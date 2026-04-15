@@ -1,28 +1,128 @@
-profileMode:
-  enabled: true
-  title: Vishal Sharma
-  subtitle: |
-    🔋 Battery Simulation Engineer | 🧠 AI Systems Builder  
+baseURL: "https://ash3spho3nix.github.io/"
+title: Vishal Sharma
+theme: PaperMod
 
-    I build systems at the intersection of **physics, simulation, and AI** —  
-    from electrochemical battery models to tools that help machines reason about engineering systems.
+enableInlineShortcodes: true
+enableRobotsTXT: true
 
-    ---
-    ⚡ 15+ years | 6 OEMs | Built simulation teams | Scaled engineering systems
+pagination:
+  pagerSize: 20
 
-  imageUrl: "avatar.jpg"
-  imageWidth: 180
-  imageHeight: 180
+taxonomies:
+  tag: tags
 
-  buttons:
-    - name: 🔋 Work & Projects
+menu:
+  main:
+    - name: About
+      url: about/
+      weight: 1
+
+    - name: Work
       url: projects/
+      weight: 2
 
-    - name: 🧠 How I Think
-      url: thinking/how-i-think/
+    - name: Thinking
+      url: thinking/
+      weight: 3
 
-    - name: 🔬 Ideas / Exploration
+    - name: Ideas
       url: ideas/
+      weight: 4
 
-    - name: 📄 Experience
+    - name: Notes
+      url: notes/
+      weight: 5
+
+    - name: Experience
       url: experience/
+      weight: 6
+
+params:
+  description: "Battery simulation expert working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
+  author: Vishal Sharma
+
+  DateFormat: "Jan 2006"
+  defaultTheme: dark
+  hideFooter: false
+  disableThemeToggle: false
+
+  ShowShareButtons: false
+  ShowReadingTime: true
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: false
+  MainSections: ["projects", "thinking", "notes"]
+  ShowToc: true
+  TocOpen: false
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: true
+
+  profileMode:
+    enabled: true
+    title: Vishal Sharma
+    subtitle: |
+      🔋 Battery Simulation Engineer | 🧠 AI Systems Builder  
+
+      Physics-first thinker working on electrochemical models,  
+      system-level simulation, and AI-assisted engineering tools.
+
+    imageUrl: "picture.jpg"
+    imageWidth: 160
+    imageHeight: 160
+
+    buttons:
+      - name: Work
+        url: projects/
+
+      - name: How I Think
+        url: thinking/how-i-think/
+
+      - name: Ideas
+        url: ideas/
+
+      - name: Experience
+        url: experience/
+
+  socialIcons:
+    - name: Email
+      url: mailto:writetovishal.sharma@gmail.com
+
+    - name: GitHub
+      url: https://github.com/ash3spho3nix
+
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/vishal-sharma-54261a18/
+
+    - name: CV
+      url: cv.pdf
+
+  assets:
+    disableScrollBarStyle: false
+
+  cover:
+    hiddenInList: false
+    hiddenInSingle: true
+
+  label:
+    text: "Vishal Sharma"
+    icon: favicon.ico
+    iconHeight: 18
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+  highlight:
+    guessSyntax: true
+    style: monokai
+
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
