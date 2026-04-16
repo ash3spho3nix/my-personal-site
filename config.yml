@@ -1,4 +1,4 @@
-baseURL: "https://ash3spho3nix.github.io/"
+baseURL: "https://github.com/ash3spho3nix"
 title: Vishal Sharma
 theme: PaperMod
 
@@ -6,7 +6,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 
 pagination:
-  pagerSize: 20
+  pagerSize: 40
 
 taxonomies:
   tag: tags
