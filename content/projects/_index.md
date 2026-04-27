@@ -33,9 +33,8 @@ My work spans electrochemical modeling, vehicle dynamics, optimization methodolo
 - [Battery Modeling](/projects/battery-modeling/)
 - [Thermal Management System Modeling](/projects/thermal-management/)
 - [DC Box Thermal Modelling](/projects/dc-box-thermal/)
-- Vehicle dynamics modeling
+- [Charging Time Calculation](/projects/charging-time/)
 - [Radar System Integration](/projects/radar-autonomous-driving/)
-- Tools integration & refactoring
 
 ### Hero MotoCorp Ltd.
 
@@ -69,3 +68,11 @@ My work spans electrochemical modeling, vehicle dynamics, optimization methodolo
 2. **Satellite Fuel Slosh Modeling** — Fluid dynamics in zero-gravity
 3. **Nutational Damping in Triaxial Rotors** — Rigid body dynamics
 4. **Rattleback Motion Simulation** — Non-intuitive rigid body phenomena
+
+---
+
+## AI & Software Projects
+
+- [Battery Simulation Framework](/projects/battery-simulation/)
+- [OpenFOAM Battery Simulator](/projects/openfoam-battery/)
+- [AI Systems & Tools](/projects/ai-systems/)

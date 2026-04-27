@@ -62,3 +62,7 @@ IIT Kanpur
 - 3 teams built from zero  
 - 5× business growth  
 - 60% reduction in model development time  
+
+---
+
+👉 [Full technical breakdown of industrial work](/industrial-experience/)

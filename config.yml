@@ -1,4 +1,4 @@
-baseURL: "https://github.com/ash3spho3nix"
+baseURL: "https://ash3spho3nix.github.io/"
 title: Vishal Sharma
 theme: PaperMod
 
@@ -6,7 +6,7 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 
 pagination:
-  pagerSize: 40
+  pagerSize: 20
 
 taxonomies:
   tag: tags
@@ -14,28 +14,36 @@ taxonomies:
 menu:
   main:
     - name: About
-      url: about/
+      url: /about/
       weight: 1
 
     - name: Work
-      url: projects/
+      url: /projects/
       weight: 2
 
-    - name: Thinking
-      url: thinking/
+    - name: Research
+      url: /research/
       weight: 3
 
-    - name: Ideas
-      url: ideas/
+    - name: Thinking
+      url: /thinking/
       weight: 4
 
-    - name: Notes
-      url: notes/
+    - name: Ideas
+      url: /ideas/
       weight: 5
 
-    - name: Experience
-      url: experience/
+    - name: Notes
+      url: /notes/
       weight: 6
+
+    - name: Experience
+      url: /experience/
+      weight: 7
+
+    - name: Resources
+      url: /resources/
+      weight: 8
 
 params:
   description: "Battery simulation expert working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
@@ -77,16 +85,16 @@ params:
 
     buttons:
       - name: Work
-        url: projects/
+        url: /projects/
 
       - name: How I Think
-        url: thinking/how-i-think/
+        url: /thinking/how-i-think/
 
       - name: Ideas
-        url: ideas/
+        url: /ideas/
 
       - name: Experience
-        url: experience/
+        url: /experience/
 
   socialIcons:
     - name: Email
@@ -99,7 +107,7 @@ params:
       url: https://www.linkedin.com/in/vishal-sharma-54261a18/
 
     - name: CV
-      url: cv.pdf
+      url: /cv.pdf
 
   assets:
     disableScrollBarStyle: false

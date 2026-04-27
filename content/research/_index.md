@@ -1,74 +1,86 @@
 ---
 title: "Research Interests"
-description: "Mechanics, dynamics, optimization, simulation, and the intersection of physics-based modeling with machine learning."
+description: "Mechanics, dynamics, optimization, simulation — and the question of why systems behave the way they do."
 draft: false
 ---
 
-## The Philosophy Behind My Research
+Most of what I find genuinely interesting in engineering sits at the intersection of two things: the governing equations that describe a system, and the behavior that emerges when you push that system toward its limits.
 
-I've always been captivated by *why* things behave the way they do. From childhood observations of unexplained phenomena to formal study of physics and mechanics, the core question has remained: **What are the governing laws?**
-
-> *"I am interested in the governing [Dynamics]({{< ref "research/dynamics" >}}) of life which helps in [Evolution]({{< ref "research/evolution" >}})."*
+The stable, well-behaved middle of the operating envelope is well understood and usually boring. The interesting physics — the instabilities, the mode transitions, the nonlinear couplings — lives at the boundaries. That's been a consistent thread across tires, piston rings, batteries, and AI systems. Different physics, same instinct.
 
 ---
 
-## Research Pillars
+## Dynamics — The Core
 
-### 1. **Dynamics** — The Core
+Mechanics and dynamics are the foundation. Not just in the "I studied this in university" sense, but in the sense that the dynamic perspective keeps producing useful insight in domains where people don't usually apply it.
 
-Mechanics and dynamics form the foundation of my thinking. Everything from planetary motion to tire standing waves, from asteroid nutation to rattleback motion—all are governed by Newton and Euler's laws.
+A battery electrode is a porous medium with coupled diffusion and reaction — it has wave-like concentration dynamics. A software codebase has dependency propagation patterns that behave like coupled oscillators. The specific equations differ; the structure of the analysis — find the modes, identify the coupling, understand what drives instability — transfers.
 
-**Sub-topics:**
-- [Contact Mechanics]({{< ref "research/contact-mechanics" >}})
-- [Hamiltonian Dynamics]({{< ref "research/hamiltonian-dynamics" >}})
-- Rigid body motion
-- Rotational instabilities
+Sub-areas of active interest:
 
-### 2. **Evolution** — Adaptation & Optimization
-
-The concept that optimization underlies almost every natural phenomenon—from the Lagrangian in classical mechanics to the principle of least action to Fermat's principle in optics.
-
-**Interests:**
-- Biologically-inspired algorithms (GA, PSO, ACO)
-- Evolutionary computation
-- Biomimicry in engineering design
-- [Genetic Algorithm Applications]({{< ref "research/evolution" >}})
-
-### 3. **Simulation & Mathematical Modeling**
-
-Translating physical phenomena into mathematical abstractions, then solving them computationally. The true art is achieving *accuracy near reality* while remaining computationally tractable.
-
-**Domains:**
-- Electrochemical systems (battery modeling)
-- Thermal dynamics
-- Fluid-structure interaction
-- Multi-body dynamics
-
-### 4. **Machine Learning × Physics**
-
-Recently, the synergy between physics-based simulation and neural networks has become increasingly powerful. The goal: augment first-principles models with data-driven components for unprecedented accuracy.
-
-**Current interests:**
-- Physics-informed neural networks (PINNs)
-- Reduced-order modeling via ML
-- Parameter estimation and inverse problems
-- Real-time control via learned surrogates
+- **[Contact Mechanics](/research/contact-mechanics/)** — Local interactions with global consequences
+- **[Hamiltonian Dynamics](/research/hamiltonian-dynamics/)** — Energy-based formulation that reveals conserved quantities and stability structure
+- Rigid body rotation and gyroscopic effects
+- Rotational instabilities (nutation, rattleback, standing waves)
 
 ---
 
-## The Unifying Theme
+## Evolution — Adaptation and Optimization
 
-At the core, I'm driven by **mechanism-level understanding**. Black-box models feel incomplete without knowing *why* they work. The journey spans:
+The principle of least action says physical systems evolve along paths that minimize (or extremize) some quantity. This shows up everywhere: Fermat's principle in optics, Hamilton's principle in mechanics, the second law in thermodynamics. Optimization isn't something humans impose on systems — it's what systems do.
 
-1. **Micro-dynamics** → Local laws (Newton, Butler-Volmer, Fourier)
-2. **Integration** → System behavior (ODEs, PDEs)
-3. **Macro-laws** → Emergent properties (thermodynamics, effective parameters)
-4. **Inverse** → Parameter recovery & control design
+This perspective makes evolutionary algorithms interesting beyond their practical utility. Genetic algorithms don't just solve engineering optimization problems — they're a computational expression of the same selection pressure logic that shapes physical systems.
+
+Areas of interest:
+
+- [Biologically-inspired algorithms](/research/evolution/) — GA, PSO, differential evolution
+- Multi-objective optimization and Pareto frontiers
+- Evolutionary computation for inverse problems
+- Degradation as a form of system evolution — how does a battery electrode "age" and what determines the trajectory?
 
 ---
 
-## A Personal Note
+## Simulation and Mathematical Modeling
 
-Physics is the language of nature. Mathematics is the syntax. Simulation is the laboratory where we test our understanding without physical constraints. And machine learning is the new tool allowing us to extract patterns from complexity.
+A simulation is a hypothesis in executable form. The discipline is building hypotheses that are precise enough to be wrong.
 
-The question that keeps me awake: *How can deeper understanding of natural processes—mechanics, evolution, optimization—help us solve engineering problems more elegantly?*
+Vague models can't be falsified — they have too many degrees of freedom to ever definitively fail. A good simulation model has specific, checkable predictions. It tells you not just what will happen, but why, and therefore what would have to be different for a different outcome.
+
+The domains I work in:
+- Electrochemical systems — where continuum equations meet discrete reaction sites
+- Thermal dynamics — coupling between energy storage, transport, and generation
+- Fluid-structure interaction — especially rotating and deformable structures
+- Multi-body dynamics — mechanical systems with multiple coupled degrees of freedom
+
+---
+
+## Physics + Machine Learning
+
+The synthesis I keep coming back to: physics-based models are interpretable but expensive and parameter-hungry. Data-driven models are fast and flexible but opaque and fragile outside their training distribution.
+
+The interesting approaches aren't choosing one over the other. They're about using physics to structure the machine learning problem:
+
+- Physics-informed neural networks (PINNs) — enforce governing equations in the loss function
+- Reduced-order modeling via dimensionality reduction — build fast surrogates that respect physical constraints
+- Parameter estimation as inverse problem — use ML to invert from observations to physical parameters
+- Learned surrogates for expensive simulations — generate physics-consistent training data, then approximate with a fast model
+
+The goal isn't to replace physical understanding with data. It's to use data to fill the gaps where direct measurement or exact computation isn't feasible.
+
+---
+
+## Patterns I Keep Seeing
+
+**Instability reveals structure.** Stable equilibria are degenerate — they look the same until you disturb them. Instabilities are specific: each one has a mechanism, a threshold condition, a characteristic signature. Understanding why a system goes unstable tells you more about the underlying physics than studying its nominal behavior.
+
+**Timescale separation is an engineering tool.** Fast dynamics (RC in ECM, contact patch evolution in tires) can often be treated as quasi-static from the slow dynamics perspective. This is why lumped models work — they exploit the separation of timescales to reduce the model order. Knowing which timescales are coupled and which aren't is the key modeling decision.
+
+**The math often transfers.** Diffusion equations, wave equations, stability analysis — the same mathematical structures appear in acoustics, electrochemistry, heat transfer, and mechanics. This isn't a coincidence; it reflects shared underlying physics. Recognizing the isomorphism between a new problem and a solved one is a significant part of engineering intuition.
+
+---
+
+## Things I'm Still Trying to Understand
+
+- Whether the analogy between battery electrode diffusion dynamics and acoustic wave propagation is just a mathematical coincidence or points to something deeper
+- How to properly handle the multi-timescale problem in battery aging — SEI growth (hours-days) coupled to thermal cycling (seconds-minutes) coupled to calendar degradation (months-years)
+- Whether symbolic regression and physics-informed ML can actually discover governing equations from data, or whether human-imposed structure is always necessary
