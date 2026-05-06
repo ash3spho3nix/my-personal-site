@@ -1,4 +1,4 @@
-baseURL: "https://ash3spho3nix.github.io/"
+baseURL: "https://vishal-sharma2409.netlify.app/"
 title: Vishal Sharma
 theme: PaperMod
 
@@ -18,32 +18,20 @@ menu:
       weight: 1
 
     - name: Work
-      url: /projects/
+      url: /work/
       weight: 2
-
-    - name: Research
-      url: /research/
-      weight: 3
 
     - name: Thinking
       url: /thinking/
-      weight: 4
-
-    - name: Ideas
-      url: /ideas/
-      weight: 5
+      weight: 3
 
     - name: Notes
       url: /notes/
-      weight: 6
-
-    - name: Experience
-      url: /experience/
-      weight: 7
+      weight: 4
 
     - name: Resources
       url: /resources/
-      weight: 8
+      weight: 5
 
 params:
   description: "Battery simulation expert working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
@@ -62,7 +50,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowAllPagesInArchive: false
-  MainSections: ["projects", "thinking", "notes"]
+  MainSections: ["work", "thinking", "notes"]
   ShowToc: true
   TocOpen: false
   ShowWordCount: false
@@ -74,27 +62,24 @@ params:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      🔋 Battery Simulation Engineer | 🧠 AI Systems Builder  
+      🔋 Battery Simulation Engineer | 🧠 AI Systems Builder
 
-      Physics-first thinker working on electrochemical models,  
+      Physics-first thinker working on electrochemical models,
       system-level simulation, and AI-assisted engineering tools.
 
-    imageUrl: "picture.jpg"
+    imageUrl: "picture.png"
     imageWidth: 160
     imageHeight: 160
 
     buttons:
-      - name: Work
-        url: /projects/
+      - name: Work & Projects
+        url: /work/
 
       - name: How I Think
         url: /thinking/how-i-think/
 
       - name: Ideas
-        url: /ideas/
-
-      - name: Experience
-        url: /experience/
+        url: /thinking/ideas/
 
   socialIcons:
     - name: Email

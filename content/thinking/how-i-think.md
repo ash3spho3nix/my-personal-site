@@ -1,49 +1,52 @@
 ---
-title: How I Think
+title: "How I Think"
+description: "The operating principles — physics-first, failure-driven, structure before generation."
+draft: false
 ---
 
-## 🧠 How I Approach Problems  
+## Physics First
 
-Most problems I work on are approached from a physics-first perspective.  
+Most problems I work on start with the governing equations, not the data. Before reaching for a model or a tool, I try to understand: what forces are acting, what constraints exist, where the system can fail, and how it behaves at its boundaries.
 
-Instead of starting with data, I try to understand:
-- what governs the system  
-- where it can fail  
-- how it behaves at boundaries  
-
----
-
-## ⚡ First Principles  
-
-If a model works but cannot be explained, it is incomplete.  
-
-The goal is not just prediction — but understanding.  
+This isn't dogma — it's practical. A model built from physical understanding generalises better, degrades more predictably, and can tell you *why* it's wrong when it fails. A model built from curve-fitting can't.
 
 ---
 
-## 🔍 Failure > Success  
+## Failure Reveals Structure
 
-Systems are easiest to understand when they break.  
-Instabilities, edge cases, and non-linear behavior often reveal more than steady-state conditions.  
+Stable, well-behaved systems are degenerate — they all look similar at equilibrium. It's the instabilities, edge cases, and nonlinear transitions that reveal the actual structure underneath.
 
----
+This shows up everywhere: a battery at the edge of lithium plating, a simulation that diverges at a specific timestep, a codebase that breaks when a specific dependency is modified. In each case, the failure tells you something about the system that nominal operation hides.
 
-## 🤖 AI + Physics  
-
-Machine learning is useful, but only when grounded.  
-
-The interesting direction is not:
-> AI replacing models  
-
-but:
-> AI helping understand and reason about models  
+The instinct is to treat failures as the most informative data points, not as noise to be avoided.
 
 ---
 
-## 🧩 Systems Thinking  
+## Timescale Separation
 
-Everything connects:
-- cell → module → pack  
-- code → structure → behavior  
+Most complex systems operate across multiple timescales simultaneously. In battery modelling: charge transport (milliseconds), thermal response (seconds to minutes), ageing (hours to years). In software: function execution (microseconds), test cycles (minutes), architectural evolution (months).
 
-Understanding these connections is more valuable than optimizing isolated components.  
+Recognising which timescales are coupled and which can be treated independently is usually the key modelling decision. It's what determines whether a lumped approximation is valid, or whether you need a full coupled simulation.
+
+---
+
+## AI as Reasoning Infrastructure
+
+Machine learning is useful — but the framing matters. The interesting direction isn't AI replacing physical models; it's AI helping reason *about* physical models.
+
+A system that can understand a codebase's dependency structure before modifying it. A surrogate model that respects physical constraints rather than just fitting training data. A debugging assistant that starts from failure modes, not token prediction.
+
+Structure before generation. Understanding before output.
+
+---
+
+## The Pattern
+
+Physics → model → automate → scale.
+
+This has been the repeating cycle across battery modelling, simulation toolchains, and AI systems. The domain changes; the cycle doesn't.
+
+---
+
+*→ Where this leads technically: [Research Interests](/thinking/research/)*
+*→ What's still unresolved: [Ideas & Open Questions](/thinking/ideas/)*

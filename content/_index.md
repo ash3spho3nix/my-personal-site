@@ -2,41 +2,16 @@
 title: Home
 ---
 
-## ⚡ What I Do  
+15 years building simulation infrastructure across automotive R&D — from ICE engines through full battery-electric systems. Currently working on electrochemical models, battery pack simulation, and AI tooling for engineering workflows.
 
-- 🔋 Build **battery simulation models** (electrochemical, thermal, ageing)  
-- ⚙️ Develop **simulation frameworks & engineering tools**  
-- 🧠 Explore **AI systems for reasoning, debugging, and automation**  
+The consistent thread: build the infrastructure that makes the problem tractable, not just solve the immediate instance of it.
 
 ---
 
-## 🧠 How I Think  
+**→ [Work & Projects](/work/)** — engineering projects, AI tools, patents
 
-- Start from **first principles**, not data  
-- Focus on **failure modes and instabilities**  
-- Connect **micro behavior → system-level effects**  
-- Use AI as a **tool for reasoning**, not just prediction  
+**→ [Thinking](/thinking/)** — research interests, ideas, how I approach problems
 
-👉 [Read more](thinking/how-i-think/)
+**→ [Notes](/notes/)** — shorter technical observations
 
----
-
-## 🔬 Current Exploration  
-
-- AI-assisted simulation debugging  
-- Physics + symbolic reasoning  
-- Code understanding systems  
-- Hybrid modeling (physics + ML)  
-
-👉 [See ideas](ideas/)
-
----
-
-## ⚙️ Selected Work  
-
-- Battery Simulation Framework  
-- OpenFOAM Battery Simulator  
-- Codebase Indexer  
-- Hybrid Code Analyzer  
-
-👉 [View all projects](projects/)
+**→ [About](/about/)** — background, experience, education
