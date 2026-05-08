@@ -1,12 +1,27 @@
 ---
 title: "Work"
-description: "15 years of engineering work — battery simulation, mechanics, tools built, and AI systems."
+description: "15 years building simulation infrastructure — battery electrochemistry, EV systems, AI tooling, and on-premise LLM deployment."
 draft: false
+build:
+  list: never
+  render: always
 ---
 
-15 years across automotive R&D — from ICE engines through full battery-electric systems. The consistent thread: build the infrastructure that makes the problem tractable, not just solve the immediate instance of it.
+15 years across automotive R&D. The consistent thread: build the infrastructure that makes the problem tractable — not just solve the immediate instance of it.
+
+**2 patents · 3 simulation teams built from scratch · 10+ engineers led · 60% model dev time reduction (MBRD)**
 
 📄 **[Full Experience & CV →](/work/experience/)**
+
+---
+
+## 🏆 Patents & Publications
+
+Surfaced here because they represent the clearest external signal of original work.
+
+- **Patent:** [Cooling system for fuel cell vehicle/EV](https://www.google.com/patents/search) — *Inventor's Award, Mercedes-Benz, 2016*
+- **Patent:** [Efficient power recapturing from vehicle suspension](https://www.google.com/patents/search) — *Mercedes-Benz, 2017*
+- **Publication:** [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University / IIT Kanpur, 2010*
 
 ---
 
@@ -50,11 +65,11 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
 
 - [Battery Thermal Model Configurator](/work/experience/)
   *Mercedes-Benz R&D · 2019–2021 · tool*
-  60% reduction in thermal model development time. Generates parameterised CFD-thermal ROM for HV battery systems. *(Part of MBRD toolchain — described in experience page.)*
+  **60% reduction in thermal model development time.** Generates parameterised CFD-thermal ROM for HV battery systems.
 
 - [Model Validation Framework](/work/experience/)
   *Mercedes-Benz R&D · 2018–2020 · tool*
-  Automated pipeline: fetch test data + battery model → run simulations → validate → upload report. *(Part of MBRD toolchain — described in experience page.)*
+  Automated pipeline: fetch test data + battery model → run simulations → validate → upload report.
 
 - [Current Limits Generator](/work/projects/ai-systems/)
   *A123 Systems · 2023 · tool*
@@ -62,7 +77,7 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
 
 - [Pack Cost Estimator](/work/experience/)
   *A123 Systems · 2023 · tool*
-  RFQ/pre-RFQ phase commercial tool — cell selection through pack concept cost in a single run. *(Described in experience page.)*
+  RFQ/pre-RFQ phase commercial tool — cell selection through pack concept cost in a single run.
 
 - [Front Fender Drag Optimization](/work/projects/front-fender-design/)
   *Hero MotoCorp · 2014 · method + tool*
@@ -102,7 +117,7 @@ The foundation — structural analysis, contact mechanics, vibration, and fluid 
 
 ## 🤖 AI & Code Intelligence
 
-Self-initiated work — built outside the day job to solve problems the existing toolchain couldn't. Runs on local LLMs (LM Studio) for GDPR-compliant on-premise deployment.
+Self-initiated — built outside the day job to solve problems the existing toolchain couldn't. **Runs on local LLMs (LM Studio) for GDPR-compliant on-premise deployment** — relevant for the German automotive context where sending engineering data to external APIs is not an option.
 
 - [AI Systems: Building Tools That Understand Code, Not Just Generate It](/work/projects/ai-systems/)
   *Self-initiated · 2022–present · overview*
@@ -123,11 +138,3 @@ Self-initiated work — built outside the day job to solve problems the existing
 - [Simple RAG Chatbot](https://github.com/ash3spho3nix/RAG-chatbot)
   *Self-initiated · 2022 · tool*
   First local RAG experiment — document retrieval, context injection, local LLM inference. The seed of the current toolchain.
-
----
-
-## 📄 Patents & Publications
-
-- **Patent:** Cooling system for fuel cell vehicle/EV — *Inventor's Award, Mercedes-Benz, 2016*
-- **Patent:** Efficient power recapturing from vehicle suspension — *Mercedes-Benz, 2017*
-- **Publication:** [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University / IIT Kanpur, 2010*

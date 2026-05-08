@@ -2,16 +2,20 @@
 title: Home
 ---
 
-15 years building simulation infrastructure across automotive R&D — from ICE engines through full battery-electric systems. Currently working on electrochemical models, battery pack simulation, and AI tooling for engineering workflows.
+I build the infrastructure that makes hard engineering problems tractable — not just solve the immediate instance.
 
-The consistent thread: build the infrastructure that makes the problem tractable, not just solve the immediate instance of it.
+15 years across automotive R&D: from tyre contact mechanics at IIT Kanpur through ICE simulation, into battery electrochemistry and EV systems, and now into AI tooling for engineering workflows. The domain keeps changing. The pattern — physics first, then model, then automate, then scale — hasn't.
+
+Currently: Simulation Lead (EMEA) at A123 Systems. Electrochemical modelling, cell-to-pack scaling, OEM requirements translation across DE/IN/CN teams. Parallel track: local LLM tooling for GDPR-compliant on-premise AI — a genuine differentiator in the German automotive market.
+
+Two patents. Three simulation teams built from scratch. One consistent instinct: the interesting physics lives at the boundary, not the nominal operating point.
 
 ---
 
 **→ [Work & Projects](/work/)** — engineering projects, AI tools, patents
 
-**→ [Thinking](/thinking/)** — research interests, ideas, how I approach problems
+**→ [Thinking](/thinking/)** — how I approach problems, research interests, open questions
 
-**→ [Notes](/notes/)** — shorter technical observations
+**→ [About](/about/)** — background, arc, what I'm working on
 
-**→ [About](/about/)** — background, experience, education
+**→ [Notes](/notes/)** — shorter observations

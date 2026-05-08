@@ -34,7 +34,7 @@ menu:
       weight: 5
 
 params:
-  description: "Battery systems specialist with expertise in simulation & modeling, working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
+  description: "Simulation infrastructure architect — 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows."
   author: Vishal Sharma
 
   DateFormat: "Jan 2006"
@@ -62,10 +62,10 @@ params:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      🔋 Battery Systems Specialist | 🧠 AI Systems Builder | Equations builder
+      Simulation Infrastructure Architect · Battery Systems · AI Tooling
 
-      Physics-first thinker working on electrochemical models,
-      system-level simulation, and AI-assisted engineering tools.
+      Physics-first engineer. 15 years from tyre mechanics to electrochemistry to on-premise LLM tooling.
+      IIT Kanpur · 2 patents · 3 teams built from scratch.
 
     imageUrl: "picture.png"
     imageWidth: 160
@@ -75,11 +75,11 @@ params:
       - name: Work & Projects
         url: /work/
 
-      - name: Thinking
+      - name: How I Think
         url: /thinking/how-i-think/
 
-      - name: Ideas
-        url: /thinking/ideas/
+      - name: Background
+        url: /about/
 
   socialIcons:
     - name: Email
