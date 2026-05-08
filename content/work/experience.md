@@ -2,6 +2,9 @@
 title: "Experience"
 description: "15 years across automotive R&D — ICE through full battery-electric systems."
 draft: false
+build:
+  list: never
+  render: always
 ---
 
 📄 **[Download CV (PDF)](/cv.pdf)**
