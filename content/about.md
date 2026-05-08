@@ -6,8 +6,7 @@ title: About
 
 I'm a mechanical engineer working in the battery domain, with a focus on simulation, modeling, and system-level behavior. Over the last 15+ years, I've worked across ICE, hybrid, and EV systems — gradually moving deeper into electrochemical modeling, thermal behavior, and large-scale simulation frameworks.
 
-But most of my work is driven by a simple curiosity:
-**how do systems actually behave when pushed to their limits?**
+But most of my work is driven by a simple curiosity: **how do systems actually behave when pushed to their limits?**
 
 I tend to approach problems from first principles — starting with physics, equations, and constraints — and then building models or tools around them. Machine learning is part of the toolbox, but only when it aligns with the underlying system behavior.
 
@@ -47,7 +46,7 @@ Over time, this has naturally expanded into building systems beyond simulation �
 | 2013–2015 | Deputy Manager, R&D | Hero MotoCorp, India |
 | 2011–2013 | Member, R&D | TVS Motor Company, India |
 
-[Full experience →](/work/experience/) | [Detailed technical breakdown →](/work/industrial-experience/)
+[Full experience & CV →](/work/experience/)
 
 ---
 
@@ -57,13 +56,20 @@ Over time, this has naturally expanded into building systems beyond simulation �
 
 ---
 
-## 🧩 Outside Work
+## 🎨 Outside Work
 
-When not working on simulations or code, I spend time on sketching, painting, and occasionally writing.
+Engineering trains you to decompose problems. Drawing trains you to *see* what's actually there, not what you think is there. These are not the same skill — and the second one is harder.
 
-These are not separate from engineering — they're just different ways of observing and understanding structure.
+**Sketching & Painting**
+
+Observational drawing — structure, proportion, shadow. Sketchbooks as a thinking tool rather than just an art medium. The practice transfers in unexpected ways: slows down perception when debugging a model that "should work", forces attention to edge conditions and boundaries, and pattern recognition from FEA stress concentrations maps oddly well onto shadow in a drawing.
+
+Not consistent enough to brag about. Consistent enough that sketchbooks keep getting filled.
+
+**Writing**
+
+Occasional writing around ideas, systems, and learning. Most of it lives in [Notes](/notes/) when it reaches the threshold of being worth publishing.
 
 ---
 
-> *"I know myself, and I know the depth of my selfishness. I cannot be at ease if someone else is in pain... Sometimes this is mistaken by the innocent for unselfishness."*
-> — paraphrased from A Quiet American, Graham Greene
+> *"You can't draw what you don't see. You can't model what you don't understand."*

@@ -18,8 +18,8 @@ A battery electrode is a porous medium with coupled diffusion and reaction — i
 
 Sub-areas of active interest:
 
-- **[Contact Mechanics](/research/contact-mechanics/)** — Local interactions with global consequences
-- **[Hamiltonian Dynamics](/research/hamiltonian-dynamics/)** — Energy-based formulation that reveals conserved quantities and stability structure
+- **[Contact Mechanics](/thinking/research/contact-mechanics/)** — Local interactions with global consequences
+- **[Hamiltonian Dynamics](/thinking/research/hamiltonian-dynamics/)** — Energy-based formulation that reveals conserved quantities and stability structure
 - Rigid body rotation and gyroscopic effects
 - Rotational instabilities (nutation, rattleback, standing waves)
 
@@ -33,7 +33,7 @@ This perspective makes evolutionary algorithms interesting beyond their practica
 
 Areas of interest:
 
-- [Biologically-inspired algorithms](/research/evolution/) — GA, PSO, differential evolution
+- [Biologically-inspired algorithms](/thinking/research/evolution/) — GA, PSO, differential evolution
 - Multi-objective optimization and Pareto frontiers
 - Evolutionary computation for inverse problems
 - Degradation as a form of system evolution — how does a battery electrode "age" and what determines the trajectory?
@@ -84,3 +84,7 @@ The goal isn't to replace physical understanding with data. It's to use data to 
 - Whether the analogy between battery electrode diffusion dynamics and acoustic wave propagation is just a mathematical coincidence or points to something deeper
 - How to properly handle the multi-timescale problem in battery aging — SEI growth (hours-days) coupled to thermal cycling (seconds-minutes) coupled to calendar degradation (months-years)
 - Whether symbolic regression and physics-informed ML can actually discover governing equations from data, or whether human-imposed structure is always necessary
+
+---
+
+*← [How I Think](/thinking/how-i-think/) | → [Ideas & Open Questions](/thinking/ideas/)*

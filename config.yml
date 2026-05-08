@@ -34,7 +34,7 @@ menu:
       weight: 5
 
 params:
-  description: "Battery simulation expert working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
+  description: "Battery systems specialist with expertise in simulation & modeling, working on electrochemical modeling, system-level simulation, and AI-assisted engineering systems."
   author: Vishal Sharma
 
   DateFormat: "Jan 2006"
@@ -62,7 +62,7 @@ params:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      🔋 Battery Simulation Engineer | 🧠 AI Systems Builder
+      🔋 Battery Systems Specialist | 🧠 AI Systems Builder | Equations builder
 
       Physics-first thinker working on electrochemical models,
       system-level simulation, and AI-assisted engineering tools.
@@ -75,7 +75,7 @@ params:
       - name: Work & Projects
         url: /work/
 
-      - name: How I Think
+      - name: Thinking
         url: /thinking/how-i-think/
 
       - name: Ideas
