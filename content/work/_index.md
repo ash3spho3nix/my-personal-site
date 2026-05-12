@@ -30,12 +30,16 @@ Surfaced here because they represent the clearest external signal of original wo
 The core domain — electrochemical modelling, thermal simulation, ageing, and system-level battery behaviour. Work spans cell characterisation through pack-level simulation across five companies.
 
 - [Battery Modeling: When Your Elegant Equation Meets Reality](/work/projects/battery-modeling/)
-  *Mercedes-Benz R&D · 2015–2021 · analysis*
+  *Cross-company · 2015–present · analysis*
   ECM vs DFN vs data-driven — what each gets wrong, and why hybrids are the real answer.
 
 - [Thermal Management System Modeling](/work/projects/thermal-management/)
-  *Mercedes-Benz R&D · 2018–2021 · tool + analysis*
-  Full-vehicle thermal simulation: battery, power electronics, coolant loop, HVAC — the coupling that makes this hard.
+  *Mercedes-Benz R&D · 2015–2021 · tool*
+  Building the full EV TMS from scratch — battery, inverter, DC-DC, coolant loop, HVAC — integrated into the in-house vehicle simulation framework.
+
+- [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/)
+  *Mercedes-Benz R&D · 2019–2021 · tool*
+  Couples CFD cooling channel results to a reduced-order thermal ROM — generates a fully-parameterised Simulink thermal model. **60% reduction in model development time.**
 
 - [DC Box Thermal Modelling](/work/projects/dc-box-thermal/)
   *Mercedes-Benz R&D · 2016–2018 · analysis*
@@ -71,9 +75,9 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
   *Mercedes-Benz R&D · 2018–2020 · tool*
   Automated pipeline: fetch test data + battery model → run simulations → validate → upload report.
 
-- [Current Limits Generator](/work/projects/ai-systems/)
+- [Current Limits Generator](/work/projects/current-limits-generator/)
   *A123 Systems · 2023 · tool*
-  Physics-based power map envelope covering lithium plating onset, side reactions, and thermal limits across the full operating space.
+  Physics-based current envelope covering lithium plating onset, side reactions, thermal limits, and thermal runaway margin — aging-aware, OEM-deliverable.
 
 - [Pack Cost Estimator](/work/experience/)
   *A123 Systems · 2023 · tool*

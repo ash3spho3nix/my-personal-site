@@ -19,26 +19,30 @@ The other formative thing at IIT Kanpur: the culture of building things from scr
 ## Early Career: Foundation in Mechanics
 
 **TVS Motor Company (2011–2013)** was where simulation met production constraints. Structural analysis of chassis components — topology optimisation, fatigue, NVH. The environment was fast and resource-constrained: limited software licenses, tight timelines, engineering decisions made on incomplete information. It built a useful tolerance for working with imperfect models and an instinct for what actually needs to be modelled precisely versus what can be approximated.
+The work on chassis components, particularly wheels, helped in understanding how full development cycles works, and how safety factor comes into picture in *real life*.
+During my short time spent with TVS Racing team, I was asked to disassemble the full dirt racing bike and then reassemble it and then ride it. It had an everlasting impact.
 
 The ANSYS APDL macros developed there — reducing pre-processing time by ~50% — were the first serious automation work. The insight that *the analysis workflow itself is an engineering problem* has recurred continuously since.
 
-**Hero MotoCorp (2013–2015)** extended this into NVH and dynamics. Engine mount optimisation, vibration analysis, introducing SOPs that reduced review cycles. The first experience of building something repeatable and transferable — not just solving a problem once, but setting up the system so the next engineer could solve it faster.
+**Hero MotoCorp (2013–2015)** extended this into NVH and structural dynamics of engine components. Piston, crankshafts, engine case, each of these components are a topic in itself. From working on engine vibrations, considering crankshaft balancing, piston slap motion, to how it affects rider experience, system level thinking developed. Engine mount optimisation was a collaborative effort with team of *Altair* to set-up a simulation technique to estabilish engine mount locations and engine mount material for reduction in vibration transfer to vehicle frame. Vibration analysis, introducing SOPs that reduced review cycles. The first experience of building something repeatable and transferable — not just solving a problem once, but setting up the system so the next engineer could solve it faster.\
+The next memorble project was surrogate modeling for front fendor optimization, *when Neural networks were not talk of the town, particularly in engineering*.
 
 ---
 
 ## The Pivot to EV: Mercedes-Benz R&D (2015–2021)
 
-Joining MBRD in 2015 was a pivot from ICE mechanics into EV systems — specifically battery simulation, at a time when the toolchain for battery development in automotive was being built from scratch.
+Joining MBRD in 2015 was a pivot from ICE mechanics into EV systems — specifically battery simulation, at a time when the toolchain for battery development in automotive was being enhanced in collaboration wtih German counterparts.
 
-Six years, two roles. The first three years (Senior Engineer) were about building competence: electrochemical modelling, thermal simulation, integrating battery subsystems into the full-vehicle framework. Understanding how a Li-ion cell actually works, not just how to use a BMS library.
+Six years, two roles. The first three years (Senior Engineer) were about enhancing the simulation framework. Starting from vehilce dynamics module, ADAS systems, Lidar systems, and later full vehicle simulation was extended for EV/PHEV/HEV. Each integral component/subsystem was built, validated and integrated, Charging systems, Thermal management system, BMS logic. This was the time, when built competence: electrochemical modelling, thermal simulation. Understanding how a Li-ion cell actually works, not just how to use a BMS library.
 
-The second three years (Technology Lead) were about building capability at the team level: toolchain architecture, development standards, cross-site collaboration with Daimler in Stuttgart, team growth from 2 to 6 engineers, 5× business growth in the portfolio.
+The second three years (Technology Lead) were about building capability at the team level: toolchain architecture, development standards, cross-site collaboration with Daimler in Stuttgart, team growth from 2 to 6 engineers, 5× business growth in the portfolio. As individual contributor, worked on specialized battery modeling toolchain.
 
 The Battery Thermal Model Configurator — 60% reduction in model development time — came out of this period. It was the first project where the goal was explicitly to reduce the cost of doing the *next* project, not just complete the current one. That's a different kind of engineering problem, and a more interesting one.
 
 ---
+**Covid times*
 
-## Building Teams From Scratch: Caterpillar and Volvo (2021–2022)
+## Building Teams: Caterpillar and Volvo (2021–2022)
 
 Two back-to-back assignments where the task was establishing battery simulation capability where none existed.
 

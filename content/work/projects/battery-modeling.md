@@ -1,67 +1,116 @@
 ---
 title: "Battery Modeling: When Your Elegant Equation Meets Reality"
-description: "Electrochemical modeling of lithium-ion batteries — why the physics is rich, the data is sparse, and the tradeoffs are real."
+description: "Electrochemical modeling of lithium-ion batteries — the tradeoffs between ECM, DFN, and data-driven approaches, and why the real answer is always a hybrid."
 date: 2024-01-15
-tags: ["battery", "electrochemistry", "simulation", "BMS"]
+tags: ["battery", "electrochemistry", "simulation", "BMS", "DFN", "ECM", "aging"]
 draft: false
+showToc: true
 ---
 
 Most battery models fail not because the equations are wrong — but because the assumptions smuggled in with them are wrong.
 
-I've spent years working with battery models across the stack: from ECM spreadsheets that needed to survive a BMS real-time loop, to full electrochemical models trying to capture what actually happens inside the cell during a fast charge. The gap between "runs on paper" and "works in a vehicle" is where most of the interesting problems live.
+Fifteen years working with battery models across the stack: from ECM spreadsheets that needed to survive a BMS real-time loop, to full electrochemical models trying to capture what actually happens inside the cell during a fast charge. The gap between "runs on paper" and "works in a vehicle" is where most of the interesting problems live.
+
+This isn't a single project — it's the accumulated understanding from building, validating, and deploying battery models across multiple OEMs, chemistries, and applications. The failures taught more than the successes.
+
+<!-- IMAGE: Cross-section diagram of a lithium-ion cell showing anode, cathode, separator, electrolyte — from open research literature -->
 
 ---
 
-## Three Ways to Model a Battery (and What Each Gets Wrong)
+## The Three Ways to Model a Battery
 
 ### Equivalent Circuit Model (ECM)
 
-An RC circuit that impersonates a battery. Fast, tunable, works in real-time.
+An RC circuit that impersonates a battery. A voltage source, a series resistance, and one or more RC pairs representing diffusion dynamics. Fast, tunable, works in real-time on a BMS microcontroller.
 
 The issue isn't that it's inaccurate — for a narrow operating window, it's fine. The issue is that *you don't know when it breaks*. Push the cell outside the temperature or SoC range you calibrated on, and the model degrades silently. There's no physics to signal the extrapolation; it just drifts.
 
-The real trap is over-tuning. More RC pairs → better fit → worse generalization. I've seen 3-RC models that fit beautifully on characterization data and failed to predict a 2C discharge from a warm start.
+The real trap is over-tuning. More RC pairs → better fit on characterisation data → worse generalisation. A 3-RC ECM that fits HPPC data beautifully can fail badly predicting a 2C discharge from a warm start — because the additional poles absorbed noise in the training data, not real dynamics.
 
-**When it earns its place:** BMS applications, SoC estimation, anything requiring <1 ms compute time.
+**ECM earns its place in:** BMS applications, real-time SoC estimation, anything requiring sub-millisecond compute time, early-stage pack design where a fast model is needed before full characterisation data exists.
+
+```
+ECM Structure (1-RC example):
+
+V_terminal = OCV(SoC) - I·R₀ - V_RC
+
+where V_RC evolves as: dV_RC/dt = I/C₁ - V_RC/(R₁·C₁)
+
+R₀, R₁, C₁ — all functions of temperature and SoC
+OCV — measured from slow discharge (quasi-static)
+```
 
 ### Electrochemical Model (DFN / P2D)
 
-This is the actual physics: Butler-Volmer kinetics, Fickian diffusion in solid and electrolyte phases, Nernst-Planck transport. The model knows *why* the voltage drops — not just *that* it does.
+This is the actual physics. Doyle-Fuller-Newman (DFN) or its single-particle simplification (SPM): Butler-Volmer electrode kinetics, Fickian diffusion of lithium in solid particles and through the electrolyte, Nernst-Planck ion transport, conservation of charge and mass across both electrodes and separator.
 
-The catch is parameters. A full DFN model has 20–30 parameters, most of which you can't measure directly and have to estimate from indirect data. Get the diffusivity wrong, and your model predicts plating onset at the wrong SoC. That's not a small error — that's the wrong safety boundary.
+The model knows *why* the voltage drops — not just *that* it does. It can tell you that the voltage sag at high C-rate is diffusion-limited at the cathode, not kinetics-limited at the anode. That distinction matters for aging prediction and for designing fast-charge protocols.
 
-What makes it valuable is precisely what makes it painful to calibrate: it captures the mechanisms. Capacity fade isn't just a number that drifts — it's SEI growth, lithium inventory loss, active material degradation. Each has a signature. Each can be interrogated.
+The catch is parameterisation. A full DFN model has 20–30 parameters, most of which you cannot measure directly. Solid-phase diffusivity, exchange current density, electrolyte transference number — these require careful experimental protocols and parameter estimation from indirect measurements. Get the diffusivity wrong, and your model predicts lithium plating onset at the wrong SoC. That's not a small error — that's the wrong safety boundary.
 
-**When it earns its place:** Understanding aging mechanisms, designing fast-charge limits, anything where you want to ask *why*.
+**DFN earns its place in:** Understanding aging mechanisms, designing fast-charge limits, studying capacity fade, anything where you need to ask *why* the cell behaves as it does.
 
-### Stochastic / Data-Driven Model
+<!-- IMAGE: Schematic of DFN model showing anode/separator/cathode with solid and electrolyte phase concentration profiles -->
 
-A Hidden Markov Model or similar treats the battery as a probabilistic state machine trained on data. It's honest in a way the ECM isn't — it doesn't pretend to know the physics, it just pattern-matches.
+### Data-Driven / Stochastic Model
 
-The problem is the same as all black-box models: it's a compression of your training distribution. Show it something outside that distribution and you get smooth, confident nonsense. No warning lights.
+A Hidden Markov Model, a neural network, or a Gaussian process treats the battery as a system to be learned from data rather than derived from first principles. No physics equations — just patterns extracted from measurements.
 
-**When it earns its place:** Short-horizon prediction in controlled operating conditions, when you have abundant data and limited physics access.
+It's honest in a way the ECM isn't: it doesn't claim to know the physics. The problem is the same as all black-box models — it's a compression of the training distribution. Show it an operating condition outside that distribution and you get smooth, confident nonsense. No warning lights, no physical plausibility check.
 
----
-
-## The Pattern That Keeps Appearing
-
-All three model classes trade off along the same axis: **physical interpretability vs. computational cost vs. extrapolation range**.
-
-The thing I keep running into: engineers tend to pick one model and defend it, when the real answer is almost always a **hybrid**. Use the electrochemical model to build physical intuition and identify the dominant mechanisms, then encode that structure into a fast surrogate. The ECM RC parameters aren't arbitrary — they correspond to something physical. You can *derive* their temperature and SoC dependence from first principles instead of fitting them empirically.
-
-That's the direction that actually scales.
+**Data-driven earns its place in:** Short-horizon prediction under controlled and well-characterised operating conditions, health estimation when abundant historical data exists, anywhere the physics is genuinely unknown or too complex to parametrise.
 
 ---
 
-## What I'm Still Trying to Understand
+## The Tradeoff That Structures Everything
 
-- How to reliably detect the onset of lithium plating in real-time, from terminal measurements alone, without the model blowing up the computational budget
-- How aging mechanisms interact — SEI growth slows diffusion, which shifts the plating boundary, which accelerates SEI growth. The coupling is nonlinear and the timescales are awkward
-- Whether physics-informed neural networks can actually help here or just add complexity without adding understanding
+All three model classes trade off along the same axes:
+
+| | ECM | DFN / P2D | Data-Driven |
+|---|---|---|---|
+| Physical interpretability | Low | High | None |
+| Computational cost | Very low | High | Variable |
+| Extrapolation range | Poor | Good | Very poor |
+| Parameterisation effort | Low | High | Data-hungry |
+| Aging mechanism visibility | None | Full | Indirect |
+
+The instinct is to pick one and defend it. The right answer is almost always a **hybrid** — use the electrochemical model to build physical intuition and identify dominant mechanisms, then encode that structure into a fast surrogate.
+
+The ECM's RC parameters aren't arbitrary numbers — they correspond to something physical. R₀ is predominantly ionic resistance in the electrolyte and contact resistance. The RC pair time constants correspond to diffusion timescales in the electrode particles. You can *derive* their temperature and SoC dependence from electrochemical first principles instead of fitting them empirically to characterisation data. The result is an ECM that extrapolates correctly — because its parameters have physical backing, not just curve-fit backing.
+
+That's the direction that actually scales across applications and operating conditions.
 
 ---
 
-## Where This Work Lives
+## Where Models Break (and What That Teaches You)
 
-These models feed the BMS — state estimation, protection limits, charging strategy. That chain is only as strong as the model's validity at the operating boundaries. The interesting problems aren't in the middle of the SoC range at 25°C. They're at the edges: cold start, fast charge, end of life. That's where model quality actually matters.
+**Cold temperatures.** Lithium diffusion in graphite has Arrhenius temperature dependence — halve the temperature (in Kelvin) and diffusivity drops by orders of magnitude. An ECM calibrated at 25°C will underestimate voltage sag at -10°C and overestimate available power. A DFN model will capture this correctly if the diffusivity parameters are identified from low-temperature data.
+
+**End of life.** As the cell ages, internal resistance increases, active material decreases, and the OCV curve shifts. An ECM recalibrated from fresh-cell data will predict the wrong SoC for an aged cell. This is why SoH-adaptive parameterisation is not optional for a BMS that needs to work across the vehicle's life.
+
+**Fast charge.** The interesting physics during fast charging is at the anode — diffusion limitation causes anode potential to drop toward 0V vs Li/Li⁺, and if the charging current is too high, lithium plates rather than intercalates. An ECM cannot detect this. A DFN model can, because it tracks anode potential explicitly.
+
+**First cycles.** The SEI layer forms in the first few cycles, consuming lithium inventory and setting the baseline internal resistance. Models calibrated after formation but applied to predict formation losses will be systematically wrong.
+
+---
+
+## What I'm Still Working Through
+
+- How to reliably detect lithium plating onset in real-time from terminal measurements alone — without computational budget that rules it out for BMS deployment
+- How aging mechanisms interact and couple: SEI growth slows diffusion, which shifts the plating boundary, which changes the operating limits, which affects SEI growth rate. The nonlinear coupling across timescales (seconds to years) is genuinely hard
+- Whether physics-informed neural networks can bridge the gap between interpretability and computational cost — or whether they just add complexity without adding understanding
+
+---
+
+## How This Connects to the Broader Work
+
+Battery models don't live in isolation. They feed:
+
+- **BMS state estimation** — SoC, SoH, power limits
+- **Thermal management** — heat generation is a model output, not a measurement
+- **Aging prediction** — calendar and cycle life, capacity fade trajectories
+- **Fast-charge protocol design** — the limits on charge rate come from the electrochemistry, not from conservative engineering judgment
+
+The interesting problems aren't at 25°C and 50% SoC. They're at cold start, at the end of a fast charge, at end of life, at the boundary conditions where model quality actually determines whether the system works correctly or fails safely.
+
+[← Work](/work/) | [Battery Thermal Management →](/work/projects/thermal-management/)
