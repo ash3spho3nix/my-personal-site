@@ -19,9 +19,9 @@ build:
 
 Surfaced here because they represent the clearest external signal of original work.
 
-- **Patent:** [Cooling system for fuel cell vehicle/EV](https://www.google.com/patents/search) — *Inventor's Award, Mercedes-Benz, 2016*
-- **Patent:** [Efficient power recapturing from vehicle suspension](https://www.google.com/patents/search) — *Mercedes-Benz, 2017*
-- **Publication:** [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University / IIT Kanpur, 2010*
+- **Patent:** Cooling system for fuel cell vehicle/EV — *Inventor's Award, Mercedes-Benz, 2016*
+- **Patent:** Efficient power recapturing from vehicle suspension — *Mercedes-Benz, 2017*
+- **Publication:** [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University, Melbourne, 2010*
 
 ---
 
@@ -127,15 +127,15 @@ Self-initiated — built outside the day job to solve problems the existing tool
   *Self-initiated · 2022–present · overview*
   The design philosophy connecting these tools: structure before generation, understanding before output.
 
-- [Codebase Indexer](https://github.com/ash3spho3nix/Codebase_Indexer)
+- [Codebase Indexer](/work/projects/codebase-indexer/)
   *Self-initiated · 2023–present · tool*
   FAISS-based pre-filter navigation layer for local LLMs. Dependency graph, importance scoring, structural query layer. The difference between an agent that codes and one that understands.
 
-- [Hybrid Code Analyzer](https://github.com/ash3spho3nix/hybrid_code_analyser)
+- [Hybrid Code Analyzer](/work/projects/hybrid-code-analyser/)
   *Self-initiated · 2024 · tool*
   Static + dynamic analysis pipeline. Finds what neither alone can — runtime failures invisible to AST analysis, structural issues invisible to execution tracing.
 
-- [Alchemist](https://github.com/ash3spho3nix/Alchemist)
+- [Alchemist](https://github.com/ash3spho3nix/Alchemist) - on-going
   *Self-initiated · 2023 · tool*
   Indexes past repositories, extracts architectural patterns, suggests new combinations. Synthesis over generation.
 
