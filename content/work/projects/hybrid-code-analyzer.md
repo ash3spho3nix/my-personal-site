@@ -1,49 +1,64 @@
 ---
-title: "Hybrid Code Analyzer"
+title: "Hybrid Code Analyzer: Finding What Static and Dynamic Analysis Miss Alone"
 date: 2026-05-09
-summary: "A hybrid static + dynamic analysis framework designed to correlate runtime failures with structural code importance."
+description: "A combined static + dynamic analysis pipeline that correlates runtime failures with structural code importance — built for AI-assisted debugging workflows."
 tags: [AI, Static Analysis, Dynamic Analysis, Python, Architecture]
 showToc: true
+draft: false
 ---
 
-heading: Hybrid Code Analyzer
+Modern repositories are increasingly too large and interconnected for shallow debugging workflows. Static analysis tells you about structure. Dynamic analysis tells you what happens at runtime. Neither alone tells you *why* a structurally important module is failing.
 
-subheading: Overview
+This project combined both.
 
-Modern repositories are increasingly too large and interconnected for shallow debugging workflows.
-
-This project explored combining:
-
-- static analysis
-- runtime tracing
-- dependency analysis
-- semantic indexing
-- structural scoring
-
-into a unified engineering analysis system.
+![Hybrid Code Analyzer — static + dynamic pipeline output](/images/hybrid_code_analyser.png)
 
 ---
 
-subheading: Core Idea
+## The Core Idea
 
-Traditional debugging tools answer:
+Traditional debugging tools answer: *"What failed?"*
 
-> "What failed?"
+This system attempts to answer: *"What structurally important subsystem is most likely responsible for failure propagation?"*
 
-This system attempted to answer:
-
-> "What structurally important subsystem is most likely responsible for failure propagation?"
+That's a different question. And it requires correlating two information streams that are usually kept separate.
 
 ---
 
-subheading: Architecture
+## Architecture
 
 ```mermaid
 graph LR
     A[Repository] --> B[Static Analyzer]
     A --> C[Dynamic Runtime Tracer]
-    B --> D[Dependency Graph]
-    C --> E[Execution Trace]
+    B --> D[Dependency Graph + Importance Scores]
+    C --> E[Execution Trace + Runtime Errors]
     D --> F[Correlation Engine]
     E --> F
-    F --> G[Failure Attribution]
+    F --> G[Failure Attribution Report]
+```
+
+**Static layer:** AST-level analysis — symbol extraction, import chains, dependency graph, structural importance scoring.
+
+**Dynamic layer:** Runtime instrumentation — which paths actually execute, what types flow through, which imports fail in the current environment, where exceptions propagate.
+
+**Correlation:** Running both and comparing reveals what neither finds alone:
+- A function that statically looks correct but fails on specific input types
+- An import chain that works in dev but not in production
+- A path that's never exercised by tests and contains a latent bug
+
+---
+
+## Key Design Decision: Kept Separate Deliberately
+
+The Indexer and Analyzer are separate tools. Not because integration is hard — because keeping them separate preserves the ability to correlate them independently.
+
+Static info: structural (what *could* happen). Dynamic info: behavioral (what *did* happen). The discrepancy between those two is where bugs live. Merge them into a single pass and you lose the signal.
+
+**Runs on local LLMs** — no external API calls required. Designed for GDPR-constrained environments.
+
+---
+
+## GitHub
+
+[→ ash3spho3nix/hybrid_code_analyser](https://github.com/ash3spho3nix/hybrid_code_analyser)

@@ -25,14 +25,6 @@ menu:
       url: /thinking/
       weight: 3
 
-    - name: Notes
-      url: /notes/
-      weight: 4
-
-    - name: Resources
-      url: /resources/
-      weight: 5
-
 params:
   description: "Simulation infrastructure architect — 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows."
   author: Vishal Sharma
@@ -62,24 +54,26 @@ params:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      Simulation Infrastructure Architect · Battery Systems · AI Tooling
+      Simulation Infrastructure Architect with 15 years bridging physics-based modeling and AI systems.
 
-      Physics-first engineer. 15 years from tyre mechanics to electrochemistry to on-premise LLM tooling.
-      IIT Kanpur · 2 patents · 3 teams built from scratch.
+      Built production simulation platforms for battery systems and vehicle dynamics.
+
+      ex-Mercedes, IIT Kanpur · 2 patents 1 publication · 3 teams built in OEM R&Ds · Test-lab setup.
 
     imageUrl: "picture.png"
     imageWidth: 160
     imageHeight: 160
 
     buttons:
+      - name: Background
+        url: /about/
+
       - name: Work & Projects
         url: /work/
 
-      - name: How I Think
-        url: /thinking/how-i-think/
+      - name: Thinking
+        url: /thinking/
 
-      - name: Background
-        url: /about/
 
   socialIcons:
     - name: Email

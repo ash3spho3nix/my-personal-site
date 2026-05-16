@@ -67,11 +67,11 @@ The core domain — electrochemical modelling, thermal simulation, ageing, and s
 
 Tools that exist, are used, and reduce the cost of doing the next project. Mix of OEM-commissioned and self-initiated.
 
-- [Battery Thermal Model Configurator](/work/experience/)
+- [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/)
   *Mercedes-Benz R&D · 2019–2021 · tool*
   **60% reduction in thermal model development time.** Generates parameterised CFD-thermal ROM for HV battery systems.
 
-- [Model Validation Framework](/work/experience/)
+- [Model Validation Framework]
   *Mercedes-Benz R&D · 2018–2020 · tool*
   Automated pipeline: fetch test data + battery model → run simulations → validate → upload report.
 
@@ -79,7 +79,7 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
   *A123 Systems · 2023 · tool*
   Physics-based current envelope covering lithium plating onset, side reactions, thermal limits, and thermal runaway margin — aging-aware, OEM-deliverable.
 
-- [Pack Cost Estimator](/work/experience/)
+- [Pack Cost Estimator]
   *A123 Systems · 2023 · tool*
   RFQ/pre-RFQ phase commercial tool — cell selection through pack concept cost in a single run.
 

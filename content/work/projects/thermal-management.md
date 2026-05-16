@@ -13,7 +13,7 @@ The battery wants to stay between 15 and 35°C. The power electronics want activ
 
 The work at Mercedes-Benz R&D India was to build this system, component by component, and integrate it into the in-house full-vehicle simulation framework — so that EV and hybrid vehicles (E-Class, S-Class, AMG, EQC) could be simulated with thermally-coupled behaviour from the start of development.
 
-<!-- IMAGE: EV thermal management system schematic — battery cooling loop, power electronics cooling, HVAC refrigerant circuit -->
+![HV battery pack — the most thermally sensitive component in the EV system](/images/batteryHV.jpg)
 
 ---
 
@@ -51,13 +51,17 @@ Cell Thermal Node ──► Cooling Plate ──► Coolant Loop
 Temperature feedback to electrochemical model
 ```
 
+### Vehicle-Level TMS Integration
+
+![Full vehicle thermal management system — cooling loops, refrigerant circuit, HVAC integration](/images/vehicle_TMS.jpg)
+
+The complete TMS covers battery cooling, power electronics cooling, and HVAC refrigerant circuit — all sharing infrastructure and competing for capacity under peak load conditions.
+
 ### Power Electronics: Inverter and DC-DC Converter
 
 Both components have thermal models built from physical first principles — thermal resistance networks from junction to case to coolant, with heat generation from switching and conduction losses.
 
 The DC-DC converter model was developed to solve a specific field problem: overtemperature in a particular drive cycle. The model was validated against instrumented test data with **96% accuracy**, and the thermal margin was identified before hardware changes were made. This is what a good component model is actually for — not post-processing test results, but answering "what will happen" before the test runs.
-
-<!-- IMAGE: Inverter / power electronics cooling system, or thermal resistance network diagram -->
 
 ### Coolant Loop
 
@@ -84,8 +88,6 @@ The model captures:
 Component models alone don't give you a system. The control logic — when to run the pump at what speed, when to activate the chiller, when to prioritise battery cooling over cabin cooling — determines what the system actually does.
 
 This was implemented in Stateflow: operating mode transitions (normal, fast charge, pre-conditioning, cold start, thermal runaway protection), hysteresis on mode switches, and the priority arbitration when multiple components are competing for cooling capacity.
-
-<!-- IMAGE: Control state machine diagram for TMS operating modes -->
 
 ---
 

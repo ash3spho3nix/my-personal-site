@@ -10,8 +10,8 @@ build:
 
 | Period | Role | Company |
 | --- | --- | --- |
-| 2022–Present | Simulation Lead, EMEA | A123 Systems, Germany |
-| 2022 | Lead – Simulation & Analysis (Sr. Manager) | Volvo Trucks, India |
+| 2022–Present | Simulation Lead, EMEA | A123 Systems GmbH, Germany |
+| 2022 | Lead – Simulation & Analysis (Sr. Manager) | Volvo Trucks R&D, India |
 | 2021–2022 | Performance Engineer | Caterpillar R&D, India |
 | 2015–2021 | Technology Lead / Senior Engineer | Mercedes-Benz R&D, India |
 | 2013–2015 | Deputy Manager, R&D | Hero MotoCorp, India |
@@ -31,18 +31,20 @@ build:
 
 ## The Short Version
 
-Mechanical engineer by training (IIT Kanpur, M.Tech + B.Tech). 15 years across automotive R&D — ICE systems, EV simulation, battery electrochemistry, and now AI tooling for engineering workflows.
+Mechanical engineer by training (IIT Kanpur, M.Tech + B.Tech). 15 years across automotive R&D — ICE systems, EV modeling & simulation, battery electrochemistry, and now ML/AI tooling for engineering workflows.
 
 The consistent thread: build the infrastructure that makes the problem tractable. Not just solve the current instance, but reduce the cost of solving the next one.
 
-Currently: Simulation Lead, EMEA at A123 Systems (Germany). Translate OEM requirements into simulation scope across DE/IN/CN teams, deliver final validation authority for EMEA deliverables, and — on a parallel track — build local LLM tooling for on-premise AI in GDPR-sensitive environments.
+Currently: **Sr. Product Engineer(Simulation Lead, EMEA)** at A123 Systems (Germany). Translate OEM requirements into simulation scope across DE/IN/CN teams, deliver final validation authority for EMEA deliverables.
 
-**2 patents · 3 simulation teams built from scratch · 10+ engineers led · 60% model dev time reduction at MBRDI**
+**2 patents · 3 simulation teams built · 10+ engineers led · 60% model dev time reduction at MBRDI**
 
 ---
 
 ## What I Actually Do
 
+- Design **12 V/48 V battery systems** from OEM requirements- preconcept phase to sample phase until project finalization.
+- Responsible for managing **simulation related requirements** across all 12 V/48 V battery projects.
 - Build and validate **battery simulation models** — electrochemical (DFN, SPM), thermal, ageing, full-pack
 - Design **simulation frameworks and toolchains** that reduce the cost of the *next* project, not just complete the current one
 - Develop **AI-assisted engineering tools** — codebase reasoning, local RAG, simulation debugging infrastructure
@@ -72,7 +74,7 @@ The AI tooling work isn't a career pivot — it's the same instinct applied to t
 
 ## Outside Work
 
-Engineering trains you to decompose problems. Drawing trains you to *see* what's actually there, not what you think is there. These aren't the same skill, and the second one is harder.
+Engineering trains you to decompose problems. Painting trains you to *see* what's actually there, not what you think is there. These aren't the same skill, and the second one is harder.
 
 Sketchbooks, observational drawing, occasional writing. The habits that slow down perception in a useful way — the same attention that catches a model that "should work" but doesn't.
 

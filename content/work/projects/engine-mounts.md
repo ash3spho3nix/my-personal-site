@@ -10,6 +10,8 @@ Engine mounts have one job: let the engine move enough to not destroy itself or 
 
 Get it wrong in one direction, and your engine torque reaction cracks the frame. Get it wrong in the other, and the idle vibration transmits straight to the steering wheel and seat. The design space is narrow, the loading is multi-directional, and the rubber changes its behavior depending on temperature, amplitude, and frequency. It's not a bolt-sizing problem. It's a dynamics problem.
 
+![Engine with mount locations — vibration isolation challenge](/images/car_engine_wth_mounts.jpg)
+
 ---
 
 ## What You're Actually Trying to Do
@@ -37,6 +39,16 @@ Each mount has stiffness in three translational and three rotational directions.
 Objective: minimize Frequency Response Function (FRF) magnitude in the target band at driver seat and steering wheel sensor locations. Constraint: static deflection within limits, fatigue life, packaging.
 
 The optimizer used was a hybrid GA + Nelder-Mead. The genetic algorithm explores the space globally; Nelder-Mead refines the best candidates. This is a pattern that shows up across multiple projects — global heuristic search followed by local refinement. It works.
+
+---
+
+## Damping and Transmissibility
+
+The transmissibility curve is where mount performance lives. Below the resonant frequency, transmissibility is ~1 (force passes through). At resonance, it amplifies. Above resonance, the mount attenuates — and the rate of attenuation depends on damping.
+
+![Damping transmissibility curves — mount isolation performance across frequency](/images/damping_transmissibility.jpg)
+
+The tradeoff: high damping suppresses the resonance peak but reduces isolation at higher frequencies. Low damping gives excellent high-frequency isolation but leaves a dangerous amplification zone at resonance. Mount design is choosing where to sit on that curve for the specific RPM range and road input spectrum of the application.
 
 ---
 

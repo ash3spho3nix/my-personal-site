@@ -8,6 +8,8 @@ draft: false
 
 My M.Tech thesis was on standing waves in rotating tires. It sounds narrow. It turned out to be a masterclass in how rotation breaks everything you thought you knew about structural mechanics.
 
+![Tire standing wave phenomenon at high speed](/images/standing_waves_tire.jpg)
+
 ---
 
 ## The Problem Nobody Warns You About
@@ -22,6 +24,8 @@ These aren't standing waves in the audio-room sense — they're spatial oscillat
 
 The interesting part is that the critical speed depends on the **wave propagation speed in the pressurized rotating ring** — which itself is a function of inflation pressure, rotational speed, and material stiffness. These are all coupled. You can't linearize your way out of it.
 
+![Standing wave formation detail in tire sidewall](/images/standing_waves_tire2.jpg)
+
 ---
 
 ## Contact Mechanics: Where Local Meets Global
@@ -35,6 +39,18 @@ The refinements that matter:
 - **Hysteretic material behavior** means the loading and unloading pressure profiles differ — that asymmetry is where rolling resistance lives
 - **Temperature-dependent rubber properties** mean the contact behavior at 80°C (post-motorway) is different from cold start — a fact that compound designers and vehicle dynamicists sometimes argue about
 
+![Tire contact model — pressure distribution and patch geometry](/images/tire_model.jpg)
+
+---
+
+## The Tire Model in Detail
+
+The rotating ring model requires coupling in-plane and out-of-plane modes through Coriolis and centrifugal terms. This isn't optional — miss either and your critical velocity prediction is wrong.
+
+![Detailed tire ring model with modal decomposition](/images/tire_model_detailed.jpg)
+
+The governing equations are derived from Lagrangian mechanics applied to a rotating elastic ring with foundation stiffness. The rotating frame introduces fictitious forces (Coriolis, centrifugal) that couple modes which would be independent in a static structure.
+
 ---
 
 ## Why Rotating Systems Are a Different Beast
@@ -47,6 +63,8 @@ In a rotating ring, you get:
 - **Gyroscopic terms** — which shift natural frequencies depending on spin speed
 
 Miss any of these in your model, and your natural frequency predictions are wrong. Which means your resonance predictions are wrong. Which means you're designing around the wrong failure mode.
+
+![High-speed standing wave progression in rotating tire](/images/standing_waves_tire3.jpg)
 
 This pattern recurs. I saw the same logic later in shaft dynamics, in satellite fuel slosh, in nutational damping — any system where rotation is not just kinematics but structural physics.
 
