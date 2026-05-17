@@ -47,6 +47,8 @@ The charging time model integrates:
 
 The thermal coupling is important. A cell that starts warm charges faster in CC (lower resistance) but reaches thermal limits sooner, triggering current derating that extends the tail. A cold cell has high resistance, takes longer to reach the CC-to-CV transition, but may never hit thermal limits. The total charge time is non-monotonic with temperature — there's an optimal starting temperature that minimizes total charge time.
 
+![Charging systems](/images/electric-car-battery-charging.jpg)
+
 ---
 
 ## Patterns I Keep Seeing

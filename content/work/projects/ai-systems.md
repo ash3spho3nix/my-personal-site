@@ -44,7 +44,7 @@ The tools aren't independent — they're designed to compose. The Indexer provid
 
 **The key design decision:** The Indexer and Analyzer are deliberately kept separate tools. They produce different information — structural vs. behavioral — and combining them into a single pass loses the ability to correlate them independently. Run both, compare outputs, find the discrepancies. That's where bugs live.
 
-[Full writeup →](/work/projects/hybrid-code-analyser/) · [GitHub →](https://github.com/ash3spho3nix/hybrid_code_analyser)
+[Full writeup →](/work/projects/hybrid-code-analyzer/) · [GitHub →](https://github.com/ash3spho3nix/hybrid_code_analyser)
 
 ---
 

@@ -26,6 +26,8 @@ This changes the problem structure completely:
 
 The surrogate here was an Artificial Neural Network trained on a design-of-experiments (DoE) set of CFD runs spanning the fender geometry parameter space. The ANN learned the mapping from geometry parameters → drag coefficient.
 
+![Surrogate Modeling](/images/surrogate_model.jpg)
+
 ---
 
 ## The Optimization Loop

@@ -15,6 +15,7 @@ The three parts connect: start with the operating principles, see where they lea
 The mental models and instincts I keep returning to — physics-first decomposition, failure-mode analysis, timescale separation, and why AI is most useful when grounded in structure.
 
 *Start here if you want to understand the reasoning behind the projects.*
+![neural network](/images/neural_network_animation2.gif)
 
 ---
 
@@ -23,6 +24,8 @@ The mental models and instincts I keep returning to — physics-first decomposit
 The technical areas I find genuinely interesting — not just what I've worked on, but what I keep thinking about.
 
 Covers: dynamics and instability, contact mechanics, Hamiltonian formulations, evolutionary algorithms, physics-informed ML, and the patterns that keep appearing across domains that look unrelated on the surface.
+
+![Mechanics and Dynamics](/images/Lagrange_Equations.jpg)
 
 *Continue here if you want to see where the thinking leads technically.*
 

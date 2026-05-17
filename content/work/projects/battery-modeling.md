@@ -13,11 +13,13 @@ Fifteen years working with battery models across the stack: from ECM spreadsheet
 
 This isn't a single project — it's the accumulated understanding from building, validating, and deploying battery models across multiple OEMs, chemistries, and applications. The failures taught more than the successes.
 
-<!-- IMAGE: Cross-section diagram of a lithium-ion cell showing anode, cathode, separator, electrolyte — from open research literature -->
+![Battery Modeling](/images/battery_modeling.png)
 
 ---
 
 ## The Three Ways to Model a Battery
+
+![Battery Modeling Techniques](/images/battery_modeling_techniques.png)
 
 ### Equivalent Circuit Model (ECM)
 
@@ -50,7 +52,7 @@ The catch is parameterisation. A full DFN model has 20–30 parameters, most of 
 
 **DFN earns its place in:** Understanding aging mechanisms, designing fast-charge limits, studying capacity fade, anything where you need to ask *why* the cell behaves as it does.
 
-<!-- IMAGE: Schematic of DFN model showing anode/separator/cathode with solid and electrolyte phase concentration profiles -->
+![Battery Modeling](/images/Battery_SPM_P2D.jpg)
 
 ### Data-Driven / Stochastic Model
 
@@ -92,6 +94,7 @@ That's the direction that actually scales across applications and operating cond
 
 **First cycles.** The SEI layer forms in the first few cycles, consuming lithium inventory and setting the baseline internal resistance. Models calibrated after formation but applied to predict formation losses will be systematically wrong.
 
+![Battery Pack Modeling](/images/cell_to_pack.png)
 ---
 
 ## What I'm Still Working Through

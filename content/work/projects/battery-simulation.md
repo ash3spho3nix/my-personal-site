@@ -16,6 +16,8 @@ At Volvo Trucks, the problem was clear: the battery and BMS teams needed a simul
 
 The framework was designed around one principle: **the battery and BMS should be first-class citizens**, not subsystems of a larger model.
 
+![BMS](/images/BMS_functionalities.jpg)
+
 **Architecture:**
 
 - Cell model layer — ECM and simplified P2D, selectable per simulation objective
