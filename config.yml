@@ -1,5 +1,5 @@
 baseURL: "https://vishal-sharma2409.netlify.app/"
-title: Vishal Sharma
+title: "Vishal Sharma | Simulation Infrastructure Architect | Battery Systems & AI Tooling"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -25,8 +25,12 @@ menu:
       url: /thinking/
       weight: 3
 
+    - name: Notes
+      url: /notes/
+      weight: 4
+
 params:
-  description: "Simulation infrastructure architect — 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows."
+  description: "Simulation infrastructure architect with 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows. Ex-Mercedes-Benz, IIT Kanpur. 2 patents."
   author: Vishal Sharma
 
   DateFormat: "Jan 2006"
@@ -54,18 +58,20 @@ params:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      Simulation Infrastructure Architect with 15 years bridging physics-based modeling and AI systems.
+      **Simulation Infrastructure Architect** — physics-based modelling · battery systems · AI tooling
 
-      Built production simulation platforms for battery systems and vehicle dynamics.
+      15 years in automotive R&D: IIT Kanpur → TVS → Hero → Mercedes-Benz → Caterpillar → Volvo → A123 Systems (EMEA Lead).
 
-      ex-Mercedes, IIT Kanpur · 2 patents 1 publication · 3 teams built in OEM R&Ds · Test-lab setup.
+      I build the infrastructure that makes hard engineering problems tractable — simulation frameworks, battery electrochemical models, and on-premise AI tooling that runs without sending your data to the cloud.
+
+      `2 patents` &nbsp;·&nbsp; `3 simulation teams built` &nbsp;·&nbsp; `ex-Mercedes-Benz R&D` &nbsp;·&nbsp; `IIT Kanpur`
 
     imageUrl: "picture.png"
     imageWidth: 160
     imageHeight: 160
 
     buttons:
-      - name: Background
+      - name: Background & Arc
         url: /about/
 
       - name: Work & Projects

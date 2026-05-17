@@ -131,7 +131,7 @@ Self-initiated — built outside the day job to solve problems the existing tool
   *Self-initiated · 2023–present · tool*
   FAISS-based pre-filter navigation layer for local LLMs. Dependency graph, importance scoring, structural query layer. The difference between an agent that codes and one that understands.
 
-- [Hybrid Code Analyzer](/work/projects/hybrid-code-analyser/)
+- [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
   *Self-initiated · 2024 · tool*
   Static + dynamic analysis pipeline. Finds what neither alone can — runtime failures invisible to AST analysis, structural issues invisible to execution tracing.
 
