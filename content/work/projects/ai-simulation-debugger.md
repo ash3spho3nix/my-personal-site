@@ -1,13 +1,13 @@
 ---
-
-# FILE: `content/projects/ai-simulation-debugger.md`
-
----
 title: "AI-Assisted Simulation Debugger"
 date: 2026-05-09
 summary: "An exploratory concept investigating AI-assisted debugging workflows for scientific and engineering simulations."
 tags: [AI, Simulation, Scientific Computing, Debugging]
 showToc: true
+category: "ai"
+cover:
+  image: "/images/local_ai_system_projects.png"
+  alt: "Local AI systems projects overview"
 ---
 
 # AI-Assisted Simulation Debugger
