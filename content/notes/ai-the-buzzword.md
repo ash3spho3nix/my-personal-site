@@ -1,4 +1,10 @@
-# AI – The Buzzword!
+---
+title: "AI – The Buzzword"
+description: "A mechanical engineer's rant on the gap between what AI is and what people claim it is."
+date: 2024-06-01
+tags: ["AI", "opinion", "engineering"]
+draft: false
+---
 
 ![A confused person standing at multiple road signs pointing in different directions labeled "AGI", "Consciousness", "Pattern Matching", "Hype"](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Dilemma_road_sign_in_Israel_-_panoramio.jpg/640px-Dilemma_road_sign_in_Israel_-_panoramio.jpg)
 *Image credit: Panoramio / Wikimedia Commons*
@@ -77,7 +83,7 @@ The technology is genuinely impressive. The engineering is remarkable. But calli
 
 ## A Philosophical Detour
 
-What even is [intelligence](https://en.wikipedia.org/wiki/Intelligence) ?
+What even is [intelligence](https://en.wikipedia.org/wiki/Intelligence)?
 
 If a thermostat turns on the heater when the room gets cold, is that intelligent? No. It is a simple [feedback loop](https://en.wikipedia.org/wiki/Feedback).
 
@@ -131,4 +137,4 @@ That is the engineer's mindset. The same mindset that refuses to accept a black 
 
 ---
 
-*Related reading: [The Black Box That Bothered Me Enough to Open It](./the-black-box-that-bothered-me.md)*
+*Related reading: [The Black Box That Bothered Me Enough to Open It](/notes/the-black-box-that-bothered-me/)*

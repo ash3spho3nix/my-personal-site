@@ -18,7 +18,7 @@ The open question: can an AI system reason about *why* a simulation is failing �
 
 This requires the system to understand the governing equations, the numerical scheme, and the coupling between subsystems. Not just pattern matching on error messages.
 
-**Status:** Actively exploring. [Codebase Indexer](https://github.com/ash3spho3nix/Codebase_Indexer) and [Hybrid Code Analyzer](https://github.com/ash3spho3nix/hybrid_code_analyser) are partial steps in this direction — but for code, not simulation models.
+**Status:** Actively exploring. [Codebase Indexer](https://github.com/ash3spho3nix/Codebase_Indexer) and [Hybrid Code Analyzer](https://github.com/ash3spho3nix/hybrid_code_analyser) are partial steps in this direction — but for code, not simulation models. Early concept documented in [AI-Assisted Simulation Debugger](/work/projects/ai-simulation-debugger/).
 
 ---
 
@@ -30,7 +30,7 @@ Symbolic regression (e.g., PySR, DSO) makes partial progress here. Physics-infor
 
 The deeper question is whether human-imposed structure is always necessary, or whether the right inductive biases can make equation discovery tractable.
 
-**Status:** Reading. No implementation yet. The [research directions](/thinking/ideas/research-directions/) note has early framing.
+**Status:** Reading. No implementation yet. Early framing in progress.
 
 ---
 

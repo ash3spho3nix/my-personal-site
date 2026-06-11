@@ -53,6 +53,10 @@ The core domain — electrochemical modelling, thermal simulation, ageing, and s
   *Volvo Trucks R&D · 2022 · tool*
   Standalone simulation environment with BMS-as-first-class-citizen, plus a PINN degradation model built for mobile inference.
 
+- [Teaching a Neural Network the Laws of Battery Decay](/work/projects/pinn-battery/)
+  *Volvo Trucks R&D · 2022 · method*
+  Physics-Informed Neural Network for battery degradation — physics-constrained training that prevents physically impossible predictions. Built for real-time aging inference on mobile hardware. See also: [AI & Physics-Informed ML ↓](#-ai--code-intelligence)
+
 - [Virtual Cell Scaling](/work/projects/battery-scaling/)
   *A123 Systems · 2022–present · tool*
   Physics-based scaling across capacity, form factor, and chemistry — for when you don't have the cell you need.
@@ -123,22 +127,34 @@ The foundation — structural analysis, contact mechanics, vibration, and fluid 
 
 Self-initiated — built outside the day job to solve problems the existing toolchain couldn't. **Runs on local LLMs (LM Studio) for GDPR-compliant on-premise deployment** — relevant for the German automotive context where sending engineering data to external APIs is not an option.
 
+- [Battery Expert AI: A Domain-Specific Assistant That Knows Its Physics](/work/projects/battery-ai-systems/)
+  *Self-initiated · 2025–present · tool*
+  Local, on-premise AI assistant for battery engineering — LoRA fine-tuned on domain knowledge, RAG over electrochemistry papers and test data, with mathematical equation reasoning for PDEs and electrochemical models.
+
 - [AI Systems: Building Tools That Understand Code, Not Just Generate It](/work/projects/ai-systems/)
-  *Self-initiated · 2022–present · overview*
+  *Self-initiated · 2025–present · overview*
   The design philosophy connecting these tools: structure before generation, understanding before output.
 
 - [Codebase Indexer](/work/projects/codebase-indexer/)
-  *Self-initiated · 2023–present · tool*
+  *Self-initiated · 2025–present · tool*
   FAISS-based pre-filter navigation layer for local LLMs. Dependency graph, importance scoring, structural query layer. The difference between an agent that codes and one that understands.
 
 - [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
-  *Self-initiated · 2024 · tool*
+  *Self-initiated · 2025 · tool*
   Static + dynamic analysis pipeline. Finds what neither alone can — runtime failures invisible to AST analysis, structural issues invisible to execution tracing.
 
-- [Alchemist](https://github.com/ash3spho3nix/Alchemist) - on-going
-  *Self-initiated · 2023 · tool*
+- [AI-Assisted Simulation Debugger](/work/projects/ai-simulation-debugger/)
+  *Self-initiated · 2026 · concept*
+  Exploratory: treating simulation failures as propagating structural inconsistencies rather than isolated errors — AI-assisted root cause reasoning for engineering simulations. The next logical step from the code intelligence tools.
+
+- [Physics-Informed Neural Network — Battery Degradation](/work/projects/pinn-battery/)
+  *Volvo Trucks R&D · 2022 · method* *(cross-listed: Battery section)*
+  Where domain physics meets ML — PINN-constrained degradation model prevents physically impossible predictions while enabling real-time inference. The physics-ML intersection in practice.
+
+- [Alchemist](https://github.com/ash3spho3nix/Alchemist)
+  *Self-initiated · 2025 · tool*
   Indexes past repositories, extracts architectural patterns, suggests new combinations. Synthesis over generation.
 
 - [Simple RAG Chatbot](https://github.com/ash3spho3nix/RAG-chatbot)
-  *Self-initiated · 2022 · tool*
+  *Self-initiated · 2025 · tool*
   First local RAG experiment — document retrieval, context injection, local LLM inference. The seed of the current toolchain.

@@ -1,4 +1,10 @@
-# Artificial Neural Network
+---
+title: "Artificial Neural Network: The Building Block Nobody Explains Well"
+description: "What a neural network actually is, how it learns, and why it's both simpler and stranger than the hype suggests."
+date: 2024-03-01
+tags: ["AI", "neural-networks", "explainer", "machine-learning"]
+draft: false
+---
 
 ![A diagram showing a simple neural network with input layer, hidden layer, and output layer connected by arrows](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Colored_neural_network.svg/640px-Colored_neural_network.svg.png)
 *Image credit: Wikimedia Commons*
@@ -43,7 +49,7 @@ That third step is called [backpropagation](https://en.wikipedia.org/wiki/Backpr
 ![Animation showing weights being adjusted during backpropagation](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Backpropagation_animated.gif/640px-Backpropagation_animated.gif)
 *Image credit: Wikimedia Commons*
 
-## Why "Neural" ?
+## Why "Neural"?
 
 The name comes from biology. [Biological neurons](https://en.wikipedia.org/wiki/Neuron) in the brain receive signals through dendrites. If the signal is strong enough, the neuron fires and sends a signal down its axon to other neurons.
 
@@ -122,7 +128,7 @@ That simplicity is what makes it beautiful.
 
 Artificial neural networks are not brains. They are not intelligent. They do not understand what they learn.
 
-But they are useful. Remarkably useful. And the fact that such a simple idea – multiply, sum, activate, repeat – can produce the behavior we see today is genuinely surprising.
+But they are useful. Remarkably useful. And the fact that such a simple idea — multiply, sum, activate, repeat — can produce the behavior we see today is genuinely surprising.
 
 The same mathematics. The same building blocks. Just more of them.
 
@@ -132,4 +138,4 @@ Maybe that is why neural networks feel familiar to anyone who has studied physic
 
 ---
 
-*Related reading: [AI – The Buzzword!](./ai-the-buzzword.md)*
+*Related reading: [AI – The Buzzword](/notes/ai-the-buzzword/)*
