@@ -1,4 +1,4 @@
-**Title:** Lessons from Battery Modeling at Scale
+# Lessons from Battery Modeling at Scale
 
 **Summary:** Building predictive battery models for product development at volume reveals hard truths about multiphysics coupling, parameter identifiability, and the gap between academic elegance and industrial reliability. Here are the scars from deploying these models across cell, module, and pack development at scale.
 

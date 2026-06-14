@@ -1,7 +1,3 @@
-Here is the article written for the specified audience, in the required technical, opinionated, evidence-driven tone.
-
----
-
 # Why Physics-Based Models Still Matter in the Age of AI
 
 **Summary:** As AI/ML gains traction in engineering domains, many teams rush to replace physics-based models with neural networks. This article argues that the two approaches are complementary, not competitive. Using examples from battery thermal modeling and contact mechanics, the case is made that physics-based models provide data efficiency, interpretability, and safety guarantees that pure ML cannot match. The conclusion: embed ML inside physics-based frameworks, not the other way around.
