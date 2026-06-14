@@ -56,3 +56,15 @@ The thermal coupling is important. A cell that starts warm charges faster in CC 
 **Non-linear systems have optimal operating points that aren't at the extremes.** Cold isn't better and hot isn't better — there's a temperature window that minimizes charge time while staying within degradation limits. This shows up in battery design constantly: the "push it harder" instinct hits diminishing returns or reversals.
 
 **The constraint you're not thinking about is the one that bites.** Fast charging seems like a current problem. It's actually a thermal problem. The electrochemistry sets the current limit; the thermal system determines whether you can sustain it.
+
+## Where This Was Used
+
+The CC-CV methodology and coupled thermal-charging model was
+implemented at **Volvo Trucks R&D** as part of the battery and
+charging simulation workstream. Validation was performed against
+**Audi e-tron** charging data, publicly available, which provided
+an independent dataset across real-world temperature and SoC
+conditions. The validation confirmed the thermal coupling was
+correctly capturing the non-monotonic relationship between starting
+temperature and total charge time — the result that matters for
+fast-charge protocol design.

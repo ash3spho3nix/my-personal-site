@@ -34,7 +34,10 @@ What doesn't scale linearly:
 - **Diffusion timescales** — thicker electrodes mean longer solid-phase diffusion paths. The same C-rate on a larger cell with thicker electrodes produces higher local concentration gradients, shifting plating onset and power limits.
 - **Ageing mechanisms** — current distribution non-uniformity in larger cells means different local utilisation rates, which means non-uniform aging. The cell doesn't die uniformly.
 
+
 Miss these and your scaled model is wrong in ways that aren't obvious from nominal discharge curves but matter enormously for safety boundaries and lifetime prediction.
+
+![Cell-to-pack scaling — parameter transformation](/images/cell_to_pack-scaling.png)
 
 ---
 
@@ -72,6 +75,23 @@ The tool feeds the pre-concept simulation phase — before a new cell has been s
 - Initial ageing projections
 
 It's not a replacement for characterisation data when that data becomes available. It's the bridge that makes simulation possible before characterisation is complete — which, in a fast-moving RFI/RFQ cycle, is most of the time.
+
+---
+
+## Where This Has Been Used
+
+The scaling methodology has been applied across multiple OEM
+RFI/RFQ requirements at A123 Systems — covering capacity scaling,
+form factor transformation, and chemistry-adjacent scaling where
+full re-characterisation was not available within the commercial
+timeline.
+
+Two consistent results: the scaled model is significantly faster to
+produce than a model built from scratch (no new characterisation
+campaign required), and the physics-based parameter transformations
+produce more accurate extrapolations than empirical scaling rules,
+particularly at temperature extremes and high C-rates where the
+naive approach breaks down most visibly.
 
 ---
 

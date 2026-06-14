@@ -36,7 +36,10 @@ A full physics-based thermal model of a battery pack might have millions of degr
 
 A [Reduced Order Model](https://en.wikipedia.org/wiki/Model_order_reduction) (ROM) compresses that complexity. It finds a lower-dimensional representation that captures the essential thermal behaviour without resolving every detail.
 
+
 Think of it like summarising a thousand-page book into a ten-page summary. The fine details are lost. But the plot, the key events, and the critical relationships remain. The reader gets the essence without the time commitment.
+
+![Reduced order model concept](/images/reduced-order-model.webp)
 
 In thermal modelling, a ROM represents temperature distribution using a handful of basis functions and lumped nodes instead of millions of grid points. Accuracy drops a few percent. Speed increases by orders of magnitude. For system-level simulation — where you need to run thousands of scenarios, not compute a single high-fidelity result — that is the right trade-off.
 
@@ -50,7 +53,10 @@ A battery pack is not just cells. It has a cooling system — typically an alumi
 
 [CFD analysis](https://en.wikipedia.org/wiki/Computational_fluid_dynamics) of the cooling plate gives you the spatially-resolved picture: velocity field inside every channel, pressure drop from inlet to outlet, and the local [Heat Transfer Coefficient](https://en.wikipedia.org/wiki/Heat_transfer_coefficient) (HTC) across the plate surface.
 
+
 The HTC is the key number. It tells you how effectively heat moves from cell surface to coolant. A high HTC means good cooling. A low HTC means the heat stays in the cell and builds up.
+
+![Battery thermal ROM architecture](/images/ROM_battery.png)
 
 CFD analysis is expensive. Running it for every design iteration isn't feasible. But running it once — for a baseline design — and then coupling those results intelligently into a fast ROM is exactly the right approach. That coupling is what the Configurator handles.
 

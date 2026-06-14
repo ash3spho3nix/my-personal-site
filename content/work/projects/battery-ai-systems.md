@@ -31,6 +31,18 @@ The response was a hybrid architecture: a fine-tuned base model that has been ad
 
 The system combines two techniques that address different failure modes.
 
+```mermaid
+graph TD
+    A[Domain Knowledge Base] -->|RAG retrieval| C[Query Interface]
+    B[LoRA Fine-tuned Base Model] -->|domain reasoning| C
+    C --> D[Mathematical Equation Layer]
+    C --> E[Dataset Exploration Module]
+    D --> F[Engineering Response]
+    E --> F
+    G[Local LLM — LM Studio / Ollama] -.->|inference engine| B
+    H[FAISS Vector Index] -.->|semantic retrieval| A
+```
+
 **LoRA fine-tuning** adapts the base model's weights to battery domain vocabulary, equation formats, and reasoning patterns. It handles the structural knowledge — the things that are always true regardless of what document is loaded: how diffusion equations work, what Butler-Volmer describes, how SoH and SoC relate. Fine-tuning on a curated battery domain corpus means the model does not need to be re-taught fundamentals on every query.
 
 **Multi-domain RAG** handles the specific and the current — cell characterisation data, specific standards, project documents, recent papers. The retrieval layer identifies relevant chunks from the knowledge base and injects them as context. This is where domain-specific details come from, without baking them into the model weights permanently.

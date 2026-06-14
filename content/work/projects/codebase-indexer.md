@@ -59,6 +59,48 @@ This is the difference between an agent that generates and an agent that underst
 
 ---
 
+## What Made This Hard
+
+**The importance scoring problem.** Centrality in a dependency
+graph is not the same as importance to a developer. A utility
+module imported by 40 files is central but not necessarily the
+most important thing to understand before making a change. Getting
+the scoring to reflect semantic importance — not just graph
+topology — required combining betweenness centrality with
+call-frequency weighting and explicit handling of interface modules.
+
+**Keeping the index current without full re-indexing.** A codebase
+changes continuously. Re-running full static analysis on every
+file change is expensive. The indexer uses incremental updates —
+detecting which files changed, re-parsing only those, and
+propagating dependency updates through the graph rather than
+rebuilding from scratch.
+
+**Context budget management.** A local LLM has a limited context
+window. The indexer's query layer has to return the right
+information density: enough structural context to reason about the
+task, not so much that it crowds out the actual code the agent
+needs to read. This is a retrieval design problem, not a parsing
+problem.
+
+## In Use
+
+The Codebase Indexer is the pre-flight check before any AI agent
+touches a repository. It feeds the [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
+for correlation between structural importance and runtime failures.
+Both run on local LLMs via LM Studio — no data leaves the machine,
+which is a hard requirement in GDPR-constrained environments.
+
+---
+
+## Connects To
+
+*Thinking: [AI as Reasoning Infrastructure](/thinking/how-i-think/#ai-as-reasoning-infrastructure)*
+*Project: [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)*
+*Project: [AI-Assisted Simulation Debugger](/work/projects/ai-simulation-debugger/)*
+
+---
+
 ## GitHub
 
 [→ ash3spho3nix/Codebase_Indexer](https://github.com/ash3spho3nix/Codebase_Indexer)

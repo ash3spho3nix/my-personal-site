@@ -6,7 +6,10 @@ tags: ["autonomous-driving", "radar", "sensor-modeling", "perception"]
 draft: false
 ---
 
+
 Radar is the sensor that autonomous driving can't work without, doesn't fully understand, and frequently underestimates.
+
+*Built as part of the vehicle simulation framework at Mercedes-Benz R&D — supporting algorithm development for adaptive cruise control, lane change assist, and object detection in pre-validation environments.*
 
 Camera gives you texture and color. LiDAR gives you precise geometry. Radar gives you something both of them don't: direct velocity measurement, all-weather reliability, and the ability to see through the annoyances — rain, fog, dust — that blind the other sensors at exactly the moments when you most need to see.
 
@@ -49,3 +52,13 @@ That failure characterization matters more than the mean case, because autonomou
 **The edge cases aren't edge cases.** Rain, sensor occlusion, and multi-target scenarios are described as "edge cases" in system specs and tested last. In field operation, they're routine. A sensor model that only handles nominal conditions isn't testing the system that will be deployed.
 
 **Uncertainty propagation matters.** The Kalman filter doesn't just estimate state — it estimates state *and uncertainty*. An algorithm that ignores the uncertainty estimates and just uses the point estimate is throwing away the most operationally relevant information: how much should I trust this detection?
+
+## What This Enabled
+
+The sensor model provided a simulation-ready radar representation
+that let software teams develop and test perception and control
+algorithms — adaptive cruise control, lane change logic, object
+detection — before physical sensor hardware was available. The
+model's honest failure characterisation (clutter, low angular
+resolution, Doppler ambiguity) meant algorithms were tested against
+the sensor's actual behaviour, not an idealised version of it.

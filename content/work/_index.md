@@ -15,6 +15,54 @@ build:
 
 ---
 
+## 🚀 Flagship Systems
+
+Five projects that best represent the architectural approach: building
+infrastructure that compounds, not tools that expire.
+
+**[Battery Simulation Framework + PINN Degradation](/work/projects/battery-simulation/)**
+*Volvo Trucks R&D · 2022*
+Problem: BMS teams needed fast iteration without dragging a full
+vehicle model. System built: standalone simulation environment with
+BMS as first-class citizen, plus a PINN degradation model running
+at ~90% accuracy in seconds on mobile. The PINN was the only
+formulation that satisfied both accuracy and mobile deployment
+constraints simultaneously.
+
+**[OpenFOAM Battery Simulator](/work/projects/openfoam-battery/)**
+*Self-initiated · Open source*
+Problem: CFD-based battery simulation is powerful and routinely
+impractical. System built: Python interface layer that converts
+OpenFOAM from an expert-only C++ tool into a callable function —
+enabling parameter sweeps, optimisation loops, and AI integration.
+[GitHub →](https://github.com/ash3spho3nix/Battery_OpenFoam_Simulator)
+
+**[Current Limits Generator](/work/projects/current-limits-generator/)**
+*A123 Systems · 2023*
+Problem: current limits were being computed manually, inconsistently,
+and conservatively across OEM programmes. System built: physics-based
+Python tool generating aging-aware current envelopes covering plating
+onset, side reactions, thermal limits, and thermal runaway margin —
+parameterised, OEM-deliverable, in production use.
+
+**[Codebase Indexer](/work/projects/codebase-indexer/)**
+*Self-initiated · 2025–present*
+Problem: AI coding agents generate code without understanding the
+codebase they're editing. System built: structural repository
+understanding layer — dependency graphs, importance scoring, semantic
+retrieval — that gives a local LLM a map before it touches a line.
+[GitHub →](https://github.com/ash3spho3nix/Codebase_Indexer)
+
+**[Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)**
+*Self-initiated · 2025*
+Problem: static analysis misses runtime failures; dynamic analysis
+misses structural importance. System built: combined pipeline that
+correlates runtime failures with structural centrality — finding
+what neither approach alone can detect.
+[GitHub →](https://github.com/ash3spho3nix/hybrid_code_analyser)
+
+---
+
 ## 🏆 Patents & Publications
 
 Surfaced here because they represent the clearest external signal of original work.
@@ -30,39 +78,39 @@ Surfaced here because they represent the clearest external signal of original wo
 The core domain — electrochemical modelling, thermal simulation, ageing, and system-level battery behaviour. Work spans cell characterisation through pack-level simulation across five companies.
 
 - [Battery Modeling: When Your Elegant Equation Meets Reality](/work/projects/battery-modeling/)
-  *Cross-company · 2015–present · analysis*
+  *Cross-company · 2015–present · analysis* [2015–present]
   ECM vs DFN vs data-driven — what each gets wrong, and why hybrids are the real answer.
 
 - [Thermal Management System Modeling](/work/projects/thermal-management/)
-  *Mercedes-Benz R&D · 2015–2021 · tool*
+  *Mercedes-Benz R&D · 2015–2021 · tool* [2015–2021]
   Building the full EV TMS from scratch — battery, inverter, DC-DC, coolant loop, HVAC — integrated into the in-house vehicle simulation framework.
 
 - [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/)
-  *Mercedes-Benz R&D · 2019–2021 · tool*
+  *Mercedes-Benz R&D · 2019–2021 · tool* [2019–2021]
   Couples CFD cooling channel results to a reduced-order thermal ROM — generates a fully-parameterised Simulink thermal model. **60% reduction in model development time.**
 
 - [DC Box Thermal Modelling](/work/projects/dc-box-thermal/)
-  *Mercedes-Benz R&D · 2016–2018 · analysis*
+  *Mercedes-Benz R&D · 2016–2018 · analysis* [2016–2018]
   The component nobody thinks about until it fails. 96% experimental accuracy; design margin identified before hardware.
 
 - [Charging Time: Why 80% Is Not Half the Problem](/work/projects/charging-time/)
-  *Mercedes-Benz R&D · 2017–2018 · analysis*
+  *Mercedes-Benz R&D · 2017–2018 · analysis* [2017–2022]
   CC-CV physics, C-rate tradeoffs, and why fast charging is a thermal problem as much as an electrochemical one.
 
 - [Battery Simulation Framework](/work/projects/battery-simulation/)
-  *Volvo Trucks R&D · 2022 · tool*
+  *Volvo Trucks R&D · 2022 · tool* [2022]
   Standalone simulation environment with BMS-as-first-class-citizen, plus a PINN degradation model built for mobile inference.
 
 - [Teaching a Neural Network the Laws of Battery Decay](/work/projects/pinn-battery/)
-  *Volvo Trucks R&D · 2022 · method*
+  *Volvo Trucks R&D · 2022 · method* [2022]
   Physics-Informed Neural Network for battery degradation — physics-constrained training that prevents physically impossible predictions. Built for real-time aging inference on mobile hardware. See also: [AI & Physics-Informed ML ↓](#-ai--code-intelligence)
 
 - [Virtual Cell Scaling](/work/projects/battery-scaling/)
-  *A123 Systems · 2022–present · tool*
+  *A123 Systems · 2022–present · tool* [2022–present]
   Physics-based scaling across capacity, form factor, and chemistry — for when you don't have the cell you need.
 
 - [OpenFOAM Battery Simulator](https://github.com/ash3spho3nix/Battery_OpenFoam_Simulator)
-  *Self-initiated · open source · tool*
+  *Self-initiated · open source · tool* [2023–present]
   Python interface layer turning OpenFOAM CFD into a callable function — enabling parameter sweeps, optimisation, and AI integration. [Full writeup →](/work/projects/openfoam-battery/)
 
 ---
@@ -72,7 +120,7 @@ The core domain — electrochemical modelling, thermal simulation, ageing, and s
 Tools that exist, are used, and reduce the cost of doing the next project. Mix of OEM-commissioned and self-initiated.
 
 - [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/)
-  *Mercedes-Benz R&D · 2019–2021 · tool*
+  *Mercedes-Benz R&D · 2019–2021 · tool* [2019–2021]
   **60% reduction in thermal model development time.** Generates parameterised CFD-thermal ROM for HV battery systems.
 
 - [Model Validation Framework]
@@ -80,7 +128,7 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
   Automated pipeline: fetch test data + battery model → run simulations → validate → upload report.
 
 - [Current Limits Generator](/work/projects/current-limits-generator/)
-  *A123 Systems · 2023 · tool*
+  *A123 Systems · 2023 · tool* [2023]
   Physics-based current envelope covering lithium plating onset, side reactions, thermal limits, and thermal runaway margin — aging-aware, OEM-deliverable.
 
 - [Pack Cost Estimator]
@@ -88,7 +136,7 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
   RFQ/pre-RFQ phase commercial tool — cell selection through pack concept cost in a single run.
 
 - [Front Fender Drag Optimization](/work/projects/front-fender-design/)
-  *Hero MotoCorp · 2014 · method + tool*
+  *Hero MotoCorp · 2014 · method + tool* [2014]
   ANN surrogate + Firefly algorithm. 12% drag reduction, 10× speedup versus CFD-in-loop. The method generalises.
 
 ---
@@ -98,27 +146,27 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
 The foundation — structural analysis, contact mechanics, vibration, and fluid dynamics from the first decade of the career. The physics intuition from this work keeps appearing in battery and AI contexts.
 
 - [Tire Modelling: What a Spinning Ring Taught Me About Everything](/work/projects/tire-modelling/)
-  *IIT Kanpur M.Tech · 2010–2011 · analysis*
+  *IIT Kanpur M.Tech · 2010–2011 · analysis* [2010–2011]
   Standing waves, critical velocity, contact mechanics. The thesis that established the pattern: rotate a structure and everything changes.
 
 - [Piston Rings: Friction, Sealing, and the Physics of Things That Touch](/work/projects/piston-rings/)
-  *TVS Motor Company · 2011–2013 · analysis*
+  *TVS Motor Company · 2011–2013 · analysis* [2011–2013]
   Three simultaneous contact regimes, elastohydrodynamic lubrication, ring flutter. Where the interesting failure always lives at the boundary.
 
 - [Magnesium Alloy Wheel Design](/work/projects/magnesium-wheel/)
-  *TVS Motor Company · 2012–2013 · method + analysis*
+  *TVS Motor Company · 2012–2013 · method + analysis* [2012–2013]
   Topology optimisation, fatigue under realistic load spectra, thermal analysis. Material substitution is a system problem, not a materials problem.
 
 - [Engine Mounts: Designing Something to Fail Softly](/work/projects/engine-mounts/)
-  *Hero MotoCorp · 2013–2015 · method*
+  *Hero MotoCorp · 2013–2015 · method* [2013–2015]
   NVH optimisation through stiffness design. Hybrid GA + Nelder-Mead, 15–20% cabin vibration reduction, verified on dynamometer.
 
 - [Radar Modeling for Autonomous Driving](/work/projects/radar-autonomous-driving/)
-  *Mercedes-Benz R&D · 2016–2017 · analysis*
+  *Mercedes-Benz R&D · 2016–2017 · analysis* [2016–2017]
   What sensors actually see — beam patterns, clutter, Kalman filter state estimation, and why edge cases aren't edge cases.
 
 - [CFD Fire Modelling: The Inverse Problem Nobody Wants to Solve](/work/projects/cfd-fire-optimization/)
-  *Victoria University, Melbourne · 2009 · method*
+  *Victoria University, Melbourne · 2009 · method* [2009]
   Material property estimation by running the physics model backwards. GA + Nelder-Mead, cross-validated, published.
 
 ---
@@ -128,7 +176,7 @@ The foundation — structural analysis, contact mechanics, vibration, and fluid 
 Self-initiated — built outside the day job to solve problems the existing toolchain couldn't. **Runs on local LLMs (LM Studio) for GDPR-compliant on-premise deployment** — relevant for the German automotive context where sending engineering data to external APIs is not an option.
 
 - [Battery Expert AI: A Domain-Specific Assistant That Knows Its Physics](/work/projects/battery-ai-systems/)
-  *Self-initiated · 2025–present · tool*
+  *Self-initiated · 2025–present · tool* [2025–present]
   Local, on-premise AI assistant for battery engineering — LoRA fine-tuned on domain knowledge, RAG over electrochemistry papers and test data, with mathematical equation reasoning for PDEs and electrochemical models.
 
 - [AI Systems: Building Tools That Understand Code, Not Just Generate It](/work/projects/ai-systems/)
@@ -136,19 +184,19 @@ Self-initiated — built outside the day job to solve problems the existing tool
   The design philosophy connecting these tools: structure before generation, understanding before output.
 
 - [Codebase Indexer](/work/projects/codebase-indexer/)
-  *Self-initiated · 2025–present · tool*
+  *Self-initiated · 2025–present · tool* [2025–present]
   FAISS-based pre-filter navigation layer for local LLMs. Dependency graph, importance scoring, structural query layer. The difference between an agent that codes and one that understands.
 
 - [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
-  *Self-initiated · 2025 · tool*
+  *Self-initiated · 2025 · tool* [2025]
   Static + dynamic analysis pipeline. Finds what neither alone can — runtime failures invisible to AST analysis, structural issues invisible to execution tracing.
 
 - [AI-Assisted Simulation Debugger](/work/projects/ai-simulation-debugger/)
-  *Self-initiated · 2026 · concept*
+  *Self-initiated · 2026 · concept* [2026]
   Exploratory: treating simulation failures as propagating structural inconsistencies rather than isolated errors — AI-assisted root cause reasoning for engineering simulations. The next logical step from the code intelligence tools.
 
 - [Physics-Informed Neural Network — Battery Degradation](/work/projects/pinn-battery/)
-  *Volvo Trucks R&D · 2022 · method* *(cross-listed: Battery section)*
+  *Volvo Trucks R&D · 2022 · method* *(cross-listed: Battery section)* [2022]
   Where domain physics meets ML — PINN-constrained degradation model prevents physically impossible predictions while enabling real-time inference. The physics-ML intersection in practice.
 
 - [Alchemist](https://github.com/ash3spho3nix/Alchemist)

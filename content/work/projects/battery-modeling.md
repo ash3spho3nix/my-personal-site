@@ -14,8 +14,11 @@ Fifteen years working with battery models across the stack: from ECM spreadsheet
 This isn't a single project — it's the accumulated understanding from building, validating, and deploying battery models across multiple OEMs, chemistries, and applications. The failures taught more than the successes.
 
 ![Battery Modeling](/images/battery_modeling.png)
+---
 
 ---
+
+![Three classifications of battery modelling methods](/images/Three-classifications-of-battery-modelling.webp)
 
 ## The Three Ways to Model a Battery
 
@@ -24,6 +27,8 @@ This isn't a single project — it's the accumulated understanding from building
 ### Equivalent Circuit Model (ECM)
 
 An RC circuit that impersonates a battery. A voltage source, a series resistance, and one or more RC pairs representing diffusion dynamics. Fast, tunable, works in real-time on a BMS microcontroller.
+
+![Battery EIS — impedance spectroscopy characterisation](/images/battery_EIS.png)
 
 The issue isn't that it's inaccurate — for a narrow operating window, it's fine. The issue is that *you don't know when it breaks*. Push the cell outside the temperature or SoC range you calibrated on, and the model degrades silently. There's no physics to signal the extrapolation; it just drifts.
 
@@ -95,7 +100,10 @@ That's the direction that actually scales across applications and operating cond
 **First cycles.** The SEI layer forms in the first few cycles, consuming lithium inventory and setting the baseline internal resistance. Models calibrated after formation but applied to predict formation losses will be systematically wrong.
 
 ![Battery Pack Modeling](/images/cell_to_pack.png)
+
 ---
+
+![Causes and consequences of battery degradation](/images/Causes-and-consequences-of-battery-degradation.png)
 
 ## What I'm Still Working Through
 

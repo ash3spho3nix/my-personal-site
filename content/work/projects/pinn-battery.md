@@ -17,6 +17,8 @@ This leads to an inevitable, exponential decay in capacity. A battery with a Cou
 
 But here is the real problem: predicting exactly how a given battery will degrade is extraordinarily difficult. The process depends on temperature, charge rates, depth of discharge, and a dozen other factors. And the internal chemical reactions follow nonlinear partial differential equations that are expensive to solve.
 
+![PINN battery degradation model overview](/images/batteries-pinn.png)
+
 ## The Three Ways People Model Degradation
 
 Before getting into the new approach, it helps to understand what already exists.
@@ -63,6 +65,8 @@ Recent work like the PINEAPPLE framework has demonstrated that PINNs can infer i
 
 Another study showed that integrating partial differential equations into a machine learning model reduced mean squared error from 10.36 to just 0.21 — an improvement of nearly 50 times. That is the difference between useless predictions and actionable insights.
 
+![Battery aging parameters and degradation mechanisms](/images/parameter of battery ageing.png)
+
 ## Where This Is Headed
 
 The field is still young. While PINNs show enormous promise for battery degradation modeling, achieving high accuracy for long-term predictions remains challenging. The nonlinear dynamics of late-stage aging — where lithium plating causes sudden capacity dives — are particularly difficult to capture.
@@ -72,6 +76,29 @@ But the direction is clear. Hybrid models that combine physics-based understandi
 For electric vehicle owners, that means better range estimates. For grid storage operators, that means longer system life through smarter usage. And for the rest of us, it means fewer mornings reaching for a charger and finding the battery unexpectedly empty.
 
 The laws of physics have not changed. But our ability to work with them — rather than around them — just took a significant step forward.
+
+---
+*[← Battery Simulation Framework](/work/projects/battery-simulation/) | [Current Limits Generator →](/work/projects/current-limits-generator/)*
+
+## Outcomes
+
+The PINN degradation model was deployed as part of the Volvo Trucks
+fleet mobile application. Key results:
+
+- **~90% prediction accuracy** on battery capacity fade across
+	the test dataset
+- **Inference in seconds** on mobile hardware — no GPU, no
+	workstation required
+- **Physically consistent predictions**: the physics constraints
+	in the loss function prevent capacity recovery artefacts and
+	ensure correct temperature sensitivity direction — failure modes
+	that appear in pure data-driven models trained on the same data
+
+The hard constraint that shaped the approach: a full electrochemical
+ageing model runs in minutes on a workstation. A fleet app needs
+a result in under a second on a device with no GPU. PINN was the
+only formulation that satisfied both the accuracy requirement and
+the deployment constraint simultaneously.
 
 ---
 

@@ -69,3 +69,11 @@ The framework and the PINN model are different kinds of deliverables — one is 
 A standalone framework that only answers one question isn't a framework — it's a script. A degradation model that only works on a workstation isn't deployable. The engineering decisions that make these useful — modular architecture, BMS-as-first-class-citizen, PINN formulation for mobile constraints — are upstream of the modelling itself.
 
 That's the part that takes longer and gets less credit. It's also the part that determines whether the work is actually used.
+
+---
+
+## Connects To
+
+*Thinking: [Timescale Separation](/thinking/how-i-think/#timescale-separation)*
+*Project: [PINN Battery Degradation](/work/projects/pinn-battery/)*
+*Project: [Battery Thermal Configurator](/work/projects/battery-thermal-configurator/)*

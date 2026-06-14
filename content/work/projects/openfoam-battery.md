@@ -32,6 +32,18 @@ The problem: all of this is C++ and command-line. Geometry is defined in text fi
 
 A Python interface layer that wraps the OpenFOAM workflow: case generation, mesh modification, solver execution, output extraction, and result parsing — accessible as Python function calls.
 
+```mermaid
+graph LR
+    A[Python API Call] --> B[Case Generator]
+    B --> C[Geometry + Mesh Config]
+    C --> D[OpenFOAM Solver]
+    D --> E[Output Extractor]
+    E --> F[Parsed Results — Python dict]
+    F --> G[Optimisation Loop]
+    F --> H[Surrogate Training Data]
+    F --> I[AI Workflow Integration]
+```
+
 This enables:
 
 **Parameter studies** — Sweep coolant flow rate, inlet temperature, or pack geometry without manually editing case files. The Python layer handles the file manipulation; the CFD solver does the physics.
@@ -57,3 +69,11 @@ The move from tool to ecosystem requires precisely what this project built: a pr
 The logical extension is closing the loop with electrochemistry. OpenFOAM handles the fluid and thermal physics; what it lacks is a model for the heat generation inside each cell as a function of electrochemical state. Coupling a cell-level ECM or P2D model to the CFD solver — so that heat generation is computed from the actual electrochemistry rather than assumed — would make this genuinely predictive for design exploration.
 
 That coupling exists in research codes. Making it accessible and fast is the open problem.
+
+---
+
+## Connects To
+
+*Thinking: [Physics + Machine Learning](/thinking/research/#physics--machine-learning)*
+*Project: [Battery Simulation Framework](/work/projects/battery-simulation/)*
+*Project: [Current Limits Generator](/work/projects/current-limits-generator/)*

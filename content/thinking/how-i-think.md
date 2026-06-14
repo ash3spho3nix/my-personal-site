@@ -10,6 +10,8 @@ Most problems I work on start with the governing equations, not the data. Before
 
 This isn't dogma — it's practical. A model built from physical understanding generalises better, degrades more predictably, and can tell you *why* it's wrong when it fails. A model built from curve-fitting can't.
 
+*→ In practice: [Battery Modeling](/work/projects/battery-modeling/) · [PINN Battery Degradation](/work/projects/pinn-battery/) · [CFD Fire Optimization](/work/projects/cfd-fire-optimization/)*
+
 ---
 
 ## Failure Reveals Structure
@@ -20,6 +22,8 @@ This shows up everywhere: a battery at the edge of lithium plating, a simulation
 
 The instinct is to treat failures as the most informative data points, not as noise to be avoided.
 
+*→ In practice: [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/) · [DC Box Thermal](/work/projects/dc-box-thermal/) · [Battery Thermal Configurator](/work/projects/battery-thermal-configurator/)*
+
 ---
 
 ## Timescale Separation
@@ -27,6 +31,8 @@ The instinct is to treat failures as the most informative data points, not as no
 Most complex systems operate across multiple timescales simultaneously. In battery modelling: charge transport (milliseconds), thermal response (seconds to minutes), ageing (hours to years). In software: function execution (microseconds), test cycles (minutes), architectural evolution (months).
 
 Recognising which timescales are coupled and which can be treated independently is usually the key modelling decision. It's what determines whether a lumped approximation is valid, or whether you need a full coupled simulation.
+
+*→ In practice: [Thermal Management System](/work/projects/thermal-management/) · [Battery Simulation Framework](/work/projects/battery-simulation/) · [Battery Modeling](/work/projects/battery-modeling/)*
 
 ---
 
@@ -38,6 +44,8 @@ A system that can understand a codebase's dependency structure before modifying 
 
 Structure before generation. Understanding before output.
 
+*→ In practice: [Codebase Indexer](/work/projects/codebase-indexer/) · [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/) · [Battery Expert AI](/work/projects/battery-ai-systems/)*
+
 ---
 
 ## The Pattern
@@ -45,6 +53,8 @@ Structure before generation. Understanding before output.
 Physics → model → automate → scale.
 
 This has been the repeating cycle across battery modelling, simulation toolchains, and AI systems. The domain changes; the cycle doesn't.
+
+*→ See also: [Engineering Principles →](/about/) · [Research Interests →](/thinking/research/)*
 
 ---
 

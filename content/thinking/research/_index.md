@@ -23,6 +23,8 @@ Sub-areas of active interest:
 - Rigid body rotation and gyroscopic effects
 - Rotational instabilities (nutation, rattleback, standing waves)
 
+*Work that applies this: [Tire Modelling](/work/projects/tire-modelling/) · [Piston Rings](/work/projects/piston-rings/) · [Engine Mounts](/work/projects/engine-mounts/)*
+
 ---
 
 ## Evolution — Adaptation and Optimization
@@ -37,6 +39,8 @@ Areas of interest:
 - Multi-objective optimization and Pareto frontiers
 - Evolutionary computation for inverse problems
 - Degradation as a form of system evolution — how does a battery electrode "age" and what determines the trajectory?
+
+*Work that applies this: [CFD Fire Optimization](/work/projects/cfd-fire-optimization/) · [Front Fender Drag](/work/projects/front-fender-design/) · [Engine Mounts](/work/projects/engine-mounts/)*
 
 ---
 
@@ -66,6 +70,8 @@ The interesting approaches aren't choosing one over the other. They're about usi
 - Learned surrogates for expensive simulations — generate physics-consistent training data, then approximate with a fast model
 
 The goal isn't to replace physical understanding with data. It's to use data to fill the gaps where direct measurement or exact computation isn't feasible.
+
+*Work that applies this: [PINN Battery Degradation](/work/projects/pinn-battery/) · [OpenFOAM Battery Simulator](/work/projects/openfoam-battery/) · [Battery Expert AI](/work/projects/battery-ai-systems/)*
 
 ---
 

@@ -12,6 +12,10 @@ cover:
 
 # AI-Assisted Simulation Debugger
 
+**Status: Early-stage concept — not yet a built system.**
+This page documents the problem framing and proposed approach,
+not a completed implementation.
+
 ## Vision
 
 Engineering simulations often fail silently.
@@ -38,3 +42,23 @@ graph TD
     B --> C[Constraint Extraction]
     C --> D[Structural Reasoning]
     D --> E[Probable Root Causes]
+  ```
+
+  ## Why This Is Hard
+
+  Engineering simulations fail in non-obvious ways. A diverged solver,
+  a violated physical constraint, or a misconfigured boundary condition
+  all produce "wrong results" — but the failure signature is different
+  in each case. Identifying root cause requires understanding the
+  governing equations, the numerical scheme, and the coupling between
+  subsystems simultaneously. Current debugging is manual and
+  non-transferable.
+
+  ## Connection to Existing Work
+
+  The Codebase Indexer and Hybrid Code Analyzer explore the same
+  underlying question for software: can structural analysis of a system
+  accelerate root-cause diagnosis? The simulation debugger applies
+  the same reasoning to physics models rather than code.
+  → [Codebase Indexer](/work/projects/codebase-indexer/)
+  → [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
