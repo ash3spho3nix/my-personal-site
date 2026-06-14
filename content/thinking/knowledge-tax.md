@@ -150,10 +150,6 @@ Building and iterating on localized engineering intelligence tools yields distin
 * **Hybrid Code Analysis Tool:** An internal framework designed to parse multi-physics simulation scripts, extract variable dependencies, and build a localized topological map of engineering constraints.
 * **Battery Expert AI (System Integration Core):** A domain-specific retrieval-augmented reasoning system coupling electrochemical knowledge graphs with local code execution to automate system-level battery diagnostics.
 
-### Related Articles
-
-* *Deterministic Systems vs. Stochastic Models: Grounding LLMs in Physical Laws*
-* *The V-Model in the Age of Autonomy: Accelerating Validation with Agentic Workflows*
 
 ### Suggested Tags
 

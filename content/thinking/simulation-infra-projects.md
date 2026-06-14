@@ -65,9 +65,6 @@ In complex engineered systems, integration cost dominates. Simulation is no exce
 - Modular Battery Simulation Platform (internal framework supporting multi-fidelity electro-thermal-mechanical coupling)  
 - Cloud-Native Parameter Sweep Orchestrator (used across 3 business units)
 
-**Related Articles**  
-- [The Hidden Cost of Model Fragmentation in Engineering Organizations](/articles/model-fragmentation)  
-- [Why Most Digital Twins Fail at Scale](/articles/digital-twin-failures)
 
 **Suggested Tags**  
 `simulation-infrastructure`, `platform-engineering`, `systems-architecture`, `battery-modeling`, `multiphysics`, `technical-debt`

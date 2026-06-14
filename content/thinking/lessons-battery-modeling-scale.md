@@ -67,8 +67,7 @@ At root, it's a systems engineering problem: how do you close the loop between t
 - Uncertainty-Aware Thermal Runaway Prediction Toolkit
 
 **Related Articles**  
-- [Simulation Infrastructure vs Simulation Projects](/articles/simulation-infra-vs-projects)  
-- [The Validation Debt Trap in Multiphysics Modeling](/articles/validation-debt)
+- [Simulation Infrastructure vs Simulation Projects](/articles/simulation-infra-projects)  
 
 **Suggested Tags**  
 `battery-modeling`, `multiphysics`, `uncertainty-quantification`, `aging-models`, `electrochemical-modeling`, `systems-engineering`

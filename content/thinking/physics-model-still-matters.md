@@ -141,9 +141,9 @@ A common misconception: AI discovers new physics. It does not. It discovers patt
 
 ## Related Articles
 
-- *The Black Box That Bothered Me Enough to Open It* – A personal exploration of LLMs from a mechanics perspective.
-- *AI – The Buzzword!* – On the hype around AGI and what actual intelligence means.
-- *Why Hybrid Analysis Beats Pure Static or Dynamic* – On combining tools rather than choosing one.
+- [*The Black Box That Bothered Me Enough to Open It*](/articles/notes/the-black-box-that-bothered-me)   – A personal exploration of LLMs from a mechanics perspective.
+- [*AI – The Buzzword!*](/articles/notes/ai-the-buzzword) – On the hype around AGI and what actual intelligence means.
+
 
 ---
 
