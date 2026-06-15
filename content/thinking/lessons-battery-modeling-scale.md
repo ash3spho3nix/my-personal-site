@@ -1,73 +1,29 @@
-# Lessons from Battery Modeling at Scale
+---
+title: "The Battery Model That Kept Getting Bigger"
+description: "From RC circuits to multi-physics: how a battery model grows from an equivalent circuit into a multi-scale, multi-timescale problem - and why the answer ends up hybrid."
+draft: false
+---
 
-**Summary:** Building predictive battery models for product development at volume reveals hard truths about multiphysics coupling, parameter identifiability, and the gap between academic elegance and industrial reliability. Here are the scars from deploying these models across cell, module, and pack development at scale.
+Like pretty much every battery modelling engineer, I started with RC models. An equivalent circuit, a couple of resistor-capacitor pairs fit to some HPPC data, and you have something that runs in real time and gets you most of the way to a usable SoC estimate. It feels complete, for a while.
 
-### Main Article
+Then I went deeper - DFN, SPM, into the actual electrochemistry. And the deeper I went, the more I ran into the practical constraints nobody mentions in the textbook chapter: computational time, cost, and deadlines. A full DFN model is wonderful right up until you need to run it a thousand times for a parameter sweep and don't have a week to do it.
 
-Early in a large-scale battery program, we faced a painful reality: our 3D electrochemical-thermal models matched lab data for fresh cells at 25°C but diverged dramatically when predicting lifetime fade under real-world drive cycles and varying ambient conditions. The models contained sophisticated SEI growth and lithium plating submodels, yet they failed to guide meaningful design decisions.
+The thing that took me longest to accept was this: most of the time, the failures aren't in the bulk behaviour - they're at the boundary conditions. The cell behaves exactly as the model predicts, right up until you hit the temperature extreme, the C-rate edge, the end-of-life condition - and that's exactly where the model breaks. The interesting physics, and the interesting bugs, both live at the boundary.
 
-This is common. Battery modeling at scale exposes the tension between capturing rich physics and maintaining actionable predictability under uncertainty.
+That's also where I had to swallow something uncomfortable: there is no single model that explains everything about a battery. I wanted there to be one - one elegant formulation covering SoC, thermal, and aging all at once. There isn't. Different regimes need different models, and pretending otherwise just hides the gaps. It took time to actually accept that, not just agree with it on paper.
 
-#### Underlying System Dynamics
+As I went further - from performance evaluation, to chemistry, to coupled thermal effects, then thermal-mechanical, then thermal-mechanical-aging - I realised I wasn't looking at "a battery model" anymore. I was looking at a multi-scale, multi-timescale problem sitting across mechanical, electrical, thermal, and chemical engineering at the same time. SEI growth on the order of days, thermal cycling on the order of minutes, calendar aging on the order of months - all coupled, all feeding back into each other.
 
-A lithium-ion cell is a complex reactive porous media system with coupled nonlinear phenomena across multiple scales: ion transport in electrolyte, solid-state diffusion, charge transfer kinetics, phase transformations, mechanical stress from volume changes, and thermal feedback loops. At pack level, you add electrical interconnects, thermal gradients, manufacturing variability, and aging-induced heterogeneity.
+At that point, the only way forward that didn't collapse under its own complexity was hybrid: use the physics-based model where you understand the mechanism and need it to extrapolate safely, and use a fast surrogate - empirical at first, later a [PINN](/work/projects/pinn-battery/) - to cover the rest within a validated range, without paying the full computational cost every time.
 
-The dominant dynamics shift with operating regime. At low rates, diffusion and kinetics dominate. At high rates, thermal and mechanical effects take over. Aging introduces slow drift in parameters that interacts nonlinearly with fast dynamics—creating a stiff system in both mathematical and organizational senses.
+And underneath all of it, the part that's unglamorous but was always there, even when I underrated it early on: data analysis. Every model, however physics-rich, is only as good as how carefully you've looked at the data it's being checked against. The [battery modeling](/work/projects/battery-modeling/) page goes into where each model class actually breaks and why. The [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) and [Virtual Cell Scaling](/work/projects/battery-scaling/) tool are both downstream of the same realisation - that the model you need depends on the question you're asking, and the job is knowing which model to reach for, not building one model to rule them all.
 
-#### Tradeoffs
-
-- **Mechanistic vs. Empirical**: Physics-based models offer extrapolation power but require extensive parameterization. Equivalent circuit or data-driven models train quickly but fail outside training distributions (critical for safety and warranty predictions).
-- **Fidelity vs. Speed**: A full 3D Newman model with microstructure-resolved electrodes might take hours per run. Reduced-order models (ROMs) or surrogates enable pack-level simulation but risk losing critical failure modes.
-- **Certainty vs. Coverage**: Highly calibrated models for nominal conditions leave you blind to manufacturing tolerances and field variability—the exact scenarios that drive warranty costs and recalls.
-
-#### Why Naive Approaches Fail
-
-Naive single-cell, single-fidelity modeling fails because it ignores propagation of uncertainty. A 5% variation in electrode porosity, innocuous in a lab cell, can cause thermal runaway hotspots in a 100+ cell module.
-
-Another failure mode: treating aging as a simple capacity fade multiplier. Real aging involves lithium inventory loss, impedance rise, and active material isolation that fundamentally alters the voltage response and safety margins. Models that don't close the loop on these mechanisms produce optimistic lifetime predictions that engineering teams learn to distrust.
-
-We once shipped a pack thermal model that matched prototype data perfectly—until production cells arrived with slightly different tab welding resistance. The model missed the resulting current imbalance by enough to invalidate the entire cooling strategy.
-
-#### Architectural Implications
-
-Effective battery modeling platforms must support:
-
-- Hierarchical modeling (cell → module → pack) with consistent physics across scales where possible.
-- Stochastic parameterization frameworks to propagate manufacturing and aging uncertainty.
-- Hybrid modeling: physics-informed neural networks or operator learning for acceleration without sacrificing interpretability.
-- Continuous validation pipelines tied to cell testing and field data telemetry.
-- Versioned material and degradation databases that evolve with new cell generations.
-
-The architecture must treat calibration not as a one-time event but as an ongoing system identification problem.
-
-#### Larger Engineering Principles
-
-Battery modeling teaches humility about model-based design in any complex physico-chemical system. All models are wrong; some are useful. The useful ones survive contact with manufacturing variability, field conditions, and second-life applications. This mirrors lessons from aerospace (certification by analysis + test) and semiconductor device modeling: validation breadth matters as much as depth.
-
-At root, it's a systems engineering problem: how do you close the loop between theory, experiment, and product under irreducible uncertainty?
-
-**Lessons Learned**
-
-- Prioritize identifiability and uncertainty quantification over adding more physics equations.
-- Build models that fail loudly and informatively rather than silently drifting.
-- The best validation target is often not the average cell, but the worst-case tails that drive risk.
-- Integration with testing and manufacturing data streams is more valuable than marginal improvements in model fidelity.
-- Never trust a battery model that hasn't been stress-tested against abuse and long-term field data.
+I started with RC because it was simple. I ended up with hybrid because the problem was never simple - it just looked that way from far enough away.
 
 ---
 
-**Key Takeaways**
-- Scale exposes coupling and variability that lab-scale modeling hides.
-- Uncertainty quantification is not optional for decision-making models.
-- Hybrid physics + data approaches often win in practice.
-- Treat your simulation capability as a living system that must evolve with the product.
+## Connects To
 
-**Related Projects**  
-- Multi-Scale Battery Aging Framework (cell-to-pack degradation propagation)  
-- Uncertainty-Aware Thermal Runaway Prediction Toolkit
-
-**Related Articles**  
-- [Simulation Infrastructure vs Simulation Projects](/articles/simulation-infra-projects)  
-
-**Suggested Tags**  
-`battery-modeling`, `multiphysics`, `uncertainty-quantification`, `aging-models`, `electrochemical-modeling`, `systems-engineering`
+*Thinking: [Physics + Machine Learning](/thinking/research/#physics--machine-learning)*
+*Project: [Battery Modeling](/work/projects/battery-modeling/)*
+*Project: [PINN Battery Degradation](/work/projects/pinn-battery/)*

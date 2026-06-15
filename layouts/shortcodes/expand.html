@@ -1,0 +1,5 @@
+<details class="expand-shortcut">
+    <summary><b>{{ .Get "title" | default "Click to expand"}}</b></summary>
+    <div class="expand-content">
+        {{ .Inner | markdownify }}
+</details>

@@ -1,0 +1,58 @@
+:root {
+    --nav-width: 720px; /* Optional: maintains clean alignment */
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+/* CSS: font-family: "IBM Plex Sans", sans-serif; */
+
+body {
+    /* The modern tech stack: Inter, followed by typical system fallbacks */
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+/* Optional: Make headings slightly bolder/crisper like modern AI UI layouts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+/* Tighten up lists and create breathing room between engineering logs */
+.post-content ul li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+/* Give the inline tag blocks an actual crisp architectural look */
+p code {
+    background: var(--code-bg) !important;
+    color: var(--primary) !important;
+    padding: 3px 8px !important;
+    border-radius: 4px !important;
+    font-size: 0.85em !important;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+/* Make internal project links look authoritative, not like raw content fragments */
+.post-content a {
+    color: var(--primary);
+    text-decoration-underline-position: under;
+    font-weight: 500;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.mermaid {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Automatic adjustments for PaperMod Dark Mode */
+.dark .mermaid svg {
+    filter: invert(0.9) hue-rotate(180deg);
+}

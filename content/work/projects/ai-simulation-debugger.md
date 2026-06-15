@@ -12,7 +12,7 @@ cover:
 
 # AI-Assisted Simulation Debugger
 
-**Status: Early-stage concept — not yet a built system.**
+**Status: Early-stage concept - not yet a built system.**
 This page documents the problem framing and proposed approach,
 not a completed implementation.
 
@@ -48,7 +48,7 @@ graph TD
 
   Engineering simulations fail in non-obvious ways. A diverged solver,
   a violated physical constraint, or a misconfigured boundary condition
-  all produce "wrong results" — but the failure signature is different
+  all produce "wrong results" - but the failure signature is different
   in each case. Identifying root cause requires understanding the
   governing equations, the numerical scheme, and the coupling between
   subsystems simultaneously. Current debugging is manual and

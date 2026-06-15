@@ -1,6 +1,6 @@
 ---
 title: "How I Think"
-description: "The operating principles — physics-first, failure-driven, structure before generation."
+description: "The operating principles - physics-first, failure-driven, structure before generation."
 draft: false
 ---
 
@@ -8,7 +8,7 @@ draft: false
 
 Most problems I work on start with the governing equations, not the data. Before reaching for a model or a tool, I try to understand: what forces are acting, what constraints exist, where the system can fail, and how it behaves at its boundaries.
 
-This isn't dogma — it's practical. A model built from physical understanding generalises better, degrades more predictably, and can tell you *why* it's wrong when it fails. A model built from curve-fitting can't.
+This isn't dogma - it's practical. A model built from physical understanding generalises better, degrades more predictably, and can tell you *why* it's wrong when it fails. A model built from curve-fitting can't.
 
 *→ In practice: [Battery Modeling](/work/projects/battery-modeling/) · [PINN Battery Degradation](/work/projects/pinn-battery/) · [CFD Fire Optimization](/work/projects/cfd-fire-optimization/)*
 
@@ -16,7 +16,7 @@ This isn't dogma — it's practical. A model built from physical understanding g
 
 ## Failure Reveals Structure
 
-Stable, well-behaved systems are degenerate — they all look similar at equilibrium. It's the instabilities, edge cases, and nonlinear transitions that reveal the actual structure underneath.
+Stable, well-behaved systems are degenerate - they all look similar at equilibrium. It's the instabilities, edge cases, and nonlinear transitions that reveal the actual structure underneath.
 
 This shows up everywhere: a battery at the edge of lithium plating, a simulation that diverges at a specific timestep, a codebase that breaks when a specific dependency is modified. In each case, the failure tells you something about the system that nominal operation hides.
 
@@ -38,7 +38,7 @@ Recognising which timescales are coupled and which can be treated independently 
 
 ## AI as Reasoning Infrastructure
 
-Machine learning is useful — but the framing matters. The interesting direction isn't AI replacing physical models; it's AI helping reason *about* physical models.
+Machine learning is useful - but the framing matters. The interesting direction isn't AI replacing physical models; it's AI helping reason *about* physical models.
 
 A system that can understand a codebase's dependency structure before modifying it. A surrogate model that respects physical constraints rather than just fitting training data. A debugging assistant that starts from failure modes, not token prediction.
 

@@ -128,7 +128,7 @@ That simplicity is what makes it beautiful.
 
 Artificial neural networks are not brains. They are not intelligent. They do not understand what they learn.
 
-But they are useful. Remarkably useful. And the fact that such a simple idea — multiply, sum, activate, repeat — can produce the behavior we see today is genuinely surprising.
+But they are useful. Remarkably useful. And the fact that such a simple idea - multiply, sum, activate, repeat - can produce the behavior we see today is genuinely surprising.
 
 The same mathematics. The same building blocks. Just more of them.
 

@@ -1,6 +1,6 @@
 ---
 title: "Front Fender Drag Optimization: Why Running CFD in a Loop Is a Bad Idea"
-description: "Surrogate-based aerodynamic optimization using ANN and firefly algorithm — decoupling the simulation from the search."
+description: "Surrogate-based aerodynamic optimization using ANN and firefly algorithm - decoupling the simulation from the search."
 date: 2024-01-15
 tags: ["optimization", "aerodynamics", "ANN", "meta-modeling", "CFD"]
 draft: false
@@ -16,7 +16,7 @@ The solution is to decouple the two problems.
 
 ## The Core Idea: Surrogate Modeling
 
-Instead of asking the CFD solver at every optimization step, you build a fast approximation — a surrogate model — from a limited set of CFD runs. The optimizer then works against the surrogate, not the simulator.
+Instead of asking the CFD solver at every optimization step, you build a fast approximation - a surrogate model - from a limited set of CFD runs. The optimizer then works against the surrogate, not the simulator.
 
 This changes the problem structure completely:
 
@@ -52,7 +52,7 @@ The loop:
 
 12% drag reduction on the front fender geometry. More importantly: **10× speedup** versus traditional CFD-in-loop optimization, because the expensive evaluations were replaced by fast surrogate queries.
 
-The drag reduction is real but specific to this vehicle and this geometry. The method generalizes — which is the more important result.
+The drag reduction is real but specific to this vehicle and this geometry. The method generalizes - which is the more important result.
 
 ---
 

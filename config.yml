@@ -28,6 +28,10 @@ menu:
     - name: Notes
       url: /notes/
       weight: 4
+      
+    - name: Tags
+      url: "/tags"
+      weight: 4
 
 params:
   description: "Simulation infrastructure architect with 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows. Ex-Mercedes-Benz, IIT Kanpur. 2 patents."
@@ -42,6 +46,7 @@ params:
   ShowReadingTime: true
   disableSpecial1stPost: true
   disableAnchoredHeadings: false
+  disableLandingPage: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -53,18 +58,20 @@ params:
   UseHugoToc: true
   comments: false
   math: true
-
+  
   profileMode:
     enabled: true
     title: Vishal Sharma
     subtitle: |
-      **Simulation Infrastructure Architect** — physics-based modelling · battery systems · AI tooling
+      **Simulation Infrastructure Architect** \
+      physics-based modelling · battery systems · AI tooling
 
-      15 years in automotive R&D: IIT Kanpur → TVS → Hero → Mercedes-Benz → Caterpillar → Volvo → A123 Systems (EMEA Lead).
+      15 years in automotive R&D: \
+      IIT Kanpur → TVS → Hero → Mercedes-Benz → Caterpillar → Volvo → A123 Systems.
 
-      I build the infrastructure that makes hard engineering problems tractable — simulation frameworks, battery electrochemical models, and on-premise AI tooling that runs without sending your data to the cloud.
-
-      `2 patents` &nbsp;·&nbsp; `3 simulation teams built` &nbsp;·&nbsp; `ex-Mercedes-Benz R&D` &nbsp;·&nbsp; `IIT Kanpur`
+      I build the simulation/modeling infrastructure that makes hard engineering problems tractable - simulation frameworks, battery electrochemical models, and on-premise AI tooling that runs without sending your data to the cloud.
+       
+      **2 Patents** · **3 Simulation Teams Built** · **ex-Mercedes-Benz R&D** · **IIT Kanpur**
 
     imageUrl: "picture.png"
     imageWidth: 160

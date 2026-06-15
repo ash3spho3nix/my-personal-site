@@ -1,6 +1,6 @@
 ---
 title: "Battery OpenFOAM Simulator: Making CFD Actually Usable"
-description: "Converting a C++ CFD tool into a Python-native simulation ecosystem — and why the interface matters as much as the physics."
+description: "Converting a C++ CFD tool into a Python-native simulation ecosystem - and why the interface matters as much as the physics."
 date: 2024-01-15
 tags: ["battery", "CFD", "OpenFOAM", "simulation", "open-source"]
 draft: false
@@ -20,9 +20,9 @@ The project was to change that ratio.
 
 OpenFOAM solves the full Navier-Stokes equations, energy transport, and coupled solid-fluid heat transfer. For battery pack thermal analysis, this means you can see what lumped models completely miss:
 
-- **Non-uniform coolant distribution** across parallel channels — some cells run hot not because of higher load, but because less coolant flows past them due to flow maldistribution
-- **Temperature gradients within cells** — not just surface temperature, but the internal distribution that determines local aging rates
-- **Transient startup and shutdown** — how long it takes the pack to reach thermal equilibrium after a step change in load
+- **Non-uniform coolant distribution** across parallel channels - some cells run hot not because of higher load, but because less coolant flows past them due to flow maldistribution
+- **Temperature gradients within cells** - not just surface temperature, but the internal distribution that determines local aging rates
+- **Transient startup and shutdown** - how long it takes the pack to reach thermal equilibrium after a step change in load
 
 The problem: all of this is C++ and command-line. Geometry is defined in text files. Mesh generation is a separate tool. Post-processing is VTK. Connecting any of this to a Python optimization loop, a parameter study, or an AI workflow requires a layer that doesn't exist out of the box.
 
@@ -30,7 +30,7 @@ The problem: all of this is C++ and command-line. Geometry is defined in text fi
 
 ## What Was Built
 
-A Python interface layer that wraps the OpenFOAM workflow: case generation, mesh modification, solver execution, output extraction, and result parsing — accessible as Python function calls.
+A Python interface layer that wraps the OpenFOAM workflow: case generation, mesh modification, solver execution, output extraction, and result parsing - accessible as Python function calls.
 
 ```mermaid
 graph LR
@@ -38,7 +38,7 @@ graph LR
     B --> C[Geometry + Mesh Config]
     C --> D[OpenFOAM Solver]
     D --> E[Output Extractor]
-    E --> F[Parsed Results — Python dict]
+    E --> F[Parsed Results - Python dict]
     F --> G[Optimisation Loop]
     F --> H[Surrogate Training Data]
     F --> I[AI Workflow Integration]
@@ -46,17 +46,17 @@ graph LR
 
 This enables:
 
-**Parameter studies** — Sweep coolant flow rate, inlet temperature, or pack geometry without manually editing case files. The Python layer handles the file manipulation; the CFD solver does the physics.
+**Parameter studies** - Sweep coolant flow rate, inlet temperature, or pack geometry without manually editing case files. The Python layer handles the file manipulation; the CFD solver does the physics.
 
-**Optimization integration** — With a Python-callable forward model, any optimization algorithm can be plugged in. Minimize peak cell temperature subject to coolant flow constraints. Find the channel geometry that minimizes temperature spread across cells. These become tractable problems.
+**Optimization integration** - With a Python-callable forward model, any optimization algorithm can be plugged in. Minimize peak cell temperature subject to coolant flow constraints. Find the channel geometry that minimizes temperature spread across cells. These become tractable problems.
 
-**AI workflow integration** — The same interface that enables optimization enables data collection. Run the model across a design space, collect input-output pairs, train a surrogate. The CFD model becomes a data generator rather than an endpoint.
+**AI workflow integration** - The same interface that enables optimization enables data collection. Run the model across a design space, collect input-output pairs, train a surrogate. The CFD model becomes a data generator rather than an endpoint.
 
 ---
 
 ## The Shift in Thinking
 
-There's a difference between a simulation tool and a simulation ecosystem. A tool is something you run manually to answer a specific question. An ecosystem is something you integrate into a larger workflow — automated, scriptable, composable with other components.
+There's a difference between a simulation tool and a simulation ecosystem. A tool is something you run manually to answer a specific question. An ecosystem is something you integrate into a larger workflow - automated, scriptable, composable with other components.
 
 Most CFD work is still tool-mode. You set up a case, run it, look at the results, modify by hand, repeat. This is fine for one-off analysis. It doesn't scale to parameter estimation, design optimization, or training machine learning models.
 
@@ -66,7 +66,7 @@ The move from tool to ecosystem requires precisely what this project built: a pr
 
 ## What's Next
 
-The logical extension is closing the loop with electrochemistry. OpenFOAM handles the fluid and thermal physics; what it lacks is a model for the heat generation inside each cell as a function of electrochemical state. Coupling a cell-level ECM or P2D model to the CFD solver — so that heat generation is computed from the actual electrochemistry rather than assumed — would make this genuinely predictive for design exploration.
+The logical extension is closing the loop with electrochemistry. OpenFOAM handles the fluid and thermal physics; what it lacks is a model for the heat generation inside each cell as a function of electrochemical state. Coupling a cell-level ECM or P2D model to the CFD solver - so that heat generation is computed from the actual electrochemistry rather than assumed - would make this genuinely predictive for design exploration.
 
 That coupling exists in research codes. Making it accessible and fast is the open problem.
 

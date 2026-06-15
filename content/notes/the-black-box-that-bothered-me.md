@@ -1,6 +1,6 @@
 ---
 title: "The Black Box That Bothered Me Enough to Open It"
-description: "A mechanical engineer's journey from intimidated ChatGPT user to understanding how LLMs actually work — attention, embeddings, and why the failure modes are predictable."
+description: "A mechanical engineer's journey from intimidated ChatGPT user to understanding how LLMs actually work - attention, embeddings, and why the failure modes are predictable."
 date: 2024-12-01
 tags: ["AI", "LLM", "machine-learning", "transformers", "engineering"]
 draft: false
@@ -94,7 +94,7 @@ So when it fails, the failure is almost always predictable.
 
 Give it a task outside its training distribution? It will fail. Give it ambiguous instructions? It will guess wrong. Give it no [context](https://en.wikipedia.org/wiki/Context_(computing)) about the problem? It will hallucinate confidently.
 
-I learned to stop being a passive user. I became a prompt engineer without calling it that. I learned to set up context properly — providing the right background information before asking the question. I learned to break tasks into steps. To ask the model to show its reasoning. To give it examples of what a good answer looks like.
+I learned to stop being a passive user. I became a prompt engineer without calling it that. I learned to set up context properly - providing the right background information before asking the question. I learned to break tasks into steps. To ask the model to show its reasoning. To give it examples of what a good answer looks like.
 
 More recently, I discovered [Model Context Protocol](https://modelcontextprotocol.io) or MCP. This is a game changer. Instead of copying code into a prompt, the model can query tools directly. It can search your codebase. Run analyses. Fetch documentation. The model stops being a text generator and becomes an agent that can act.
 
@@ -120,7 +120,7 @@ Same thing applies here.
 
 I do not blame ChatGPT for being wrong anymore. I blame myself for not giving it the right context. I do not get frustrated when it misunderstands. I refine my prompt. I add constraints. I give examples.
 
-This shift — from user to architect — took me a while. But it was worth it.
+This shift - from user to architect - took me a while. But it was worth it.
 
 ---
 
