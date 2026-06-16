@@ -11,18 +11,15 @@ build:
 
 **2 patents · 3 simulation teams built from scratch · 10+ engineers led · 60% model dev time reduction (MBRD)**
 
-📄 **[Full Experience & CV →](/work/experience/)**
+📄 **[Career — timeline, education, patents →](/career/)**
 
 ---
 
 ## 🏆 Patents & Publications
 
-Surfaced here because they represent the clearest external signal of original work.
-
-- *Patent:* Cooling system for fuel cell vehicle/EV - *Inventor's Award, Mercedes-Benz, 2016*
-- *Patent:* Efficient power recapturing from vehicle suspension - *Mercedes-Benz, 2017*
-- *Publication:* [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) - *Victoria University, Melbourne, 2010*
-
+- *Patent:* Cooling system for fuel cell vehicle/EV — *Inventor's Award, Mercedes-Benz, 2016*
+- *Patent:* Efficient power recapturing from vehicle suspension — *Mercedes-Benz, 2017*
+- *Publication:* [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University, Melbourne, 2010*
 
 ---
 {{% expand title="🚀 Flagship Systems" %}}
@@ -103,7 +100,7 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
 
 - [Teaching a Neural Network the Laws of Battery Decay](/work/projects/pinn-battery/) \
   *Volvo Trucks R&D · 2022 · method* \
-  Physics-Informed Neural Network for battery degradation - physics-constrained training that prevents physically impossible predictions. Built for real-time aging inference on mobile hardware. See also: [AI & Physics-Informed ML ↓](#-ai--code-intelligence)
+  Physics-Informed Neural Network for battery degradation - physics-constrained training that prevents physically impossible predictions. Built for real-time aging inference on mobile hardware.
 
 - [Virtual Cell Scaling](/work/projects/battery-scaling/) \
   *A123 Systems · 2025–present · tool*  \
@@ -165,11 +162,11 @@ Self-initiated - built outside the day job to solve problems the existing toolch
 
 - [AI-Assisted Simulation Debugger](/work/projects/ai-simulation-debugger/) \
   *Self-initiated · 2026 · concept* \
-  Exploratory: treating simulation failures as propagating structural inconsistencies rather than isolated errors - AI-assisted root cause reasoning for engineering simulations. The next logical step from the code intelligence tools.
+  Exploratory: treating simulation failures as propagating structural inconsistencies rather than isolated errors - AI-assisted root cause reasoning for engineering simulations.
 
 - [Physics-Informed Neural Network - Battery Degradation](/work/projects/pinn-battery/) \
   *Volvo Trucks R&D · 2022 · method* *(cross-listed: Battery section)* \
-  Where domain physics meets ML - PINN-constrained degradation model prevents physically impossible predictions while enabling real-time inference. The physics-ML intersection in practice.
+  Where domain physics meets ML - PINN-constrained degradation model prevents physically impossible predictions while enabling real-time inference.
 
 - [Alchemist](https://github.com/ash3spho3nix/Alchemist) \
   *Self-initiated · 2025 · tool* \

@@ -1,5 +1,5 @@
 baseURL: "https://vishal-sharma2409.netlify.app/"
-title: "Vishal Sharma | Simulation Infrastructure Architect | Battery Systems & AI Tooling"
+title: "Vishal Sharma"
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -17,21 +17,22 @@ menu:
       url: /about/
       weight: 1
 
+    - name: Career
+      url: /career/
+      weight: 2
+      
     - name: Work
       url: /work/
-      weight: 2
+      weight: 3
 
     - name: Thinking
       url: /thinking/
-      weight: 3
+      weight: 4
 
     - name: Notes
       url: /notes/
-      weight: 4
+      weight: 5
       
-    - name: Tags
-      url: "/tags"
-      weight: 4
 
 params:
   description: "Simulation infrastructure architect with 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows. Ex-Mercedes-Benz, IIT Kanpur. 2 patents."
@@ -76,9 +77,10 @@ params:
     imageUrl: "picture.png"
     imageWidth: 160
     imageHeight: 160
+    imageAlt: "Vishal Sharma - Simulation Infrastructure Architect"
 
     buttons:
-      - name: Background & Arc
+      - name: About
         url: /about/
 
       - name: Work & Projects
@@ -99,7 +101,7 @@ params:
       url: https://www.linkedin.com/in/vishal-sharma-54261a18/
 
     - name: CV
-      url: /cv.pdf
+      url: /CV_Vishal_Sharma.pdf
 
   assets:
     disableScrollBarStyle: false

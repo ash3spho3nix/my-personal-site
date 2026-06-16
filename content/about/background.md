@@ -2,6 +2,9 @@
 title: "Background"
 description: "Where the thinking came from - IIT Kanpur, early career, and how 15 years of domain work connects."
 draft: false
+build:
+  list: never
+  render: always
 ---
 
 ## IIT Kanpur
@@ -26,18 +29,18 @@ During my short time spent with TVS Racing team, I was asked to disassemble the 
 
 The ANSYS APDL macros developed there - reducing pre-processing time by ~50% - were the first serious automation work. The insight that *the analysis workflow itself is an engineering problem* has recurred continuously since.
 
-**Hero MotoCorp (2013–2015)** extended this into thermal analysis, contact analysis, NVH and structural dynamics of engine components(Core component of 2 wheeler automotive). Piston, crankshafts, engine case, each of these components are a topic in itself. From working on engine vibrations, considering crankshaft balancing, piston slap motion, to how it affects rider experience, system level thinking developed. Engine mount optimisation was a collaborative effort with team of *Altair* to set-up a simulation technique to estabilish engine mount locations and engine mount material for reduction in vibration transfer to vehicle frame. Vibration analysis, introducing SOPs that reduced review cycles. The first experience of building something repeatable and transferable - not just solving a problem once, but setting up the system so the next engineer could solve it faster.\
-The next memorble project was **surrogate modeling for front fendor optimization**, *when Neural networks were not talk of the town, particularly in engineering*.
+**Hero MotoCorp (2013–2015)** extended this into thermal analysis, contact analysis, NVH and structural dynamics of engine components (core component of 2 wheeler automotive). Piston, crankshafts, engine case, each of these components are a topic in itself. From working on engine vibrations, considering crankshaft balancing, piston slap motion, to how it affects rider experience, system level thinking developed. Engine mount optimisation was a collaborative effort with team of *Altair* to set-up a simulation technique to establish engine mount locations and engine mount material for reduction in vibration transfer to vehicle frame. Vibration analysis, introducing SOPs that reduced review cycles. The first experience of building something repeatable and transferable - not just solving a problem once, but setting up the system so the next engineer could solve it faster.\
+The next memorable project was **surrogate modeling for front fender optimization**, *when Neural networks were not talk of the town, particularly in engineering*.
 
 ---
 
 ## The Pivot to EV: Mercedes-Benz R&D (2015–2021)
 
-Joining MBRD in 2015 was a pivot from ICE mechanics into EV systems - specifically battery simulation, at a time when the toolchain for battery development in automotive was being enhanced in collaboration wtih German counterparts.
+Joining MBRD in 2015 was a pivot from ICE mechanics into EV systems - specifically battery simulation, at a time when the toolchain for battery development in automotive was being enhanced in collaboration with German counterparts.
 
-Six years, two roles. The first three years (Senior Engineer) were about enhancing the simulation framework. Starting from vehilce dynamics module, ADAS systems, Lidar systems, and later full vehicle simulation was extended for EV/PHEV/HEV. Each integral component/subsystem was built, validated and integrated, *Charging systems*, *Thermal management system*, *BMS logic*, etc. This was the time, when built competence: electrochemical modelling, thermal simulation, systems modeling(MBSE). Understanding how a Li-ion cell actually works, not just how to use a BMS library.
+Six years, two roles. The first three years (Senior Engineer) were about enhancing the simulation framework. Starting from vehicle dynamics module, ADAS systems, Lidar systems, and later full vehicle simulation was extended for EV/PHEV/HEV. Each integral component/subsystem was built, validated and integrated, *Charging systems*, *Thermal management system*, *BMS logic*, etc. This was the time, when built competence: electrochemical modelling, thermal simulation, systems modeling (MBSE). Understanding how a Li-ion cell actually works, not just how to use a BMS library.
 
-The second three years (Technology Lead) were about parralel roles- one of technical leadership of building capability at the team level: toolchain architecture, development standards, cross-site collaboration with Daimler in Stuttgart, team growth from 2 to 6 engineers, 5× business growth in the portfolio, and second as an individual contributor, worked on specialized battery modeling toolchain, utilizing and enhancing battery domain knowhow.
+The second three years (Technology Lead) were about parallel roles - one of technical leadership of building capability at the team level: toolchain architecture, development standards, cross-site collaboration with Daimler in Stuttgart, team growth from 2 to 6 engineers, 5× business growth in the portfolio, and second as an individual contributor, worked on specialized battery modeling toolchain, utilizing and enhancing battery domain knowhow.
 
 The Battery Thermal Model Configurator - 60% reduction in model development time - came out of this period. It was the first project where the goal was explicitly to reduce the cost of doing the *next* project, not just complete the current one. That's a different kind of engineering problem, and a more interesting one.
 
@@ -70,4 +73,4 @@ It's not a career pivot. It's a natural extension of the same instinct that prod
 
 The local LLM focus - running models on-premises, building RAG systems, developing code analysis tools - is deliberate. In the German automotive context, GDPR-driven interest in on-premise AI is real and growing. The capability to deploy AI tooling that doesn't send data to external servers is worth having, both practically and professionally.
 
-[← About](/about/) | [Work & Projects →](/work/)
+[← About](/about/) | [Career →](/career/)

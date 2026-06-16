@@ -48,13 +48,49 @@ Structure before generation. Understanding before output.
 
 ---
 
+## Engineering Principles
+
+Seven principles that have stayed consistent across 15 years and six companies. Not aspirational statements — operational rules that have shaped real technical decisions.
+
+#### Infrastructure before instances
+
+The right investment is the system that reduces the cost of all future similar problems, not the perfect solution to the current one. Every simulation framework built — [Battery Thermal Configurator](/work/projects/battery-thermal-configurator/), [Battery Simulation Framework](/work/projects/battery-simulation/), [Current Limits Generator](/work/projects/current-limits-generator/) — was this principle applied. The 60% reduction in model development time at MBRD came from building once correctly, not from solving the same setup problem faster each time.
+
+#### Own the interface
+
+Failures don't live inside well-tested components. They live at the coupling: the CFD-to-ROM boundary, the BMS-to-thermal handoff, the static-to-dynamic analysis correlation. Technical leadership means owning those boundaries - not delegating the integration while keeping the interesting component work.
+→ [Thermal Configurator: CFD-ROM interface](/work/projects/battery-thermal-configurator/) · [Hybrid Code Analyzer: static-dynamic correlation](/work/projects/hybrid-code-analyzer/)
+
+#### Physics sets the constraints — engineering works within them
+
+Before committing to any model, architecture, or approach: what does the governing physics actually allow? This question eliminates more bad decisions than any review process. A PINN degradation model isn't just a clever ML approach - it's the only formulation that satisfies both the accuracy requirement and the mobile deployment constraint simultaneously, because the physics of battery aging makes that constraint explicit.
+→ [PINN Battery Degradation](/work/projects/pinn-battery/) · [Battery Modeling: where models break](/work/projects/battery-modeling/)
+
+#### Reuse is designed, not discovered
+
+Tools that get reused across programmes and teams are designed for reuse from day one: parameterised inputs, documented assumptions, clear scope boundaries. The [Current Limits Generator](/work/projects/current-limits-generator/) and [Virtual Cell Scaling](/work/projects/battery-scaling/) tool are parameterised - swap the cell's characterisation data and the output regenerates. That property is not an accident.
+
+#### Validate at the boundary, not the centre
+
+Nominal operating conditions reveal little about system quality. Edge cases, failure modes, and boundary transitions are where the real test lives. The [DC box thermal model](/work/projects/dc-box-thermal/) found the design margin problem at the joint near maximum current, not at nominal load. The [tire standing wave analysis](/work/projects/tire-modelling/) is entirely about what happens at the critical velocity - the nominal operating region is uninteresting.
+
+#### Cross-domain fluency is a compound advantage
+
+The engineer who recognises that tire standing wave dynamics and battery electrode diffusion share the same mathematical structure has an analytical toolkit that specialists on either side don't. The [ANN surrogate + Firefly optimisation](/work/projects/front-fender-design/) built for aerodynamics in 2014 is structurally identical to the battery parameter estimation approach in 2023. Same method, different physics. The investment compounds.
+→ [Research Interests](/thinking/research/)
+
+#### AI augments reasoning; it does not replace domain knowledge
+
+The most useful AI systems give a domain expert better information to reason from. A local LLM with a structural index of the codebase is more useful than a cloud model with no context. A Physics-Informed Neural Network that respects electrode kinetics is more reliable than a neural network trained on the same data without constraints. The pattern across every AI tool built here: structure before generation.
+→ [AI Systems overview](/work/projects/ai-systems/)
+
+---
+
 ## The Pattern
 
 Physics → model → automate → scale.
 
 This has been the repeating cycle across battery modelling, simulation toolchains, and AI systems. The domain changes; the cycle doesn't.
-
-*→ See also: [Engineering Principles →](/about/) · [Research Interests →](/thinking/research/)*
 
 ---
 

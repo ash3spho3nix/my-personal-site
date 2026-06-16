@@ -2,6 +2,7 @@
 title: Notes
 description: "Short-form technical observations - things that don't fit neatly anywhere else."
 draft: false
+layout: single
 ---
 
 Shorter than articles. More specific than journal entries.
