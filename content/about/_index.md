@@ -1,18 +1,16 @@
 ---
 title: "About"
-description: "Mechanical engineer by instinct. Simulation infrastructure by trade. 15 years building the frameworks that make hard problems tractable."
+description: "Mechanical engineer by instinct. Simulation/Modeling infrastructure by trade. Building the frameworks that make hard problems tractable. Solving complex problems at system and components level."
 build:
   list: never
   render: always
 ---
 
-Mechanical engineer by training (IIT Kanpur, M.Tech + B.Tech). 15 years across automotive R&D — ICE systems, EV modelling & simulation, battery electrochemistry, and ML/AI tooling for engineering workflows.
+Mechanical engineer by training (IIT Kanpur, M.Tech + B.Tech). 15 years across automotive R&D - ICE systems, EV modelling & simulation, battery electrochemistry, and ML/AI tooling for engineering workflows.
 
-The consistent thread: build the infrastructure that makes the problem tractable. Not just solve the current instance, but reduce the cost of solving the next one.
+*The consistent thread*: build the infrastructure that makes the problem tractable. Not just solve the current instance, but reduce the cost of solving the next one.
 
-*Currently*: **Simulation Lead, EMEA** at A123 Systems (Germany) — translating OEM requirements into simulation scope across DE/IN/CN teams, with final validation authority for all EMEA deliverables.
-
-**`2 patents`** &nbsp;·&nbsp; **`1 publication`** &nbsp;·&nbsp; **`3 simulation teams built`** &nbsp;·&nbsp; **`10+ engineers led`** &nbsp;·&nbsp; **`60% model dev time reduction at MBRD`**
+*Currently*: **Simulation Lead, EMEA** at *A123 Systems (Germany)* — translating OEM requirements into simulation scope across DE/IN/CN teams, with final validation authority for all EMEA deliverables.
 
 ---
 
@@ -30,4 +28,4 @@ The AI tooling work isn't a career pivot — it's the same instinct applied to t
 
 **→ [Work — projects and tools built](/work/)**
 
-**→ [How I Think — principles and mental models](/thinking/how-i-think/)**
+**→ [How I approach problems - principles and mental models](/thinking/how-i-think/)**

@@ -4,6 +4,8 @@ description: "System dynamics from rigid body motion to nonlinear behavior - the
 draft: false
 ---
 
+![Rattleback](/images/others/rattleback-dynamics.gif)
+
 Dynamics is the study of how systems change over time under the action of forces. That definition is technically correct and almost completely useless as a description of what makes it interesting.
 
 What makes it interesting is that the same mathematical machinery - equations of motion, stability analysis, mode decomposition - applies across an enormous range of physical systems. A rotating gyroscope, a vibrating engine mount, a Kalman filter tracking a radar target, and a battery cell responding to a current pulse all have dynamic behavior describable by the same class of equations. The specific physics differs. The analytical instinct transfers.

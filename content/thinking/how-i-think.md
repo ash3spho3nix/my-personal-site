@@ -52,6 +52,8 @@ Structure before generation. Understanding before output.
 
 Seven principles that have stayed consistent across 15 years and six companies. Not aspirational statements — operational rules that have shaped real technical decisions.
 
+{{% expand title="Expand all seven principles →" %}}
+
 #### Infrastructure before instances
 
 The right investment is the system that reduces the cost of all future similar problems, not the perfect solution to the current one. Every simulation framework built — [Battery Thermal Configurator](/work/projects/battery-thermal-configurator/), [Battery Simulation Framework](/work/projects/battery-simulation/), [Current Limits Generator](/work/projects/current-limits-generator/) — was this principle applied. The 60% reduction in model development time at MBRD came from building once correctly, not from solving the same setup problem faster each time.
@@ -83,6 +85,8 @@ The engineer who recognises that tire standing wave dynamics and battery electro
 
 The most useful AI systems give a domain expert better information to reason from. A local LLM with a structural index of the codebase is more useful than a cloud model with no context. A Physics-Informed Neural Network that respects electrode kinetics is more reliable than a neural network trained on the same data without constraints. The pattern across every AI tool built here: structure before generation.
 → [AI Systems overview](/work/projects/ai-systems/)
+
+{{% /expand %}}
 
 ---
 

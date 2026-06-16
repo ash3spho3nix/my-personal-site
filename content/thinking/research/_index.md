@@ -10,7 +10,7 @@ The stable, well-behaved middle of the operating envelope is well understood and
 
 ---
 
-## Dynamics - The Core
+## [Dynamics - The Core](/thinking/research/dynamics/)
 
 Mechanics and dynamics are the foundation. Not just in the "I studied this in university" sense, but in the sense that the dynamic perspective keeps producing useful insight in domains where people don't usually apply it.
 
@@ -27,7 +27,7 @@ Sub-areas of active interest:
 
 ---
 
-## Evolution - Adaptation and Optimization
+## [Evolution - Adaptation and Optimization](/thinking/research/evolution/)
 
 The principle of least action says physical systems evolve along paths that minimize (or extremize) some quantity. This shows up everywhere: Fermat's principle in optics, Hamilton's principle in mechanics, the second law in thermodynamics. Optimization isn't something humans impose on systems - it's what systems do.
 
@@ -44,7 +44,7 @@ Areas of interest:
 
 ---
 
-## Simulation and Mathematical Modeling
+## [Simulation and Mathematical Modeling](/thinking/simulation-modeling/)
 
 A simulation is a hypothesis in executable form. The discipline is building hypotheses that are precise enough to be wrong.
 

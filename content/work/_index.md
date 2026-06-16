@@ -1,27 +1,12 @@
 ---
 title: "Work"
-description: "15 years building simulation infrastructure - battery electrochemistry, EV systems, AI tooling, and on-premise LLM deployment."
+description: "Building simulation/modeling infrastructure - battery electrochemistry, EV systems, AI tooling, and on-premise LLM deployment."
 draft: false
 build:
   list: never
   render: always
 ---
 
-15 years across automotive R&D. The consistent thread: build the infrastructure that makes the problem tractable - not just solve the immediate instance of it.
-
-**2 patents · 3 simulation teams built from scratch · 10+ engineers led · 60% model dev time reduction (MBRD)**
-
-📄 **[Career — timeline, education, patents →](/career/)**
-
----
-
-## 🏆 Patents & Publications
-
-- *Patent:* Cooling system for fuel cell vehicle/EV — *Inventor's Award, Mercedes-Benz, 2016*
-- *Patent:* Efficient power recapturing from vehicle suspension — *Mercedes-Benz, 2017*
-- *Publication:* [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — *Victoria University, Melbourne, 2010*
-
----
 {{% expand title="🚀 Flagship Systems" %}}
 Five projects that best represent the architectural approach: building
 infrastructure that compounds, not tools that expire.
@@ -79,11 +64,11 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
   ECM vs DFN vs data-driven - what each gets wrong, and why hybrids are the real answer.
 
 - [Thermal Management System Modeling](/work/projects/thermal-management/) \
-  *Mercedes-Benz R&D · 2015–2021 · tool* \
+  *Mercedes-Benz R&D · 2015�?021 · tool* \
   Building the full EV TMS from scratch - battery, inverter, DC-DC, coolant loop, HVAC - integrated into the in-house vehicle simulation framework.
 
 - [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) \
-  *Mercedes-Benz R&D · 2019–2021 · tool* \
+  *Mercedes-Benz R&D · 2019�?021 · tool* \
   Couples CFD cooling channel results to a reduced-order thermal ROM - generates a fully-parameterised Simulink thermal model. **60% reduction in model development time.**
 
 - [DC Box Thermal Modelling](/work/projects/dc-box-thermal/) \
@@ -91,7 +76,7 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
   The component nobody thinks about until it fails. 96% experimental accuracy; design margin identified before hardware.
 
 - [Charging Time: Why 80% Is Not Half the Problem](/work/projects/charging-time/) \
-  *Mercedes-Benz R&D · 2017–2018 · analysis* \
+  *Mercedes-Benz R&D · 2017�?018 · analysis* \
   CC-CV physics, C-rate tradeoffs, and why fast charging is a thermal problem as much as an electrochemical one.
 
 - [Battery Simulation Framework](/work/projects/battery-simulation/) \
@@ -113,17 +98,17 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
 {{% /expand %}}
 
 ---
-{{% expand title="🛠️ Engineering Tools Built" %}}
+{{% expand title="🛠�?Engineering Tools Built" %}}
 
 Tools that exist, are used, and reduce the cost of doing the next project. Mix of OEM-commissioned and self-initiated.
 
 - [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) \
-  *Mercedes-Benz R&D · 2019–2020 · tool* \
+  *Mercedes-Benz R&D · 2019�?020 · tool* \
   **60% reduction in thermal model development time.** Generates parameterised CFD-thermal ROM for HV battery systems.
 
 - Model Validation Framework \
-  *Mercedes-Benz R&D · 2018–2020 · tool* \
-  Automated pipeline: fetch test data + battery model → run simulations → validate → upload report.
+  *Mercedes-Benz R&D · 2018�?020 · tool* \
+  Automated pipeline: fetch test data + battery model �?run simulations �?validate �?upload report.
 
 - [Current Limits Generator](/work/projects/current-limits-generator/) \
   *A123 Systems · 2025 · tool* \
@@ -184,23 +169,23 @@ Self-initiated - built outside the day job to solve problems the existing toolch
 The foundation - structural analysis, contact mechanics, vibration, and fluid dynamics from the first decade of the career. The physics intuition from this work keeps appearing in battery and AI contexts.
 
 - [Tire Modelling: What a Spinning Ring Taught Me About Everything](/work/projects/tire-modelling/) \
-  *IIT Kanpur M.Tech · 2010–2011 · analysis* \
+  *IIT Kanpur M.Tech · 2010�?011 · analysis* \
   Standing waves, critical velocity, contact mechanics. The thesis that established the pattern: rotate a structure and everything changes.
 
 - [Piston Rings: Friction, Sealing, and the Physics of Things That Touch](/work/projects/piston-rings/) \
-  *TVS Motor Company · 2012–2013 · analysis* \
+  *TVS Motor Company · 2012�?013 · analysis* \
   Three simultaneous contact regimes, elastohydrodynamic lubrication, ring flutter. Where the interesting failure always lives at the boundary.
  
 - [Magnesium Alloy Wheel Design](/work/projects/magnesium-wheel/) \
-  *TVS Motor Company · 2011–2012 · method + analysis*  \
+  *TVS Motor Company · 2011�?012 · method + analysis*  \
   Topology optimisation, fatigue under realistic load spectra, thermal analysis. Material substitution is a system problem, not a materials problem.
 
 - [Engine Mounts: Designing Something to Fail Softly](/work/projects/engine-mounts/) \
-  *Hero MotoCorp · 2013–2015 · method* \
-  NVH optimisation through stiffness design. Hybrid GA + Nelder-Mead, 15–20% cabin vibration reduction, verified on dynamometer.
+  *Hero MotoCorp · 2013�?015 · method* \
+  NVH optimisation through stiffness design. Hybrid GA + Nelder-Mead, 15�?0% cabin vibration reduction, verified on dynamometer.
 
 - [Radar Modeling for Autonomous Driving](/work/projects/radar-autonomous-driving/) \
-  *Mercedes-Benz R&D · 2016–2017 · analysis* \
+  *Mercedes-Benz R&D · 2016�?017 · analysis* \
   What sensors actually see - beam patterns, clutter, Kalman filter state estimation, and why edge cases aren't edge cases.
 
 - [CFD Fire Modelling: The Inverse Problem Nobody Wants to Solve](/work/projects/cfd-fire-optimization/) \
@@ -208,5 +193,12 @@ The foundation - structural analysis, contact mechanics, vibration, and fluid dy
   Material property estimation by running the physics model backwards. GA + Nelder-Mead, cross-validated, published.
 {{% /expand %}}
 
+
+---
+
+
+📄 **[Career �?timeline, education, patents →](/career/)**
+
+🔬 **[Beyond the work �?Research Interests →](/thinking/research/)** · Dynamics, contact mechanics, PINNs, evolutionary algorithms, and the patterns that keep appearing across domains that look unrelated on the surface.
 
 ---
