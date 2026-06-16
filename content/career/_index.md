@@ -6,6 +6,18 @@ build:
   render: always
 ---
 
+## Career Snapshot
+
+| Period | Role | Company |
+| --- | --- | --- |
+| 2022–Present | Simulation Lead, EMEA | A123 Systems GmbH, Germany |
+| 2022 | Lead – Simulation & Analysis (Sr. Manager) | Volvo Trucks R&D, India |
+| 2021–2022 | Performance Engineer | Caterpillar R&D, India |
+| 2015–2021 | Technology Lead / Senior Engineer | Mercedes-Benz R&D, India |
+| 2013–2015 | Deputy Manager, R&D | Hero MotoCorp, India |
+| 2011–2013 | Member, R&D | TVS Motor Company, India |
+| 2009 | Research Intern | Victoria University, Melbourne |
+
 📄 **[Download CV (PDF)](/CV_Vishal_Sharma.pdf)**
 
 ---
