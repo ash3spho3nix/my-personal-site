@@ -7,18 +7,49 @@ build:
   render: always
 ---
 
-{{% expand title="🚀 Flagship Systems" %}}
+## 🚀 Flagship Systems
 Five projects that best represent the architectural approach: building
 infrastructure that compounds, not tools that expire.
 
 ### [Battery Simulation Framework + PINN Degradation](/work/projects/battery-simulation/)
 *Volvo Trucks R&D · 2022* \
-Problem: BMS teams needed fast iteration without dragging a full
-vehicle model. System built: standalone simulation environment with
-BMS as first-class citizen, plus a PINN degradation model running
-at ~90% accuracy in seconds on mobile. The PINN was the only
-formulation that satisfied both accuracy and mobile deployment
-constraints simultaneously.
+**Problem:** Battery simulation was time-consuming, as it was run on full-vehicle simulation framework  \
+**System built:** Standalone simulation environment with BMS as a first-class citizen. \
+**Core Impact:** Integrated a PINN degradation model running at ~90% accuracy in seconds on mobile
+
+### [Current Limits Generator](/work/projects/current-limits-generator/)
+*A123 Systems · 2025* \
+**Problem:** current limits were being computed manually, inconsistently,
+and conservatively across OEM programmes. \
+**System built:** physics-based Python tool generating aging-aware current envelopes covering plating
+onset, side reactions, thermal limits, and thermal runaway margin - parameterised, OEM-deliverable, in production use. \
+**Core Impact:** Standardized and physics-oriented methodology to calculate dynamic current limits, which are used as
+input for battery simulations, particularly powermaps calculation.
+
+### [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) \
+*Mercedes-Benz R&D · 2019-2021 · tool* \
+**Problem:** To build an accurate and faster battery thermal model coupled with cooling plates/thermal management system. \
+**System built:** Full fledged matlab based tool, which couples CFD cooling channel results to a reduced-order thermal ROM - generates a fully-parameterised Simulink thermal model.  \
+**Core Impact:** *60% reduction in model development time.* | *Users - R&D engineers in Mercedes, Stuttgart*
+  
+### [Codebase Indexer](/work/projects/codebase-indexer/)
+*Self-initiated · 2025–present* \
+**Problem:** AI coding agents generate code without understanding the
+codebase they're editing. \
+**System built:** structural repository understanding layer - dependency graphs, importance scoring, semantic
+retrieval - that gives a local LLM a map before it touches a line. \
+**Core Impact:** codebase mapping problem resolved. No hallucinations. Json output file can be used by AI agents. \
+[GitHub →](https://github.com/ash3spho3nix/Codebase_Indexer)
+
+### [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
+*Self-initiated · 2025* \
+Problem: static analysis misses runtime failures; dynamic analysis
+misses structural importance.  \
+System built: combined pipeline that
+correlates runtime failures with structural centrality - finding
+what neither approach alone can detect. \
+[GitHub →](https://github.com/ash3spho3nix/hybrid_code_analyser)
+
 
 ### [OpenFOAM Battery Simulator](/work/projects/openfoam-battery/)
 *Self-initiated · Open source · 2025* \
@@ -27,32 +58,6 @@ impractical. System built: Python interface layer that converts
 OpenFOAM from an expert-only C++ tool into a callable function -
 enabling parameter sweeps, optimisation loops, and AI integration.
 [GitHub →](https://github.com/ash3spho3nix/Battery_OpenFoam_Simulator)
-
-### [Current Limits Generator](/work/projects/current-limits-generator/)
-*A123 Systems · 2025* \
-Problem: current limits were being computed manually, inconsistently,
-and conservatively across OEM programmes. System built: physics-based
-Python tool generating aging-aware current envelopes covering plating
-onset, side reactions, thermal limits, and thermal runaway margin -
-parameterised, OEM-deliverable, in production use.
-
-### [Codebase Indexer](/work/projects/codebase-indexer/)
-*Self-initiated · 2025–present* \
-Problem: AI coding agents generate code without understanding the
-codebase they're editing. System built: structural repository
-understanding layer - dependency graphs, importance scoring, semantic
-retrieval - that gives a local LLM a map before it touches a line.
-[GitHub →](https://github.com/ash3spho3nix/Codebase_Indexer)
-
-### [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/)
-*Self-initiated · 2025* \
-Problem: static analysis misses runtime failures; dynamic analysis
-misses structural importance. System built: combined pipeline that
-correlates runtime failures with structural centrality - finding
-what neither approach alone can detect.
-[GitHub →](https://github.com/ash3spho3nix/hybrid_code_analyser)
-
-{{% /expand %}}
 
 ---
 {{% expand title="🔋 Battery & Electrochemistry" %}}
@@ -66,10 +71,6 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
 - [Thermal Management System Modeling](/work/projects/thermal-management/) \
   *Mercedes-Benz R&D · 2015�?021 · tool* \
   Building the full EV TMS from scratch - battery, inverter, DC-DC, coolant loop, HVAC - integrated into the in-house vehicle simulation framework.
-
-- [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) \
-  *Mercedes-Benz R&D · 2019�?021 · tool* \
-  Couples CFD cooling channel results to a reduced-order thermal ROM - generates a fully-parameterised Simulink thermal model. **60% reduction in model development time.**
 
 - [DC Box Thermal Modelling](/work/projects/dc-box-thermal/) \
   *Mercedes-Benz R&D · 2016 · analysis* \

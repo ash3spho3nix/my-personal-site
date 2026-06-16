@@ -35,7 +35,8 @@ menu:
       
 
 params:
-  description: "Simulation infrastructure architect with 15 years building physics-based simulation and AI tooling across automotive R&D. Battery electrochemistry, EV systems, on-premise AI for engineering workflows. Ex-Mercedes-Benz, IIT Kanpur. 2 patents."
+  title: "Vishal Sharma | Simulation Infrastructure Architect & Battery Expert"
+  description: "Principal Battery Systems Engineer & Simulation Expert specializing in physics-based modeling, PINN degradation, and local AI orchestration."
   author: Vishal Sharma
 
   DateFormat: "Jan 2006"

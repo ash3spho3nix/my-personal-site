@@ -7,6 +7,8 @@ build:
   list: never
   render: always
 ---
+> 📄 **Looking for the full technical breakdown?** \
+> [Download the comprehensive CV / Resume PDF Direct Link ](/CV_Vishal_Sharma.pdf)
 
 ## Key Metrics
 
