@@ -1,0 +1,8 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='60' y='100' font-size='42'>Exploring Local LLMs</text>
+<text x='60' y='150' font-size='26'>4GB GPU • Quantisation • Constraints • Learning</text>
+<rect x='150' y='240' width='220' height='140' fill='none' stroke='black'/><text x='205' y='320'>4GB GPU</text>
+<rect x='500' y='240' width='220' height='140' fill='none' stroke='black'/><text x='540' y='320'>GGUF Q4</text>
+<rect x='850' y='240' width='220' height='140' fill='none' stroke='black'/><text x='905' y='320'>Local AI</text>
+</svg>

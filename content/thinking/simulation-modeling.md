@@ -44,6 +44,6 @@ Fifteen years in, simulation modelling still feels like a conversation with the 
 
 ## Connects To
 
-*Project: [Battery Simulation Framework](/work/projects/battery-simulation-framework/)*  
-*Project: [PINN Degradation Modelling](/work/projects/pinn-degradation-modelling/)*  
+*Project: [Battery Simulation Framework](/thinking/battery-simulation-framework/)*  
+*Project: [PINN Degradation Modelling](/work/projects/pinn-battery/)*  
 *Thinking: [How I Think About Engineering Systems](/thinking/how-i-think/)*

@@ -13,7 +13,7 @@ Fifteen years working with battery models across the stack: from ECM spreadsheet
 
 This isn't a single project - it's the accumulated understanding from building, validating, and deploying battery models across multiple OEMs, chemistries, and applications. The failures taught more than the successes.
 
-![Battery Modeling](/images/battery_modeling.png)
+
 ---
 
 ---
@@ -99,7 +99,7 @@ That's the direction that actually scales across applications and operating cond
 
 **First cycles.** The SEI layer forms in the first few cycles, consuming lithium inventory and setting the baseline internal resistance. Models calibrated after formation but applied to predict formation losses will be systematically wrong.
 
-![Battery Pack Modeling](/images/cell_to_pack.png)
+
 
 ---
 

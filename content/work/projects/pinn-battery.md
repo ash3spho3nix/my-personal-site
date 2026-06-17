@@ -55,6 +55,8 @@ There is active research in related approaches, and it is worth understanding th
 
 PINNs stand apart because they do not need pre-computed simulation data. The physics is embedded directly, so the network learns while simultaneously respecting the laws of electrochemistry. This is sometimes called a "mesh-free" approach - unlike finite element methods that discretize space into thousands of small cells, a PINN can evaluate the solution at any point instantly.
 
+![Battery Modeling](/images/battery/battery_modeling.png)
+
 ## What Problem Does This Actually Solve?
 
 The practical problem is this: battery management systems need to predict state of health and remaining useful life in real-time, but the underlying physics is too slow to solve on embedded hardware, and pure data-driven models are not reliable enough.
@@ -65,7 +67,7 @@ Recent work like the PINEAPPLE framework has demonstrated that PINNs can infer i
 
 Another study showed that integrating partial differential equations into a machine learning model reduced mean squared error from 10.36 to just 0.21 - an improvement of nearly 50 times. That is the difference between useless predictions and actionable insights.
 
-![Battery aging parameters and degradation mechanisms](/images/parameter of battery ageing.png)
+![Battery aging parameters and degradation mechanisms](/images/battery/parameter-battery-ageing.png)
 
 ## Where This Is Headed
 
