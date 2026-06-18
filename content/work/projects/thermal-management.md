@@ -1,4 +1,4 @@
----
+﻿---
 title: "Thermal Management System: Building the System That Connects Everything"
 description: "Developing and integrating a complete EV thermal management system - from individual component models to a coupled full-vehicle simulation framework at Mercedes-Benz R&D."
 date: 2018-01-01
@@ -13,7 +13,7 @@ The battery wants to stay between 15 and 35°C. The power electronics want activ
 
 The work at Mercedes-Benz R&D India was to build this system, component by component, and integrate it into the in-house full-vehicle simulation framework - so that EV and hybrid vehicles (E-Class, S-Class, AMG, EQC) could be simulated with thermally-coupled behaviour from the start of development.
 
-![HV battery pack - the most thermally sensitive component in the EV system](/images/batteryHV.jpg)
+![HV battery pack - the most thermally sensitive component in the EV system](/images/vehicle/batteryHV.jpg)
 
 ---
 
@@ -53,7 +53,7 @@ Temperature feedback to electrochemical model
 
 ### Vehicle-Level TMS Integration
 
-![Full vehicle thermal management system - cooling loops, refrigerant circuit, HVAC integration](/images/vehicle_TMS.jpg)
+![Full vehicle thermal management system - cooling loops, refrigerant circuit, HVAC integration](/images/vehicle/vehicle_TMS.jpg)
 
 The complete TMS covers battery cooling, power electronics cooling, and HVAC refrigerant circuit - all sharing infrastructure and competing for capacity under peak load conditions.
 

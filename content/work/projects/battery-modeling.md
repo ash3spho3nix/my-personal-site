@@ -1,4 +1,4 @@
----
+﻿---
 title: "Battery Modeling: When Your Elegant Equation Meets Reality"
 description: "Electrochemical modeling of lithium-ion batteries - the tradeoffs between ECM, DFN, and data-driven approaches, and why the real answer is always a hybrid."
 date: 2024-01-15
@@ -18,17 +18,17 @@ This isn't a single project - it's the accumulated understanding from building, 
 
 ---
 
-![Three classifications of battery modelling methods](/images/Three-classifications-of-battery-modelling.webp)
+![Three classifications of battery modelling methods](/images/battery/Three-classifications-of-battery-modelling.webp)
 
 ## The Three Ways to Model a Battery
 
-![Battery Modeling Techniques](/images/battery_modeling_techniques.png)
+![Battery Modeling Techniques](/images/battery/battery_modeling_techniques.png)
 
 ### Equivalent Circuit Model (ECM)
 
 An RC circuit that impersonates a battery. A voltage source, a series resistance, and one or more RC pairs representing diffusion dynamics. Fast, tunable, works in real-time on a BMS microcontroller.
 
-![Battery EIS - impedance spectroscopy characterisation](/images/battery_EIS.png)
+![Battery EIS - impedance spectroscopy characterisation](/images/battery/battery_EIS.png)
 
 The issue isn't that it's inaccurate - for a narrow operating window, it's fine. The issue is that *you don't know when it breaks*. Push the cell outside the temperature or SoC range you calibrated on, and the model degrades silently. There's no physics to signal the extrapolation; it just drifts.
 
@@ -57,7 +57,7 @@ The catch is parameterisation. A full DFN model has 20–30 parameters, most of 
 
 **DFN earns its place in:** Understanding aging mechanisms, designing fast-charge limits, studying capacity fade, anything where you need to ask *why* the cell behaves as it does.
 
-![Battery Modeling](/images/Battery_SPM_P2D.jpg)
+![Battery Modeling](/images/battery/Battery_SPM_P2D.jpg)
 
 ### Data-Driven / Stochastic Model
 
@@ -103,7 +103,7 @@ That's the direction that actually scales across applications and operating cond
 
 ---
 
-![Causes and consequences of battery degradation](/images/Causes-and-consequences-of-battery-degradation.png)
+![Causes and consequences of battery degradation](/images/battery/Causes-and-consequences-of-battery-degradation.png)
 
 ## What I'm Still Working Through
 

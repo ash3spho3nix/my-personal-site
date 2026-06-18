@@ -1,4 +1,4 @@
----
+﻿---
 title: "Battery Thermal Model Configurator"
 description: "A MATLAB/Simulink tool that couples CFD-derived cooling channel results with reduced-order thermal models of HV battery packs - cutting model development time by 60%."
 date: 2021-01-01
@@ -39,7 +39,7 @@ A [Reduced Order Model](https://en.wikipedia.org/wiki/Model_order_reduction) (RO
 
 Think of it like summarising a thousand-page book into a ten-page summary. The fine details are lost. But the plot, the key events, and the critical relationships remain. The reader gets the essence without the time commitment.
 
-![Reduced order model concept](/images/reduced-order-model.webp)
+![Reduced order model concept](/images/others/reduced-order-model.webp)
 
 In thermal modelling, a ROM represents temperature distribution using a handful of basis functions and lumped nodes instead of millions of grid points. Accuracy drops a few percent. Speed increases by orders of magnitude. For system-level simulation - where you need to run thousands of scenarios, not compute a single high-fidelity result - that is the right trade-off.
 
@@ -56,7 +56,7 @@ A battery pack is not just cells. It has a cooling system - typically an alumini
 
 The HTC is the key number. It tells you how effectively heat moves from cell surface to coolant. A high HTC means good cooling. A low HTC means the heat stays in the cell and builds up.
 
-![Battery thermal ROM architecture](/images/ROM_battery.png)
+![Battery thermal ROM architecture](/images/battery/ROM_battery.png)
 
 CFD analysis is expensive. Running it for every design iteration isn't feasible. But running it once - for a baseline design - and then coupling those results intelligently into a fast ROM is exactly the right approach. That coupling is what the Configurator handles.
 

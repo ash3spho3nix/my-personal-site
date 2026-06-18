@@ -1,4 +1,4 @@
----
+﻿---
 title: "Hybrid Code Analyzer: Finding What Static and Dynamic Analysis Miss Alone"
 date: 2026-05-09
 description: "A combined static + dynamic analysis pipeline that correlates runtime failures with structural code importance - built for AI-assisted debugging workflows."
@@ -11,7 +11,7 @@ Modern repositories are increasingly too large and interconnected for shallow de
 
 This project combined both.
 
-![Hybrid Code Analyzer - static + dynamic pipeline output](/images/hybrid_code_analyser.png)
+![Hybrid Code Analyzer - static + dynamic pipeline output](/images/ai-systems/hybrid_code_analyser.png)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Virtual Cell Scaling: When You Don't Have the Cell You Need"
 description: "Scaling electrochemical models across capacity, form factor, and chemistry - without starting from scratch every time."
 date: 2024-01-15
@@ -37,7 +37,7 @@ What doesn't scale linearly:
 
 Miss these and your scaled model is wrong in ways that aren't obvious from nominal discharge curves but matter enormously for safety boundaries and lifetime prediction.
 
-![Cell-to-pack scaling - parameter transformation](/images/cell_to_pack-scaling.png)
+![Cell-to-pack scaling - parameter transformation](/images/battery/cell_to_pack-scaling.png)
 
 ---
 

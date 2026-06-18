@@ -1,4 +1,4 @@
----
+﻿---
 title: "Codebase Indexer: A Navigation Layer for AI-Assisted Code Reasoning"
 date: 2026-05-09
 description: "A structural repository understanding system - dependency graphs, importance scoring, and semantic retrieval designed for local LLM reasoning."
@@ -11,7 +11,9 @@ AI coding systems frequently lack persistent structural understanding of reposit
 
 This project built a system that gives a local LLM a structural map of any Python repository - before it touches a single line of code.
 
-![Codebase Indexer - architecture overview and output](/images/codebase_indexer.png)
+![Codebase Indexer - architecture overview and output](/images/ai-systems/codebase_indexer.png)
+
+![Codebase Indexer - two-phase architecture: offline indexing and online querying](/images/ai-systems/codebase_indexer_architecture.svg)
 
 ---
 

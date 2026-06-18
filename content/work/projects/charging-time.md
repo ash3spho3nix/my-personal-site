@@ -1,4 +1,4 @@
----
+﻿---
 title: "Charging Time: Why 80% Is Not Half the Problem"
 description: "The CC-CV charging profile and why the last 20% of a charge takes disproportionately long - and why that matters for thermal management."
 date: 2024-01-15
@@ -47,7 +47,7 @@ The charging time model integrates:
 
 The thermal coupling is important. A cell that starts warm charges faster in CC (lower resistance) but reaches thermal limits sooner, triggering current derating that extends the tail. A cold cell has high resistance, takes longer to reach the CC-to-CV transition, but may never hit thermal limits. The total charge time is non-monotonic with temperature - there's an optimal starting temperature that minimizes total charge time.
 
-![Charging systems](/images/electric-car-battery-charging.jpg)
+![Charging systems](/images/vehicle/electric-car-battery-charging.jpg)
 
 ---
 

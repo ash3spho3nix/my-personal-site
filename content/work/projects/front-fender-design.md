@@ -1,4 +1,4 @@
----
+﻿---
 title: "Front Fender Drag Optimization: Why Running CFD in a Loop Is a Bad Idea"
 description: "Surrogate-based aerodynamic optimization using ANN and firefly algorithm - decoupling the simulation from the search."
 date: 2024-01-15
@@ -26,7 +26,7 @@ This changes the problem structure completely:
 
 The surrogate here was an Artificial Neural Network trained on a design-of-experiments (DoE) set of CFD runs spanning the fender geometry parameter space. The ANN learned the mapping from geometry parameters → drag coefficient.
 
-![Surrogate Modeling](/images/surrogate_model.jpg)
+![Surrogate Modeling](/images/others/surrogate_model.jpg)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Teaching a Neural Network the Laws of Battery Decay"
 description: "Why a Physics-Informed Neural Network is a better approach to battery degradation modelling than either pure physics or pure data-driven - and the landscape of PINN approaches for Li-ion aging."
 date: 2022-06-01
@@ -17,7 +17,7 @@ This leads to an inevitable, exponential decay in capacity. A battery with a Cou
 
 But here is the real problem: predicting exactly how a given battery will degrade is extraordinarily difficult. The process depends on temperature, charge rates, depth of discharge, and a dozen other factors. And the internal chemical reactions follow nonlinear partial differential equations that are expensive to solve.
 
-![PINN battery degradation model overview](/images/batteries-pinn.png)
+![PINN battery degradation model overview](/images/battery/batteries-pinn.png)
 
 ## The Three Ways People Model Degradation
 
@@ -32,6 +32,8 @@ Before getting into the new approach, it helps to understand what already exists
 Each approach has strengths. Each also has crippling weaknesses.
 
 ## What Is a Physics-Informed Neural Network?
+
+![Diffusion equation - governing PDE for lithium ion transport in electrodes](/images/equation/diffusion-equation.svg)
 
 A Physics-Informed Neural Network, or PINN, does something that sounds almost too clever to work. It takes a standard neural network and adds the governing physics equations directly into the training process as a penalty term.
 

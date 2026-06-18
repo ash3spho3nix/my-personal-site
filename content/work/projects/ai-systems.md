@@ -1,4 +1,4 @@
----
+﻿---
 title: "AI Systems: Building Tools That Understand Code, Not Just Generate It"
 description: "A different class of AI system - focused on reasoning about structure and behavior, not producing tokens."
 date: 2024-01-15
@@ -18,7 +18,7 @@ The projects here are attempts to build the infrastructure for that kind of AI-a
 
 ## The AI Toolchain: How It Fits Together
 
-![Local AI system - project overview and tool interaction](/images/local_ai_system_projects.png)
+![Local AI system - project overview and tool interaction](/images/ai-systems/local_ai_system_projects.png)
 
 The tools aren't independent - they're designed to compose. The Indexer provides structural context. The Analyzer adds runtime behavior. Together they feed a local LLM with information it couldn't extract from a raw codebase dump. The RAG layer adds document-level retrieval across notes, papers, and technical references.
 
@@ -52,11 +52,13 @@ The tools aren't independent - they're designed to compose. The Indexer provides
 
 The seed of the local retrieval stack - document ingestion, chunking, embedding, and local LLM inference over engineering notes, papers, and technical references.
 
-![RAG pipeline - Ollama local LLM with document retrieval](/images/rag-ollama-diagram.png)
+![RAG pipeline - Ollama local LLM with document retrieval](/images/ai-systems/rag-ollama-diagram.png)
 
 **What it does:** Retrieves relevant context from a personal knowledge base - papers, project notes, simulation references - and injects it into a local LLM query. No cloud, no external embeddings, no data leakage.
 
-![Marginalia - personal knowledge annotation and retrieval system](/images/marginalia.png)
+![Marginalia - personal knowledge annotation and retrieval system](/images/ai-systems/marginalia.png)
+
+![Marginalia - search and retrieval architecture](/images/ai-systems/marginalia_search_architecture.svg)
 
 Marginalia extends this into structured annotation: highlights, notes, and concept links across technical documents - turning passive reading into a searchable, queryable personal knowledge layer.
 
@@ -66,7 +68,9 @@ Marginalia extends this into structured annotation: highlights, notes, and conce
 
 ## Battery Expert AI
 
-![Battery Expert AI - domain-specific assistant for electrochemistry and simulation](/images/battery_expert_ai.png)
+![Battery Expert AI - domain-specific assistant for electrochemistry and simulation](/images/ai-systems/battery_expert_ai.png)
+
+![AI character and emotional timescales model](/images/ai-systems/ai_character_emotional_timescales.svg)
 
 A domain-specific AI assistant trained on battery electrochemistry, simulation methodology, and OEM requirements - running locally. The goal: a technical interlocutor that understands Butler-Volmer, DFN models, and aging mechanisms without needing to be taught the basics in every prompt.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Simulation and Modelling — Fifteen Years of Getting It Wrong and Sometimes Right"
 description: "A personal walk through the evolution of my thinking on automotive, battery, thermal, and ageing modelling — the problems that broke my early approaches and the approaches that still surprise me."
 draft: false
@@ -10,7 +10,7 @@ Then reality started showing its teeth. A minor change in mounting stiffness wou
 
 By the time I reached Mercedes-Benz R&D India in 2015 the problems had scaled up. Full-vehicle simulation frameworks demanded coupling between structural dynamics, thermal systems, and early controls logic. I spent weeks stitching together tools for one vehicle programme only to watch the whole chain fall apart when the next variant arrived with different cooling architecture. The frustration was familiar: the physics was there, but making it useful across teams felt like fighting entropy with duct tape.
 
-![Full vehicle thermal simulation mesh](/images/full-vehicle-thermal-simulation.jpg)
+![Full vehicle thermal simulation mesh](/images/vehicle/vehicle_TMS.jpg)
 
 That experience pushed me deeper into battery work. At Caterpillar and later Volvo Trucks I started wrestling with true multi-physics problems. Automotive modelling had prepared me for large systems, but battery packs operate at a different level of tightness. Heat generation changes local electrochemistry, which changes resistance, which changes heat again — a feedback loop that laughs at loosely coupled solvers.
 
@@ -20,13 +20,13 @@ That led me into ageing modelling properly. Early attempts used simple empirical
 
 At Volvo Trucks in 2022 we built a PINN-based degradation model on top of the existing framework. The results were startling — ~90% accuracy on capacity fade for NMC cells under mixed drive-cycle and charging conditions, running in seconds instead of hours. For the first time I could run hundreds of pack-level ageing scenarios as part of a vehicle trade-off study instead of waiting for HPC slots. It felt like a genuine leap.
 
-![Battery aging degradation curves](/images/battery-aging-degradation-curves.jpg)
+![Battery aging degradation curves](/images/battery/Causes-and-consequences-of-battery-degradation.png)
 
 But of course the new technique brought its own headaches. The PINN was brilliant at interpolation and fast evaluation, yet it still struggled with strong extrapolation — new cell chemistries or abuse conditions required careful retraining and validation. Interpretability remained partial. Engineers reviewing the results wanted to understand *why* the model predicted a particular lithium plating onset, not just that it did. Pure data-driven methods hit the same wall even harder.
 
 This pushed me toward hybrid physics-based modelling. I started combining pseudo-3D electro-thermal models with reduced-order ageing mechanisms. At A123 Systems the work on pseudo-3D pack models for Porsche motorsport applications and multiple RFQs showed the value. We could capture current distribution, tab heating, and cell-to-cell variation without going to full 3D CFD for every study. The models became tools for current limits generation and virtual cell scaling — practical, traceable outputs that design teams could actually use.
 
-![Battery pack electro-thermal simulation](/images/battery-pack-electro-thermal.jpg)
+![Battery pack electro-thermal simulation](/images/battery/battery-coupled-system.jpg)
 
 Thermal modelling has been a constant companion through all this. Automotive thermal systems are large and somewhat forgiving — cabin comfort, under-hood temperatures, radiator sizing. Battery thermal management is the opposite: tight margins, strong two-way coupling, and safety implications that keep you honest. I have spent more nights than I care to count debugging why a seemingly minor change in cooling channel geometry produced runaway temperature predictions in one scenario but not another.
 

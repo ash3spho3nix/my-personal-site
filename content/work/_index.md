@@ -1,4 +1,4 @@
----
+﻿---
 title: "Work"
 description: "Building simulation/modeling infrastructure - battery electrochemistry, EV systems, AI tooling, and on-premise LLM deployment."
 draft: false
@@ -64,27 +64,27 @@ enabling parameter sweeps, optimisation loops, and AI integration.
 
 The core domain - electrochemical modelling, thermal simulation, ageing, and system-level battery behaviour. Work spans cell characterisation through pack-level simulation across five companies.
 
-- [Battery Modeling: When Your Elegant Equation Meets Reality](/work/projects/battery-modeling/) \
+- [Battery Modelling](/work/projects/battery-modeling/) \
   *Cross-company · 2015–present · analysis* \
   ECM vs DFN vs data-driven - what each gets wrong, and why hybrids are the real answer.
 
 - [Thermal Management System Modeling](/work/projects/thermal-management/) \
-  *Mercedes-Benz R&D · 2015�?021 · tool* \
+  *Mercedes-Benz R&D · 2015�?021 · tool* \
   Building the full EV TMS from scratch - battery, inverter, DC-DC, coolant loop, HVAC - integrated into the in-house vehicle simulation framework.
 
 - [DC Box Thermal Modelling](/work/projects/dc-box-thermal/) \
   *Mercedes-Benz R&D · 2016 · analysis* \
   The component nobody thinks about until it fails. 96% experimental accuracy; design margin identified before hardware.
 
-- [Charging Time: Why 80% Is Not Half the Problem](/work/projects/charging-time/) \
-  *Mercedes-Benz R&D · 2017�?018 · analysis* \
+- [Charging Time Modelling](/work/projects/charging-time/) \
+  *Mercedes-Benz R&D · 2017�?018 · analysis* \
   CC-CV physics, C-rate tradeoffs, and why fast charging is a thermal problem as much as an electrochemical one.
 
 - [Battery Simulation Framework](/work/projects/battery-simulation/) \
   *Volvo Trucks R&D · 2022 · tool* \
   Standalone simulation environment with BMS-as-first-class-citizen, plus a PINN degradation model built for mobile inference.
 
-- [Teaching a Neural Network the Laws of Battery Decay](/work/projects/pinn-battery/) \
+- [PINN Battery Degradation](/work/projects/pinn-battery/) \
   *Volvo Trucks R&D · 2022 · method* \
   Physics-Informed Neural Network for battery degradation - physics-constrained training that prevents physically impossible predictions. Built for real-time aging inference on mobile hardware.
 
@@ -99,17 +99,17 @@ The core domain - electrochemical modelling, thermal simulation, ageing, and sys
 {{% /expand %}}
 
 ---
-{{% expand title="🛠�?Engineering Tools Built" %}}
+{{% expand title="🛠�?Engineering Tools Built" %}}
 
 Tools that exist, are used, and reduce the cost of doing the next project. Mix of OEM-commissioned and self-initiated.
 
 - [Battery Thermal Model Configurator](/work/projects/battery-thermal-configurator/) \
-  *Mercedes-Benz R&D · 2019�?020 · tool* \
+  *Mercedes-Benz R&D · 2019�?020 · tool* \
   **60% reduction in thermal model development time.** Generates parameterised CFD-thermal ROM for HV battery systems.
 
 - Model Validation Framework \
-  *Mercedes-Benz R&D · 2018�?020 · tool* \
-  Automated pipeline: fetch test data + battery model �?run simulations �?validate �?upload report.
+  *Mercedes-Benz R&D · 2018�?020 · tool* \
+  Automated pipeline: fetch test data + battery model �?run simulations �?validate �?upload report.
 
 - [Current Limits Generator](/work/projects/current-limits-generator/) \
   *A123 Systems · 2025 · tool* \
@@ -130,11 +130,11 @@ Tools that exist, are used, and reduce the cost of doing the next project. Mix o
 
 Self-initiated - built outside the day job to solve problems the existing toolchain couldn't. **Runs on local LLMs (LM Studio) for GDPR-compliant on-premise deployment** - relevant for the German automotive context where sending engineering data to external APIs is not an option.
 
-- [Battery Expert AI: A Domain-Specific Assistant That Knows Its Physics](/work/projects/battery-ai-systems/) \
+- [Battery Expert AI](/work/projects/battery-ai-systems/) \
   *Self-initiated · 2025–present · tool* \
   Local, on-premise AI assistant for battery engineering - LoRA fine-tuned on domain knowledge, RAG over electrochemistry papers and test data, with mathematical equation reasoning for PDEs and electrochemical models.
 
-- [AI Systems: Building Tools That Understand Code, Not Just Generate It](/work/projects/ai-systems/) \
+- [AI Systems Overview](/work/projects/ai-systems/) \
   *Self-initiated · 2025–present · overview* \
   The design philosophy connecting these tools: structure before generation, understanding before output.
 
@@ -169,27 +169,27 @@ Self-initiated - built outside the day job to solve problems the existing toolch
 
 The foundation - structural analysis, contact mechanics, vibration, and fluid dynamics from the first decade of the career. The physics intuition from this work keeps appearing in battery and AI contexts.
 
-- [Tire Modelling: What a Spinning Ring Taught Me About Everything](/work/projects/tire-modelling/) \
-  *IIT Kanpur M.Tech · 2010�?011 · analysis* \
+- [Tire Modelling](/work/projects/tire-modelling/) \
+  *IIT Kanpur M.Tech · 2010�?011 · analysis* \
   Standing waves, critical velocity, contact mechanics. The thesis that established the pattern: rotate a structure and everything changes.
 
-- [Piston Rings: Friction, Sealing, and the Physics of Things That Touch](/work/projects/piston-rings/) \
-  *TVS Motor Company · 2012�?013 · analysis* \
+- [Piston Rings](/work/projects/piston-rings/) \
+  *TVS Motor Company · 2012�?013 · analysis* \
   Three simultaneous contact regimes, elastohydrodynamic lubrication, ring flutter. Where the interesting failure always lives at the boundary.
  
 - [Magnesium Alloy Wheel Design](/work/projects/magnesium-wheel/) \
-  *TVS Motor Company · 2011�?012 · method + analysis*  \
+  *TVS Motor Company · 2011�?012 · method + analysis*  \
   Topology optimisation, fatigue under realistic load spectra, thermal analysis. Material substitution is a system problem, not a materials problem.
 
 - [Engine Mounts: Designing Something to Fail Softly](/work/projects/engine-mounts/) \
-  *Hero MotoCorp · 2013�?015 · method* \
-  NVH optimisation through stiffness design. Hybrid GA + Nelder-Mead, 15�?0% cabin vibration reduction, verified on dynamometer.
+  *Hero MotoCorp · 2013�?015 · method* \
+  NVH optimisation through stiffness design. Hybrid GA + Nelder-Mead, 15�?0% cabin vibration reduction, verified on dynamometer.
 
 - [Radar Modeling for Autonomous Driving](/work/projects/radar-autonomous-driving/) \
-  *Mercedes-Benz R&D · 2016�?017 · analysis* \
+  *Mercedes-Benz R&D · 2016�?017 · analysis* \
   What sensors actually see - beam patterns, clutter, Kalman filter state estimation, and why edge cases aren't edge cases.
 
-- [CFD Fire Modelling: The Inverse Problem Nobody Wants to Solve](/work/projects/cfd-fire-optimization/) \
+- [CFD Fire Modelling](/work/projects/cfd-fire-optimization/) \
   *Victoria University, Melbourne · 2009 · method* \
   Material property estimation by running the physics model backwards. GA + Nelder-Mead, cross-validated, published.
 {{% /expand %}}
@@ -198,8 +198,8 @@ The foundation - structural analysis, contact mechanics, vibration, and fluid dy
 ---
 
 
-📄 **[Career �?timeline, education, patents →](/career/)**
+📄 **[Career �?timeline, education, patents →](/career/)**
 
-🔬 **[Beyond the work �?Research Interests →](/thinking/research/)** · Dynamics, contact mechanics, PINNs, evolutionary algorithms, and the patterns that keep appearing across domains that look unrelated on the surface.
+🔬 **[Beyond the work �?Research Interests →](/thinking/research/)** · Dynamics, contact mechanics, PINNs, evolutionary algorithms, and the patterns that keep appearing across domains that look unrelated on the surface.
 
 ---

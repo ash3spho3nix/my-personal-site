@@ -1,10 +1,10 @@
----
+﻿---
 title: "Exploring Local LLMs"
 description: "How running local AI on a 4 GB GPU taught me more about LLMs than any course, tutorial, or benchmark ever could."
 draft: false
 ---
 
-![](/images/local-llm-workflow.png)
+![](/images/ai-systems/local_ai_system_projects.png)
 
 Around mid-2024, I was already using ChatGPT, Claude and various coding assistants almost daily. They were useful, sometimes surprisingly useful, but I was never completely comfortable with them. Everything felt like a black box. You type a question into a chat window, something magical happens behind the scenes, and an answer appears. Sometimes brilliant, sometimes completely wrong, but nobody really explains what happened in between.
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Current Limits Generator: Defining the Safe Operating Envelope"
 description: "A self-initiated Python tool at A123 Systems that generates physics-based current limit envelopes - covering lithium plating, side reactions, thermal limits, and thermal runaway onset across the full operating space."
 date: 2023-06-01
@@ -29,6 +29,10 @@ No off-the-shelf tool did this in a way that integrated all four. The limits wer
 
 ---
 
+![Current limits constraint stack - physics layers from lithium plating to thermal runaway](/images/battery/current_limits_constraint_stack.svg)
+
+![Battery current limits - operational envelope](/images/battery/battery-current-limits.png)
+
 ## The Physics Behind the Limits
 
 ### Lithium Plating Onset
@@ -51,6 +55,8 @@ Plating limit = f(anode diffusivity, exchange current density,
 
 All of these are temperature and SoC dependent.
 ```
+
+![Butler-Volmer equation - electrochemical kinetics for plating onset](/images/equation/butler-volmer-equation.svg)
 
 ### Side Reactions
 

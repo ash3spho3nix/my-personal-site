@@ -1,4 +1,4 @@
----
+﻿---
 title: "Engine Mounts: The Art of Designing Something to Fail Softly"
 description: "NVH optimization through mount stiffness design - why vibration isolation is fundamentally a tradeoff problem."
 date: 2024-01-15
@@ -10,7 +10,7 @@ Engine mounts have one job: let the engine move enough to not destroy itself or 
 
 Get it wrong in one direction, and your engine torque reaction cracks the frame. Get it wrong in the other, and the idle vibration transmits straight to the steering wheel and seat. The design space is narrow, the loading is multi-directional, and the rubber changes its behavior depending on temperature, amplitude, and frequency. It's not a bolt-sizing problem. It's a dynamics problem.
 
-![Engine with mount locations - vibration isolation challenge](/images/car_engine_wth_mounts.jpg)
+![Engine with mount locations - vibration isolation challenge](/images/others/car_engine_wth_mounts.jpg)
 
 ---
 
@@ -46,7 +46,7 @@ The optimizer used was a hybrid GA + Nelder-Mead. The genetic algorithm explores
 
 The transmissibility curve is where mount performance lives. Below the resonant frequency, transmissibility is ~1 (force passes through). At resonance, it amplifies. Above resonance, the mount attenuates - and the rate of attenuation depends on damping.
 
-![Damping transmissibility curves - mount isolation performance across frequency](/images/damping_transmissibility.jpg)
+![Damping transmissibility curves - mount isolation performance across frequency](/images/others/damping_transmissibility.jpg)
 
 The tradeoff: high damping suppresses the resonance peak but reduces isolation at higher frequencies. Low damping gives excellent high-frequency isolation but leaves a dangerous amplification zone at resonance. Mount design is choosing where to sit on that curve for the specific RPM range and road input spectrum of the application.
 

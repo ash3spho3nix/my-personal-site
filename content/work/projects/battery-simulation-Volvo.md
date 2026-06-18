@@ -1,4 +1,4 @@
----
+﻿---
 title: "Battery Simulation Framework: Building the Infrastructure, Not Just the Model"
 description: "A standalone simulation framework for battery and BMS development - and a PINN-based degradation model built to run on a mobile app."
 date: 2024-01-15
@@ -16,7 +16,7 @@ At Volvo Trucks, the problem was clear: the battery and BMS teams needed a simul
 
 The framework was designed around one principle: **the battery and BMS should be first-class citizens**, not subsystems of a larger model.
 
-![BMS](/images/BMS_functionalities.jpg)
+![BMS](/images/battery/BMS_functionalities.jpg)
 
 **Architecture:**
 
