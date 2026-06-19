@@ -1,4 +1,4 @@
----
+﻿---
 title: "Career"
 description: "15 years across automotive R&D — ICE through full battery-electric systems. Timeline, education, patents."
 build:
@@ -79,3 +79,30 @@ Thesis: *Critical Velocity and Standing Waves in High-Speed Tires*
 - *Patent:* Cooling system for fuel cell vehicle/EV — Inventor's Award, Mercedes-Benz · 2016
 - *Patent:* Efficient power recapturing from vehicle suspension — Mercedes-Benz · 2017
 - *Publication:* [Estimating wood material properties for CFD fire modelling](http://vuir.vu.edu.au/id/eprint/10198) — Victoria University, 2010
+
+
+---
+
+## Academic & Research Projects
+
+Work that doesn't fit the professional timeline but shaped how I think.
+
+**M.Tech Thesis — Standing Waves in Tires** | IIT Kanpur, 2011
+Contact mechanics and wave propagation in high-speed pressurised rotating tires. Full analytical treatment of the critical velocity problem. → [Project page](/work/projects/tire-modelling/)
+
+**Final Year Project — Micromanipulation with Polymers** | IIT Kanpur, 2010
+Micro gripper design with automated controls.
+
+**Other research-driven work:**
+- Genetic Algorithm for parameter estimation — inverse problem: recover material parameters from simulation output
+- Satellite fuel slosh modelling — fluid dynamics in zero-gravity environments  
+- Nutational damping in triaxial rotors — rigid body dynamics, energy dissipation
+- Rattleback motion simulation — non-intuitive chirality in rigid body rotation
+
+---
+
+## Additional Publications
+
+- Neural network based chiller modelling
+- A methodology to optimise the design of front fender for drag using ANN and Firefly algorithm — Hero MotoCorp
+- Analytical study of rotating rings: standing waves in rotating tires — IIT Kanpur

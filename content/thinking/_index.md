@@ -1,13 +1,11 @@
 ---
 title: "Thinking"
-description: "I approach problems from first principles modeling to AI reasoning. Research interests, open ideas, and mental models."
+description: "Research interests, operating principles, open questions, and lessons from 15 years of simulation and battery engineering."
 draft: false
 layout: single
 ---
 
-This section captures how I think about problems - and what I think about.
-
-The three parts connect: start with the research areas that genuinely interest me, see how those shape the operating principles, and then follow the open questions that haven't resolved yet.
+This section captures how I think about problems — and what I think about.
 
 ---
 
@@ -19,7 +17,7 @@ Covers: dynamics and instability, contact mechanics, Hamiltonian formulations, e
 
 ---
 
-## 🧠 [How I approach a problem →](/thinking/how-i-think/)
+## 🧠 [How I Approach a Problem →](/thinking/how-i-think/)
 
 The mental models and instincts I keep returning to — physics-first decomposition, failure-mode analysis, timescale separation, and why AI is most useful when grounded in structure. Includes the seven engineering principles that have shaped real decisions across 15 years.
 
@@ -29,28 +27,10 @@ The mental models and instincts I keep returning to — physics-first decomposit
 
 Ongoing directions that haven't resolved into finished projects yet — half-formed hypotheses, active explorations, and the questions that keep coming back.
 
-*The unresolved end of the thread.*
-
 ---
 
-## 📝 Essays & Field Notes
+## 📓 [Lessons Learnt →](/thinking/lessons/)
 
-Longer pieces on things I've built, broken, and eventually understood.
+Essays and field notes from 15 years of simulation, battery modelling, and AI tooling — what broke, what held, and why.
 
-- [Simulation and Modelling — Fifteen Years](/thinking/simulation-modeling/)
-  *A personal walk through the evolution of my thinking on automotive, battery, thermal, and ageing modelling — the problems that broke my early approaches.*
-
-- [The Battery Model That Kept Getting Bigger](/thinking/lessons-battery-modeling-scale/)
-  *From RC circuits to multi-physics: how a battery model grows from an equivalent circuit into a multi-scale, multi-timescale problem — and why the answer ends up hybrid.*
-
-- [Debugging a Black Box vs Debugging Physics](/thinking/physics-model-still-matters/)
-  *The real argument for physics-based models isn't accuracy — it's that they carry the signature of the physics inside them, which makes them debuggable.*
-
-- [Tools, Projects, Frameworks — and the Difference](/thinking/simulation-infra-projects/)
-  *Why building a simulation framework is a fundamentally different job than building a tool or finishing a project.*
-
-- [What AI Can't Inherit](/thinking/knowledge-tax/)
-  *On the difference between knowledge and experience, and why a knowledge-graph RAG system can — and can't — close that gap.*
-
-- [Exploring Local LLMs](/thinking/local-llm/)
-  *How running local AI on a 4 GB GPU taught me more about LLMs than any course, tutorial, or benchmark ever could.*
+Six pieces covering: the evolution of battery modelling, why physics-based models are debuggable in ways black-box models aren't, the difference between a tool and a framework, what AI can and can't inherit from an experienced engineer, and what running local LLMs on constrained hardware actually teaches you.

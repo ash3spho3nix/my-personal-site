@@ -1,4 +1,4 @@
----
+﻿---
 title: "Experience"
 description: "Full technical experience — roles, responsibilities, and projects with links."
 draft: false
@@ -51,6 +51,7 @@ Final validation authority for all EMEA simulation deliverables — thermal, age
 - [Virtual Cell Scaling](/work/projects/battery-scaling/) — scales validated electrochemical models across capacity, form factor, and chemistry variants; used when the target cell doesn't yet exist as hardware
 - Pseudo-3D Electro-Thermal Pack Model — rapid concept evaluation tool: coupled RC + lumped thermal with cooling plate; ~70% reduction in concept assessment cycle time
 - Pack Cost Estimator — commercial tool for RFQ phase; takes cell selection inputs and outputs pack-level cost breakdown
+- All tools run on local LLM infrastructure (LM Studio / Ollama) for GDPR-compliant on-premise deployment — no engineering data sent to external APIs. → [How this infrastructure was built](/thinking/local-llm/)
 
 ---
 
