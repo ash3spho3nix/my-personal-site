@@ -17,6 +17,8 @@ Back in 2013, when none of this was the talk of the town, neural networks were q
 
 But the idea was beautiful.
 
+![Neural network illustration](/images/NN/neural_network.jpeg)
+
 ## What Is a Neural Network, Really?
 
 A neural network is simple at its core. A bunch of numbers connected together in layers.
@@ -45,6 +47,8 @@ Here is what happens:
 5. Repeat. Thousands of times. Millions of times.
 
 That third step is called [backpropagation](https://en.wikipedia.org/wiki/Backpropagation). It is the engine that makes neural networks work. Without it, the network would just be a random function. With it, the network gradually improves.
+
+![Neural network training animation](/images/NN/neural_network_animation.gif)
 
 ![Animation showing weights being adjusted during backpropagation](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Backpropagation_animated.gif/640px-Backpropagation_animated.gif)
 *Image credit: Wikimedia Commons*

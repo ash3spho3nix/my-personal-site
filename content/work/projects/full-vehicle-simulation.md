@@ -37,6 +37,8 @@ Each level was parameterised independently, so you could swap a component model 
 
 **BMS and Battery Integration** — modelled the battery pack interaction with the vehicle: SoC tracking, current limits, thermal state feedback to the vehicle energy management. The BMS logic layer was designed to be swappable — either a behavioural model or, in the SiL branch, actual compiled BMS software code.
 
+![Battery modeling within the full-vehicle simulation context](/images/battery/battery_modeling2.jpg)
+
 **Thermal Management System** — the most coupled subsystem. Connects vehicle-level cooling (coolant circuits, heat exchangers, radiator, HVAC) to battery thermal state. The challenge was that the battery thermal dynamics and the HVAC dynamics operate on different timescales — getting that coupling numerically stable without excessive stiffness required care. *Filed a patent on the cooling system architecture.*
 
 **DC-DC Converter Thermal Model** — a targeted fix for a real field problem. Overheating was being observed in deployed vehicles. Built a high-fidelity thermal model of the DC-DC converter, validated against test data at 96% accuracy, identified the design margin issue before hardware changes were made.

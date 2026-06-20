@@ -60,6 +60,8 @@ The HTC is the key number. It tells you how effectively heat moves from cell sur
 
 CFD analysis is expensive. Running it for every design iteration isn't feasible. But running it once - for a baseline design - and then coupling those results intelligently into a fast ROM is exactly the right approach. That coupling is what the Configurator handles.
 
+![Battery thermal simulation - coupled CFD-ROM result](/images/battery/battery-simulation-thermal.webp)
+
 ---
 
 ## What It Actually Does

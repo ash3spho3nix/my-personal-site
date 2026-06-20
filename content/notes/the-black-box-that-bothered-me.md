@@ -34,6 +34,8 @@ That is it. That is the engine.
 
 I built small ones. Toy problems. Recognizing handwritten digits. Approximating simple functions. Nothing impressive by today's standards. But I understood those networks. I could look at the weights and tell you what each neuron was doing.
 
+![Neural network animation](/images/NN/neural_network_animation2.gif)
+
 Fast forward a decade. Those same simple networks, stacked hundreds of layers deep and trained on the entire internet, became the foundation of [Large Language Models](https://en.wikipedia.org/wiki/Large_language_model). Same math. Same principles. Just a different scale that feels like magic but is not.
 
 ---

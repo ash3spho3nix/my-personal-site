@@ -32,6 +32,8 @@ Treat simulation failures not as isolated errors, but as:
 
 > propagating structural inconsistencies.
 
+![Classification of fault diagnostic methods](/images/others/Classification-of-fault-diagnostic-methods.png)
+
 ---
 
 ## Proposed Workflow

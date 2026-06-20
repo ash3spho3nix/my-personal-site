@@ -24,9 +24,13 @@ This isn't a single project - it's the accumulated understanding from building, 
 
 ![Battery Modeling Techniques](/images/battery/battery_modeling_techniques.png)
 
+![Battery modelling taxonomy - electric model, thermal model, and coupled electro-thermal model](/images/battery/Capture1.PNG)
+
 ### Equivalent Circuit Model (ECM)
 
 An RC circuit that impersonates a battery. A voltage source, a series resistance, and one or more RC pairs representing diffusion dynamics. Fast, tunable, works in real-time on a BMS microcontroller.
+
+![EEM-ECM coupled modeling method](/images/battery/battery-eem-ecm-coupled-method.webp)
 
 ![Battery EIS - impedance spectroscopy characterisation](/images/battery/battery_EIS.png)
 
@@ -67,6 +71,8 @@ It's honest in a way the ECM isn't: it doesn't claim to know the physics. The pr
 
 **Data-driven earns its place in:** Short-horizon prediction under controlled and well-characterised operating conditions, health estimation when abundant historical data exists, anywhere the physics is genuinely unknown or too complex to parametrise.
 
+![Different data-driven modeling approaches for batteries](/images/vehicle/different-data-driven-model.jpg)
+
 ---
 
 ## The Tradeoff That Structures Everything
@@ -93,6 +99,8 @@ That's the direction that actually scales across applications and operating cond
 
 **Cold temperatures.** Lithium diffusion in graphite has Arrhenius temperature dependence - halve the temperature (in Kelvin) and diffusivity drops by orders of magnitude. An ECM calibrated at 25°C will underestimate voltage sag at -10°C and overestimate available power. A DFN model will capture this correctly if the diffusivity parameters are identified from low-temperature data.
 
+![Battery low-temperature aging behaviour](/images/battery/battery-low-temperature-aging.webp)
+
 **End of life.** As the cell ages, internal resistance increases, active material decreases, and the OCV curve shifts. An ECM recalibrated from fresh-cell data will predict the wrong SoC for an aged cell. This is why SoH-adaptive parameterisation is not optional for a BMS that needs to work across the vehicle's life.
 
 **Fast charge.** The interesting physics during fast charging is at the anode - diffusion limitation causes anode potential to drop toward 0V vs Li/Li⁺, and if the charging current is too high, lithium plates rather than intercalates. An ECM cannot detect this. A DFN model can, because it tracks anode potential explicitly.
@@ -109,6 +117,8 @@ That's the direction that actually scales across applications and operating cond
 
 - How to reliably detect lithium plating onset in real-time from terminal measurements alone - without computational budget that rules it out for BMS deployment
 - How aging mechanisms interact and couple: SEI growth slows diffusion, which shifts the plating boundary, which changes the operating limits, which affects SEI growth rate. The nonlinear coupling across timescales (seconds to years) is genuinely hard
+
+![Weighted dependency of battery degradation on different aging mechanisms](/images/battery/battery-component-weighted-dependency-on-mechanisms.png)
 - Whether physics-informed neural networks can bridge the gap between interpretability and computational cost - or whether they just add complexity without adding understanding
 
 ---

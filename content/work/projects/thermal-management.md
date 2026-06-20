@@ -31,6 +31,8 @@ Battery thermal behaviour affects range, performance, and aging. Power electroni
 
 The battery is the most thermally sensitive component in the system. The model covers:
 
+![Battery thermal model](/images/battery/battery-thermal-model.png)
+
 - **Heat generation** - Joule heating (I²R) from current through internal resistance, plus electrochemical entropic heating. Both depend on SoC, temperature, and C-rate
 - **Thermal mass distribution** - cells, module walls, pack housing, each with appropriate heat capacity
 - **Cooling path** - from cell surface through thermal interface material to cooling plate, then into the coolant loop

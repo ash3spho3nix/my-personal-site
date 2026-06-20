@@ -32,19 +32,11 @@ Early in my battery career I was fascinated by cell physics.
 The famous DFN model. The equations themselves are beautiful.
 
 Lithium concentration inside active particles follows:
-```tex
-$$
-\frac{\partial c_s}{\partial t}
-===============================
 
-\frac{D_s}{r^2}
-\frac{\partial}{\partial r}
-\left(
-r^2
-\frac{\partial c_s}{\partial r}
-\right)
 $$
-```
+\frac{\partial c_s}{\partial t} = \frac{D_s}{r^2} \frac{\partial}{\partial r}
+\left( r^2 \frac{\partial c_s}{\partial r} \right)
+$$
 
 Electrolyte transport introduces another set of coupled PDEs. Potential distributions add another layer.
 

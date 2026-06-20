@@ -49,6 +49,8 @@ graph TD
 
 The combination means the model reasons correctly about battery physics (fine-tuning) while drawing on specific, up-to-date, project-relevant information (RAG). Neither alone is sufficient.
 
+![BattINFO ontology - relationships between Butler-Volmer kinetics, electrode potential, and electrochemical constants](/images/battery/aenm202102702-fig-0008-m.jpg)
+
 ### Mathematical Equation Handling
 
 Battery engineering runs on differential equations. Any system that cannot handle them is decorative, not useful.
@@ -62,6 +64,8 @@ This is not cosmetic. When an engineer uploads a paper with an electrochemical m
 Battery engineering is cross-domain by nature. A thermal runaway analysis involves electrochemistry, thermal dynamics, and materials science simultaneously. The knowledge base is structured accordingly, covering: battery technology and electrochemistry, finite element methods for coupled multi-physics simulation, EV powertrain integration, power systems, materials science for electrode and electrolyte characterisation, and thermal management systems.
 
 Domain-aware retrieval means queries about charging behaviour pull from the electrochemistry and EV integration domains, while queries about cooling strategies pull from thermal management and materials science. The system does not flatten everything into a single undifferentiated text corpus.
+
+![How electrochemical models descend to ECM/EEM simplifications - the model hierarchy the knowledge base has to reason across](/images/battery/how-electrochemical-descends-to-ecm-eem-methods.webp)
 
 ### Dataset Exploration for Battery Test Data
 

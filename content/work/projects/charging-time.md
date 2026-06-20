@@ -49,6 +49,8 @@ The thermal coupling is important. A cell that starts warm charges faster in CC 
 
 ![Charging systems](/images/vehicle/electric-car-battery-charging.jpg)
 
+![Battery pack](/images/battery/battery_pack.png)
+
 ---
 
 ## Patterns I Keep Seeing

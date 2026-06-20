@@ -78,6 +78,8 @@ This is where the domain expertise meets the local AI infrastructure. The same t
 
 ---
 
+![Hybrid AI systems - combining structural analysis with local LLM reasoning](/images/ai-systems/hybrid-ai-systems.svg)
+
 ## The Pattern Across These Projects
 
 All of these systems share a design philosophy: **structure before generation**. Understanding before output. Whether it's a codebase, a battery operating envelope, or a project portfolio - the goal is to build representations that preserve the structural relationships, and then reason from those representations.

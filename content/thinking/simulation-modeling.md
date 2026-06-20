@@ -8,6 +8,8 @@ After I joined TVS Motor Company back in 2011, simulation felt straightforward. 
 
 Then reality started showing its teeth. A minor change in mounting stiffness would invalidate half my assumptions. Physical tests on the prototype would reveal behaviours the model had never seen. I began to realise I wasn't really modelling the system — I was modelling an idealised version of it, and the gap mattered more than I wanted to admit.
 
+![What if I told you reality is also just a simulation](/images/memes/what_if_i_told_you_that_reality_is_simulation.jpg)
+
 By the time I reached Mercedes-Benz R&D India in 2015 the problems had scaled up. Full-vehicle simulation frameworks demanded coupling between structural dynamics, thermal systems, and early controls logic. I spent weeks stitching together tools for one vehicle programme only to watch the whole chain fall apart when the next variant arrived with different cooling architecture. The frustration was familiar: the physics was there, but making it useful across teams felt like fighting entropy with duct tape.
 
 ![Full vehicle thermal simulation mesh](/images/vehicle/vehicle_TMS.jpg)
@@ -37,6 +39,8 @@ Along the way I have explored quite a few side paths. OpenFOAM-based battery sim
 What keeps pulling me forward is the realisation that simulation modelling is never finished. Every new chemistry — LFP versus NMC, solid-state experiments, silicon anodes — rewrites parts of the rulebook. The questions from vehicle teams keep evolving too: not just "will it work?" but "how do we optimise this pack for both performance and circular economy requirements?"
 
 I still catch myself falling into old traps — over-simplifying the coupling, trusting a model a little too far outside its validation envelope, or under-investing in the infrastructure that makes the models reusable. But the pattern is clearer now. The real leverage comes not from any single solver or algorithm, but from building systems where new physics can be plugged in, where results stay traceable, and where the accumulated knowledge compounds instead of evaporating between projects.
+
+![Decision-making with simulation - how models inform engineering choices](/images/others/Decision-making-with-simulation.png)
 
 Fifteen years in, simulation modelling still feels like a conversation with the physical world. Sometimes the world answers clearly. More often it forces me to ask better questions and build better tools to hear the answer.
 

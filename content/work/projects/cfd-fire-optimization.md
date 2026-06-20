@@ -12,6 +12,8 @@ The alternative is to go backwards. You have experimental fire test data. You ha
 
 This is an inverse problem, and inverse problems are reliably harder than forward problems.
 
+![CFD streamline visualization](/images/others/CFD-elephant.jpg)
+
 ---
 
 ## Why Inverse Problems Are Annoying

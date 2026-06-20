@@ -12,6 +12,8 @@ I think back to my time at TVS. There was a prototype mechanic there - much olde
 
 That's the part that leaves when an engineer leaves, gets promoted, or just gets too busy to answer questions. Not the documents - those stay in the PLM, in Confluence, in shared drives. What leaves is the mapping between a symptom and a cause, built over years of being the person who got called when something didn't make sense.
 
+![Your plan vs reality](/images/memes/your_plan_vs_reality.png)
+
 So where does that leave AI systems in engineering orgs? Not as a replacement - that idea doesn't survive contact with reality. But maybe as a partial mitigation. A knowledge-graph-based RAG system - one that doesn't just store documents but tries to capture the relationships between a chemistry change, a process parameter, a test failure, and the fix that resolved it - could give a new engineer a head start. Not the mechanic's ear. But maybe a pointer toward the right question to ask, or the right old report or test log to go dig into.
 
 That's the framing behind the [Battery Expert AI](/work/projects/battery-ai-systems/) work - it's deliberately not positioned as a replacement for engineering judgment. It's a retrieval layer that surfaces relevant prior work faster, so the engineer can get to the judgment part sooner. The [Codebase Indexer](/work/projects/codebase-indexer/) is the same idea applied to code: it doesn't understand *why* a module was built the way it was, but it can at least show you where to start looking.

@@ -51,6 +51,8 @@ The rotating ring model requires coupling in-plane and out-of-plane modes throug
 
 The governing equations are derived from Lagrangian mechanics applied to a rotating elastic ring with foundation stiffness. The rotating frame introduces fictitious forces (Coriolis, centrifugal) that couple modes which would be independent in a static structure.
 
+![Lagrange's equations - the governing formulation for the rotating ring model](/images/others/Lagrange_Equations.jpg)
+
 ---
 
 ## Why Rotating Systems Are a Different Beast

@@ -36,7 +36,7 @@ Lithium concentration inside active particles follows:
 
 $$
 \frac{\partial c_s}{\partial t}
-===============================
+=
 
 \frac{D_s}{r^2}
 \frac{\partial}{\partial r}
@@ -163,6 +163,9 @@ A battery is not just an energy storage device. It is a safety-critical system, 
 **The framework must support traceability, Validation, Versioning, Data lineage, Correlation workflows, Reproducibility.**
 
 Suddenly software architecture becomes as important as electrochemistry.
+
+
+![Value chain of lithium-ion batteries for vehicles](/images/battery/Value-chain-of-lithium-ion-batteries-for-vehicles.png)
 
 ## Building A Tool Versus Building A Framework
 

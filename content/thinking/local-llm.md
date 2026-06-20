@@ -4,6 +4,8 @@ description: "How running local AI on a 4 GB GPU taught me more about LLMs than 
 draft: false
 ---
 
+![](/images/ai-systems/local-llm-hero.svg)
+
 ![](/images/ai-systems/local_ai_system_projects.png)
 
 Around mid-2024, I was already using ChatGPT, Claude and various coding assistants almost daily. They were useful, sometimes surprisingly useful, but I was never completely comfortable with them. Everything felt like a black box. You type a question into a chat window, something magical happens behind the scenes, and an answer appears. Sometimes brilliant, sometimes completely wrong, but nobody really explains what happened in between.
@@ -35,6 +37,8 @@ Not because the answer was impressive. ChatGPT could have produced a better answ
 **My machine generated that response.**
 
 That small moment was enough to pull me down the rabbit hole.
+
+![](/images/memes/god-says-you-goback-you-have-models-to-build.jpeg)
 
 ## When Things Started Breaking
 

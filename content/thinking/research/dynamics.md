@@ -31,6 +31,8 @@ Linear stability analysis tells you whether small perturbations around an equili
 
 The linearization is valid near the equilibrium. It's not valid at the distances from equilibrium where failure modes live. This is why test-to-failure is still necessary even when you have detailed simulation models - the nonlinear behavior at the boundary often can't be captured by extrapolating from small-signal analysis.
 
+![Stable vs oscillatory solutions](/images/memes/Meme-stable-oscillatory-solutions.png)
+
 ---
 
 ## Energy Methods and Hamiltonian Formulation

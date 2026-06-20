@@ -39,6 +39,8 @@ Miss these and your scaled model is wrong in ways that aren't obvious from nomin
 
 ![Cell-to-pack scaling - parameter transformation](/images/battery/cell_to_pack-scaling.png)
 
+![Battery design vs performance tradeoffs across scaling decisions](/images/battery/battery-design-vs-performance.webp)
+
 ---
 
 ## What the Tool Does
@@ -48,6 +50,8 @@ The scaling tool takes a validated electrochemical model for a reference cell an
 **Capacity scaling:** Adjusts electrode active material loading and geometric area. Internal resistance is recalculated from the new current density distribution, not assumed proportional.
 
 **Form factor transformation:** Cylindrical → prismatic → pouch involves changes in thermal boundary conditions, current collector geometry, and the mechanical constraints on electrode stack expansion. The tool handles all three common formats - 18650/21700/4680 cylindrical, prismatic, and pouch - with format-specific scaling physics for each.
+
+![Cell-to-Pack (CTP) architecture - skipping the module layer entirely](/images/battery/CTP.png)
 
 **Thickness scaling:** Thicker electrodes are parameterised by adjusting solid-phase diffusion length and tortuosity. The diffusion timescale shifts accordingly - which directly affects C-rate capability and the onset conditions for lithium plating.
 
@@ -106,6 +110,8 @@ The tool works well for first-order scaling. Where it can grow:
 **Calendar and cycle life estimation.** Larger cells often have different aging characteristics. Thicker electrodes mean longer lithium diffusion paths, which can accelerate degradation at high charge rates. Scaling these aging effects is an open research problem.
 
 **Multi-cell pack scaling.** Instead of scaling one cell, scale an entire pack concept. Given a pack with 100 small cells, what would the equivalent large-format cell pack look like? Useful for comparing different cell strategies without building either one.
+
+![Battery pack components - cells, modules, and structural elements](/images/battery/battery-pack-components.png)
 
 **Integration with simulation toolchain.** Export directly to formats used by BMS simulators, thermal analysis tools, and vehicle simulation platforms - rather than a standalone output.
 

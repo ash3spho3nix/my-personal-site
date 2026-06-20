@@ -15,6 +15,7 @@ IIT Kanpur's mechanical programme at that time was genuinely heavy on fundamenta
 
 The M.Tech thesis was on *standing waves in high-speed rotating tires* - contact mechanics, wave propagation in pressurised rotating rings, critical velocity analysis. It was the first time a modelling problem had enough depth that the interesting difficulty was in the physics, not just the implementation. That experience set a pattern.
 
+
 The projects like *Nutational damping of asteroids in free space* and *remaining fuel estimation in spacecraft* which had core mechanics/dynamics physics and modeling/simulation essence for results and visualization, generated a genuine interest in modeling world.
 
 The other formative thing at IIT Kanpur: the culture of building things from scratch before reaching for existing tools. Not as dogma, but as a way of understanding what the tools actually do. Most of the simulation work that came later - and the AI tooling work more recently - runs on that instinct.
@@ -72,5 +73,6 @@ The AI and software tooling work has been running in parallel to the day job sin
 It's not a career pivot. It's a natural extension of the same instinct that produced the ANSYS macros in 2012: the analysis workflow is an engineering problem, and if you can build better infrastructure for it, you should.
 
 The local LLM focus - running models on-premises, building RAG systems, developing code analysis tools - is deliberate. In the German automotive context, GDPR-driven interest in on-premise AI is real and growing. The capability to deploy AI tooling that doesn't send data to external servers is worth having, both practically and professionally.
+
 
 [← About](/about/) | [Career →](/career/)

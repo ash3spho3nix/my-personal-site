@@ -31,6 +31,12 @@ Before getting into the new approach, it helps to understand what already exists
 
 Each approach has strengths. Each also has crippling weaknesses.
 
+![Pros and cons of the different battery modeling methods](/images/ai-systems/Pros-and-cons-of-the-modeling-methods.png)
+
+![Comparison of different battery modeling methods](/images/battery/different-battery-modeling-methods.webp)
+
+![ECM vs EEM modeling approaches compared](/images/battery/eem-vs-ecm.png)
+
 ## What Is a Physics-Informed Neural Network?
 
 ![Diffusion equation - governing PDE for lithium ion transport in electrodes](/images/equation/diffusion-equation.svg)

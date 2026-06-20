@@ -16,7 +16,9 @@ At Volvo Trucks, the problem was clear: the battery and BMS teams needed a simul
 
 The framework was designed around one principle: **the battery and BMS should be first-class citizens**, not subsystems of a larger model.
 
-![BMS](/images/battery/BMS_functionalities.jpg)
+![Battery modeling framework architecture](/images/battery/battery-modeling-framework.png)
+
+![BMS](/images/battery/coupled-electr-thermal-aging-battery-sim-framework.png)
 
 **Architecture:**
 

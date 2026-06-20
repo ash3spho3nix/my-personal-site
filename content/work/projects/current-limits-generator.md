@@ -96,6 +96,8 @@ The output is a **multi-dimensional current limit map** - charge and discharge l
 
 This map is directly usable by the BMS as a lookup table, and by the simulation framework as boundary conditions for pack-level simulations.
 
+![SoH prediction method - how state of health estimation feeds the current limit envelope](/images/battery/SOH-prediction-method.jpg)
+
 The tool also generates:
 
 - **Operating window visualisation** - the safe charge/discharge envelope at each operating point, overlaid with the active constraint (which limit is binding at each point)

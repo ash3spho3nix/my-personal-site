@@ -17,6 +17,8 @@ Now it's "AI."
 
 This one bothers anyone who actually cares about definitions.
 
+![AI hype cycle](/images/memes/AI-hype-cycle.png)
+
 [Artificial Intelligence](https://en.wikipedia.org/wiki/Artificial_intelligence). Two simple words. Neither means what people think anymore.
 
 ## A Small Rant
@@ -58,6 +60,8 @@ Some define AGI as a system that can perform any intellectual task a human can. 
 
 Three different definitions. Same acronym. Same confusion.
 
+![AI in the news vs reality](/images/memes/ai-in-news-vs-reality.jpeg)
+
 The first definition is probably achievable. An engineering problem. A hard one. But still engineering.
 
 The second definition is [philosophy](https://en.wikipedia.org/wiki/Philosophy_of_mind). Consciousness is not understood. Not in humans. Not in machines. The honest answer is "nobody knows."
@@ -67,6 +71,8 @@ The third definition is science fiction. Every real system hits diminishing retu
 Yet the race continues. Companies announce AGI breakthroughs that are just better chatbots.
 
 Oh, not again.
+
+![I, Robot Will Smith AGI meme](/images/memes/ai-irobot-movie-meme-willsmith.jpg)
 
 ## The Disappointment No One Admits
 

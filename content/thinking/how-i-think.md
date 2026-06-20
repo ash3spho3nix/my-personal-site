@@ -32,6 +32,8 @@ Most complex systems operate across multiple timescales simultaneously. In batte
 
 Recognising which timescales are coupled and which can be treated independently is usually the key modelling decision. It's what determines whether a lumped approximation is valid, or whether you need a full coupled simulation.
 
+![Multi-scale modeling comparison - across timescales and length scales](/images/others/multi-scale-modeling-comparison.jpg)
+
 *→ In practice: [Thermal Management System](/work/projects/thermal-management/) · [Battery Simulation Framework](/work/projects/battery-simulation/) · [Battery Modeling](/work/projects/battery-modeling/)*
 
 ---

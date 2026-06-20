@@ -74,6 +74,14 @@ Thesis: *Critical Velocity and Standing Waves in High-Speed Tires*
 
 ---
 
+## Additional AI Projects
+
+Alongside the simulation day job, a parallel track of AI and local-LLM tooling has been running since around 2016 - initially PowerShell automation, now local LLM systems, RAG pipelines, and code-intelligence tools, all built to run on-premise (LM Studio / Ollama) for GDPR-compliant deployment.
+
+Key pieces: a [Codebase Indexer](/work/projects/codebase-indexer/) and [Hybrid Code Analyzer](/work/projects/hybrid-code-analyzer/) that give local LLMs structural and runtime understanding of a repository before they touch code; a domain-specific [Battery Expert AI](/work/projects/battery-ai-systems/) combining LoRA fine-tuning with multi-domain RAG; and the [PINN degradation model](/work/projects/pinn-battery/) deployed in production at Volvo. → [How the local-LLM infrastructure was built](/thinking/local-llm/)
+
+---
+
 ## Patents & Publications
 
 - *Patent:* Cooling system for fuel cell vehicle/EV — Inventor's Award, Mercedes-Benz · 2016

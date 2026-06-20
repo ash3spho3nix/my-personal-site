@@ -14,6 +14,8 @@ It can also take an experienced CFD engineer a day to set up a single case, anot
 
 The project was to change that ratio.
 
+![Battery modeling pipeline - from case generation to results](/images/battery/battery-modeling-pipeline.webp)
+
 ---
 
 ## What OpenFOAM Does Well and Where It Hurts
